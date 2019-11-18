@@ -1,0 +1,54 @@
+.navbar {
+   background-color: rgba(26,36,38,.5);
+   min-height: 5em;
+   font-weight: 600;
+}
+
+.jumbotron {
+    /*padding: 70px 30px 70px 30px;*/
+    margin: 0px auto;
+    background: #00889a!important;
+    color: floralwhite;
+   min-height: 24rem;
+   border-radius: 0;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    /*border-bottom: 1px ridge;*/
+    min-height: 400px;
+}
+
+.caps {
+   text-transform: uppercase;
+}
+
+.headerOpenSource,
+.jumbotron h3 {
+   font-style: italic;
+}
+
+#theIssue_detail {
+   margin-top: 4em;
+}
+
+#ourActivities_detail, .icon, .title {
+   border: 2px solid red;
+}
+
+#ourOrganization.image_wrapper {
+  width: 45em;
+}
+#ourOrganization img {
+   /*width: 35em;*/
+   height: 38em;
+   width: 100%;
+}
+
+.testI {border: 2px solid red;}
+footer {
+   color: floralwhite;
+   background-color: #233033;
+   min-height: 4em;
+}
