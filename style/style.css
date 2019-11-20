@@ -1,3 +1,7 @@
+body {
+   font-size: 18px;
+}
+
 .navbar {
    background-color: rgba(26,36,38,.5);
    min-height: 5em;
@@ -40,11 +44,31 @@
 #ourOrganization.image_wrapper {
   width: 45em;
 }
+
 #ourOrganization img {
    /*width: 35em;*/
    height: 38em;
    width: 100%;
 }
+
+#ourSolution-bckgnd {
+   background: #00889a!important;
+   color: floralwhite;
+}
+
+#ourSolution-imgWrapper img {
+   border-radius: 50%;
+   width: 20em;
+   height: 20em;
+   border: 2px solid floralwhite;
+}
+
+/*
+#ourSolution-imgWrapper img {
+   
+   width: 100%;
+}
+*/
 
 .testI {border: 2px solid red;}
 footer {
