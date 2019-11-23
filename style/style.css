@@ -9,7 +9,6 @@ body {
 }
 
 .jumbotron {
-    /*padding: 70px 30px 70px 30px;*/
     margin: 0px auto;
     background: #00889a!important;
     color: floralwhite;
@@ -20,7 +19,6 @@ body {
 .row-content {
     margin: 0px auto;
     padding: 50px 0px 50px 0px;
-    /*border-bottom: 1px ridge;*/
     min-height: 400px;
 }
 
@@ -37,16 +35,12 @@ body {
    margin-top: 4em;
 }
 
-#ourActivities_detail, .icon, .title {
-   border: 2px solid red;
-}
 
 #ourOrganization.image_wrapper {
   width: 45em;
 }
 
 #ourOrganization img {
-   /*width: 35em;*/
    height: 38em;
    width: 100%;
 }
@@ -63,14 +57,16 @@ body {
    border: 2px solid floralwhite;
 }
 
-/*
-#ourSolution-imgWrapper img {
-   
-   width: 100%;
+#ourActivities_detail h5 {
+   color: #00889a;
+   margin-top: 1.8em;
 }
-*/
 
-.testI {border: 2px solid red;}
+#ourActivities_detail .fa {
+   font-size: 3.5em;
+   margin-top: 1em;
+}
+
 footer {
    color: floralwhite;
    background-color: #233033;
