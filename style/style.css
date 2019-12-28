@@ -9,9 +9,9 @@ body {
 }
 
 .jumbotron {
-    margin: 0px auto;
-    background: #00889a!important;
-    color: floralwhite;
+   margin: 0px auto;
+   background: #00889a!important;
+   color: floralwhite;
    min-height: 24rem;
    border-radius: 0;
 }
