@@ -2,15 +2,16 @@ import { Grid, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 
-import image from "../../images/image.jpg"
 
 function HomeAcc() {
     
-    console.log("test iamge",)
   return (
     
    <Grid container direction={"row"} mt={9}  sx={{
-    height:488
+    height:488,
+    ml:-1,
+    // mt:-1,
+    width:"100%"
    }}  >
 <Grid item  sx={{
     display:{

@@ -7,18 +7,12 @@ function HomaCenter() {
     <Grid container justifyContent={"center"} >
 <Grid item bgcolor={"#f0f0f0"} width={"100%"} padding={5} justifyContent={"center"} >
 <Stack justifyContent={"center"} direction={"row"} >
-<Typography fontWeight={"bold"}  width={"50%"} fontSize={20} textAlign={"center"}  >
+<Typography fontWeight={"bold"}  width={"60%"} fontSize={25} textAlign={"center"}  >
 NOTRE INFRASTRUCTURE NUMÉRIQUE REPOSE SUR DU TRAVAIL OPEN SOURCE, MAIS
 </Typography>
 </Stack>
-<Stack style={{
-    justifyContent:"center",
-    // flexDirection:"row",
-    alignItems:'center',
-    width:"50%",
-    background:"red"
-}} >
-<Typography fontSize={16} mt={2} >
+<Stack direction={"column"} justifyContent={"center"}  alignItems={"center"} >
+<Typography fontSize={18} mt={2} width={"50%"}>
 L'open source connait de plus en plus de déséquilibre alarmant. Il y a de plus en plus de consomateurs pour (très) peu de contributeurs.
 </Typography>
 <div>
@@ -34,7 +28,6 @@ L'open source connait de plus en plus de déséquilibre alarmant. Il y a de plus
 </div>
 </Stack>
 </Grid>
-
     </Grid>
   )
 }

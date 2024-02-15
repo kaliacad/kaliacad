@@ -12,13 +12,13 @@ import Button from '@mui/material/Button';
 // import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
-import { pages, settings } from '../data/Data';
+import { pages } from '../data/Data';
 
 
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(false);
-  const [anchorElUser, setAnchorElUser] = React.useState(false);
+  // const [anchorElUser, setAnchorElUser] = React.useState(false);
 
   // const handleOpenNavMenu = () => {
   //   setAnchorElNav(event.currentTarget);
@@ -31,12 +31,12 @@ function Header() {
     setAnchorElNav(!anchorElNav);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(!anchorElUser);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(!anchorElUser);
+  // };
 
   return (
-    <AppBar position="absolute"elevation={0} >
+    <AppBar position="fixed"elevation={0} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
