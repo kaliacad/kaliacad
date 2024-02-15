@@ -1,6 +1,7 @@
 import * as React from "react"
 import Header from "../navigation/Header"
 import HomeAcc from "./HomePage/HomeAcc"
+import HomaCenter from "./HomePage/HomaCenter"
 
 const pageStyles = {
   color: "#232129",
@@ -14,6 +15,7 @@ const IndexPage = () => {
       <Header/>
     <main style={pageStyles}>
     <HomeAcc/>
+    <HomaCenter/>
     </main>
     </div>
   )

@@ -2,17 +2,25 @@ import { Grid, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { StaticImage } from "gatsby-plugin-image"
 
+import image from "../../images/image.jpg"
 
 function HomeAcc() {
+    
+    console.log("test iamge",)
   return (
     
    <Grid container direction={"row"} mt={9}  sx={{
     height:488
    }}  >
-<Grid item  sx={6} md={5} lg={5} sm={6}
+<Grid item  sx={{
+    display:{
+        xs:"none",
+        sm:"flex"
+    }
+}} lg={5} md={6}
  >
 <StaticImage
-  src="../../images/image.jpg"
+  src={"../../images/image.jpg"}
   alt="Description de votre image"
   width={300} // Largeur de l'image
   height={200} // Hauteur de l'image
@@ -21,7 +29,7 @@ function HomeAcc() {
 <Grid item  sx={6} md={7} lg={7} sm={6} >
 <Stack justifyContent={"center"} height={400}>
 <h1 style={{
-    textShadow: "#000 1px 0 2px",
+    textShadow: "#000 1px 1px 2px",
     fontSize:50,
     fontWeight:"bold",
     // fontFamily:"serif"
