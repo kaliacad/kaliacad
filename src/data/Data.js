@@ -1,4 +1,4 @@
 
 
-export const pages = ['Products', 'Pricing', 'Blog'];
+export const pages = ['Acceuil', 'SOUTENEZ-NOUS'];
 export const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

@@ -5,6 +5,10 @@ module.exports = {
   siteMetadata: {
     title: `kali-academi-upgrade`,
     siteUrl: `https://www.yourdomain.tld`,
+    
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+  ],
 }
