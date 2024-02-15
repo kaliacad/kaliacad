@@ -37,7 +37,9 @@ function HomeAcc() {
 <Typography style={{
     marginTop:-30,
     fontSize:20,
-    fontStyle:"oblique"
+    fontStyle:"oblique",
+    textDecoration:"underLine",
+    color:"blue"
 }} >changer le monde grâce au code</Typography>
 </Stack>
 </Grid>
