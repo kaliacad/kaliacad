@@ -21,6 +21,9 @@ CE QUE NOUS FAISONS
           height="140"
           image={e.image}
           alt="green iguana"
+          style={{
+            objectFit:"cover"
+          }}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div" textAlign={"center"} >

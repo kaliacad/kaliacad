@@ -25,6 +25,7 @@ function Mission() {
     <img src={image} alt='test' style={{
     width:"100%",
     height:"100%",
+    objectFit:"cover"
 }} />
 </Stack>
     </Stack>
