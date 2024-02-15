@@ -36,10 +36,12 @@ function Header() {
   // };
 
   return (
-    <AppBar position="fixed"elevation={0} >
+    <AppBar position="fixed"elevation={1} sx={{
+      background:"#FFF"
+    }}  >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color:"blue" }} />
           <Typography
             variant="h6"
             noWrap
@@ -51,14 +53,14 @@ function Header() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'blue',
               textDecoration: 'none',
             }}
           >
             KALI ACADEMY
           </Typography>
 
-          <Box sx={{ flexGrow: 1,  display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1,  display: { xs: 'flex', md: 'none',color:"blue" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -85,12 +87,17 @@ function Header() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none' },
-                background:"red"
+                background:"red",
+                color:"#000",
+                fontWeight:"bold"
               }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} 
                 // onClick={handleCloseNavMenu}
+               style={{
+                color:"#000"
+               }}
                 >
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
@@ -98,7 +105,7 @@ function Header() {
             </Menu>
           </Box>
           
-          <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
+          <AdbIcon sx={{ display: { xs: 'flex', md: 'none',color:"blue" }, mr: 1 }} />
           <Typography
             variant="h5"
             noWrap
@@ -111,8 +118,9 @@ function Header() {
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
-              color: 'inherit',
+              color: 'blue',
               textDecoration: 'none',
+              
             }}
           >
             KALI ACADEMY
@@ -122,7 +130,7 @@ function Header() {
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#000', display: 'block',fontWeight:"bold" }}
               >
                 {page}
               </Button>

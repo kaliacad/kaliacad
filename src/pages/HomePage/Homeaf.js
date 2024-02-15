@@ -26,7 +26,7 @@ CE QUE NOUS FAISONS
           }}
         />
         <CardContent>
-          <Typography gutterBottom variant="h5" component="div" textAlign={"center"} >
+          <Typography fontWeight={"bold"} gutterBottom variant="h6" component="div" textAlign={"center"} >
             {e.title}
           </Typography>
           <Typography variant="body2" color="text.secondary">
