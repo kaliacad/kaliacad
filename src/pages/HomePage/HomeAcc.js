@@ -1,6 +1,7 @@
 import { Grid, Stack, Typography } from '@mui/material'
 import React from 'react'
-import { StaticImage } from "gatsby-plugin-image"
+// import { StaticImage } from "gatsby-plugin-image"
+import image from "../../images/acc2.png"
 
 
 function HomeAcc() {
@@ -17,20 +18,18 @@ function HomeAcc() {
     display:{
         xs:"none",
         sm:"flex"
-    }
-}} lg={5} md={6}
+    },
+}} lg={5} md={5}
  >
-<StaticImage
-  src={"../../images/image.jpg"}
-  alt="Description de votre image"
-  width={300} // Largeur de l'image
-  height={200} // Hauteur de l'image
-/>
+<img src={image} alt='test' style={{
+    width:"100%",
+    height:"100%",
+}} />
 </Grid>
-<Grid item  sx={6} md={7} lg={7} sm={6} >
+<Grid item  sx={6} md={6} lg={7} sm={7} >
 <Stack justifyContent={"center"} height={400}>
 <h1 style={{
-    textShadow: "#000 1px 1px 2px",
+    textShadow: "#000 2px 0px 1px",
     fontSize:50,
     fontWeight:"bold",
     // fontFamily:"serif"

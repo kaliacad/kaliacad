@@ -3,6 +3,7 @@ import Header from "../navigation/Header"
 import HomeAcc from "./HomePage/HomeAcc"
 import HomaCenter from "./HomePage/HomaCenter"
 import Mission from "./HomePage/Mission"
+import Homeaf from "./HomePage/Homeaf"
 
 const pageStyles = {
   color: "#232129",
@@ -18,6 +19,7 @@ const IndexPage = () => {
     <HomeAcc/>
     <HomaCenter/>
     <Mission/>
+    <Homeaf/>
     </main>
     </div>
   )
