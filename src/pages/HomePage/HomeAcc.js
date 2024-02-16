@@ -7,7 +7,7 @@ import image from "../../images/acc2.png"
 function HomeAcc() {
     
   return (
-    <  >
+    <div id='homepage' >
     <Stack flexDirection={"row"} mt={10} justifyContent={"end"} >
     <Button variant='outlined' sx={{
             borderColor:"blue",
@@ -41,7 +41,7 @@ function HomeAcc() {
     height:"100%",
 }} />
 </Grid>
-<Grid item  sx={6} md={6} lg={7} sm={7} >
+<Grid item  sx={5} md={6} lg={6} sm={5} ml={5}>
 <Stack justifyContent={"center"} height={400}>
 <h1 style={{
     textShadow: "#000 2px 0px 1px",
@@ -74,7 +74,7 @@ function HomeAcc() {
 </Stack>
 </Grid>
    </Grid>
-   </>
+   </div>
   )
 }
 

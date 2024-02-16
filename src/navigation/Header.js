@@ -18,11 +18,15 @@ import { pages } from '../data/Data';
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(false);
+  const idHomeTagetElement=document.getElementById("homepage")
+  const goHome=()=>{
+    idHomeTagetElement.scrollIntoView({behavior:"smooth"})
+  }
   // const [anchorElUser, setAnchorElUser] = React.useState(false);
 
-  // const handleOpenNavMenu = () => {
-  //   setAnchorElNav(event.currentTarget);
-  // };
+  const handleOpenNavMenu = () => {
+    setAnchorElNav(!anchorElNav);
+  };
   // const handleOpenUserMenu = () => {
   //   setAnchorElUser(event.currentTarget);
   // };
@@ -46,7 +50,7 @@ function Header() {
             variant="h6"
             noWrap
             component="a"
-            href="#app-bar-with-responsive-menu"
+            // href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
               display: { xs: 'none', md: 'flex' },
@@ -56,6 +60,7 @@ function Header() {
               color: 'blue',
               textDecoration: 'none',
             }}
+            // onClick={()=>goHome()}
           >
             KALI ACADEMY
           </Typography>
@@ -66,7 +71,7 @@ function Header() {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              // onClick={handleOpenNavMenu}
+              onClick={handleOpenNavMenu}
               color="inherit"
             >
               <MenuIcon />

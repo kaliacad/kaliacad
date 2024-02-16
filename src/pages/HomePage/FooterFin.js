@@ -1,6 +1,7 @@
 import { Stack, Typography } from '@mui/material'
 import React from 'react'
 import AdbIcon from '@mui/icons-material/Adb';
+import {GitHub,Email,Telegram,YouTube} from "@mui/icons-material"
 
 function FooterFin() {
     const currentyear=new Date().getFullYear()
@@ -14,24 +15,26 @@ function FooterFin() {
         </div>
         <div>
             <Stack flexDirection={"row"} >
-            <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, color:"blue", }} />
-            <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'blue',
-              textDecoration: 'none',
-            }}
-          >
-            KALI ACADEMY
-          </Typography>
+            <span style={{
+                color:"gray",
+                fontSize:12,
+                marginRight:5,
+                ":hover":{
+                    color:"blue"
+                }
+            }} ><GitHub fontSize='small' /></span>
+            <span style={{
+                color:"gray",
+                fontSize:12
+            }} ><Email fontSize='small' /></span>
+            <span style={{
+                color:"gray",
+                fontSize:12
+            }} ><Telegram fontSize='small'/></span>
+            <span style={{
+                color:"gray",
+                fontSize:12
+            }} ><YouTube fontSize='small' /></span>
             </Stack>
         </div>
         <div>
