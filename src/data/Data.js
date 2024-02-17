@@ -24,5 +24,5 @@ export const dataCequeNousFaison=[
         description:"pour motiver plus du monde à rejoindre la communauté",
         image:image3
 
-    }
+    },
 ]

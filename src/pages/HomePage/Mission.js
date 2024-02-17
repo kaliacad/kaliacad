@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography } from '@mui/material'
+import { Grid, Hidden, Stack, Typography } from '@mui/material'
 import React from 'react'
 // import { StaticImage } from "gatsby-plugin-image"
 import image from "../../images/bgimage2.png"
@@ -22,11 +22,14 @@ function Mission() {
 <Stack style={{
     width:"40%",
 }} >
+    <Hidden smDown mdDown >
     <img src={image} alt='test' style={{
     width:"100%",
     height:"100%",
     objectFit:"cover"
 }} />
+
+    </Hidden>
 </Stack>
     </Stack>
    

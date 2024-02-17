@@ -1,4 +1,4 @@
-import { Grid, Stack, Typography,Button } from '@mui/material'
+import { Grid, Stack, Typography,Button, Hidden } from '@mui/material'
 import React from 'react'
 // import { StaticImage } from "gatsby-plugin-image"
 import image from "../../images/acc2.png"
@@ -8,6 +8,7 @@ function HomeAcc() {
     
   return (
     <div id='homepage' >
+    <Hidden smDown mdDown >
     <Stack flexDirection={"row"} mt={10} justifyContent={"end"} >
     <Button variant='outlined' sx={{
             borderColor:"blue",
@@ -22,6 +23,7 @@ function HomeAcc() {
             color:'#FFF'
         }} >Contact</Button>
     </Stack>
+    </Hidden>
    <Grid container direction={"row"}   sx={{
     height:488,
     ml:-1,
@@ -36,13 +38,15 @@ function HomeAcc() {
     },
 }} lg={5} md={5}
  >
+<Hidden smDown mdDown >
 <img src={image} alt='test' style={{
     width:"100%",
     height:"100%",
 }} />
+</Hidden>
 </Grid>
 <Grid item  sx={5} md={6} lg={6} sm={5} ml={5}>
-<Stack justifyContent={"center"} height={400}>
+<Stack justifyContent={"center"} height={400} width={"100%"} mt={5}>
 <h1 style={{
     textShadow: "#000 2px 0px 1px",
     fontSize:53,

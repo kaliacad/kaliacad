@@ -1,19 +1,9 @@
-import { Card, Grid, Stack, Typography ,CardActionArea,CardMedia,CardContent} from '@mui/material'
+import { Card, Grid, Stack, Typography ,CardActionArea,CardMedia,CardContent, Hidden} from '@mui/material'
 import React from 'react'
 import { dataCequeNousFaison, listeMenu } from '../../data/Data'
+import useCarousel from "../hooks/useCarousel"
 
-function Homeaf() {
-  return (
-    <Grid container justifyContent={"center"} >
-<Grid item bgcolor={"#f0f0f0"} width={"100%"} padding={5} justifyContent={"center"} >
-<Stack >
-<Typography fontWeight={"bold"}   fontSize={26} textAlign={"center"}  >
-CE QUE NOUS FAISONS
-</Typography>
-</Stack>
-<Stack flexDirection={"row"} justifyContent={"center"} mt={5}>
-{
-    dataCequeNousFaison.map((e,index)=>(
+const dat=dataCequeNousFaison.map((e,index)=>(
         <Card sx={{ maxWidth: 345, ml:1 }} >
             <CardActionArea>
         <CardMedia
@@ -36,9 +26,32 @@ CE QUE NOUS FAISONS
       </CardActionArea>
         </Card>
     ))
-}
 
+
+function Homeaf() {
+  const {data,dataverticale}=useCarousel()
+  return (
+    <Grid container justifyContent={"center"} >
+<Grid item bgcolor={"#f0f0f0"} width={"100%"} padding={5} justifyContent={"center"} >
+<Stack >
+<Typography fontWeight={"bold"}   fontSize={26} textAlign={"center"}  >
+CE QUE NOUS FAISONS
+</Typography>
 </Stack>
+<div style={{marginTop:40}} >
+<Hidden smDown xsDown >
+{
+  data({datajx:dat})
+}
+</Hidden>
+<Hidden mdDown lgDown xlDown  smUp xsUp >
+  {
+  dataverticale({datajx:dat})
+}
+</Hidden>
+
+
+</div>
 </Grid>
     </Grid>
   )
