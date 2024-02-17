@@ -1,7 +1,7 @@
-import { Card, CardActionArea, CardActions, CardMedia, Grid, IconButton, Stack, TextField, Tooltip, Typography } from '@mui/material'
+import { Button, Card, CardActionArea, CardActions, CardMedia, Grid, IconButton, Stack, TextField, Tooltip, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import {  dataCequeNousFaisonAlbum } from '../data/Data'
-import { Download } from '@mui/icons-material';
+import { Download, Search } from '@mui/icons-material';
 import FooterFin from './HomePage/HomeFooter';
 
 function Albums() {
@@ -43,8 +43,46 @@ function Albums() {
             Notre Galerie
         </Typography> 
         </Grid>
+        <Stack width={"100%"} mt={1} flexDirection={"row"} justifyContent={"center"} >
+                <Button 
+                    size='small' 
+                    variant='outlined' 
+                    sx={{
+                        borderColor:"blue",
+                        borderWidth:1,
+                        color:"#000",
+                        marginLeft:1
+                    }} 
+                    >photo</Button>
+                    <Button 
+                    size='small' 
+                    variant='outlined' 
+                    sx={{
+                        borderColor:"red",
+                        borderWidth:1,
+                        color:"#000",
+                        marginLeft:1
+                    }} 
+                    >
+                        video
+                    </Button>
+            
+        </Stack>
         <Stack width={"100%"} mt={1} flexDirection={"row"} justifyContent={"end"} alignItems={"end"} >
-            <TextField size='small' placeholder='search...' value={seacher} onChange={(e)=>setSeacher(e.target.value)} />
+            <TextField 
+            size='small' 
+            placeholder='search...' 
+            variant='standard'
+            sx={{
+                bgcolor:"#FFF",
+                color:"#000"
+            }}
+            value={seacher} onChange={(e)=>setSeacher(e.target.value)} />
+            <Search fontSize='medium' sx={{
+                color:"gray",
+                mr:2,
+                mt:-10
+            }} />
         </Stack>
         <div style={{
             margin:50,
