@@ -1,6 +1,6 @@
-import { Stack, Typography } from '@mui/material'
+import { Stack } from '@mui/material'
 import React from 'react'
-import AdbIcon from '@mui/icons-material/Adb';
+// import AdbIcon from '@mui/icons-material/Adb';
 import {GitHub,Email,Telegram,YouTube} from "@mui/icons-material"
 
 function FooterFin() {

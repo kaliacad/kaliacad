@@ -1,10 +1,7 @@
 import * as React from "react"
 import Header from "../navigation/Header"
-import HomeAcc from "./HomePage/HomeTitle"
-import HomaCenter from "./HomePage/HomaCenter"
-import Mission from "./HomePage/HomMission"
-import Homeaf from "./HomePage/HomeaWatWeDo"
-import FooterFin from "./HomePage/HomeFooter"
+import Route from "../router/indexs";
+import { BrowserRouter } from "react-router-dom";
 //
 const pageStyles = {
   color: "#232129",
@@ -14,19 +11,18 @@ const pageStyles = {
 
 const IndexPage = () => {
   return (
-    <div style={{
-      // background:"beige",
-      width:"100%"
-    }} >
-      <Header/>
-    <main style={pageStyles}>
-    <HomeAcc/>
-    <HomaCenter/>
-    <Mission/>
-    <Homeaf/>
-    <FooterFin/>
-    </main>
-    </div>
+    <BrowserRouter>
+        <div 
+        style={{
+          // background:"beige",
+          width:"100%"
+        }} >
+          <Header/>
+            <main style={pageStyles}>
+                <Route/>
+            </main>
+        </div>
+    </BrowserRouter>
   )
 }
 

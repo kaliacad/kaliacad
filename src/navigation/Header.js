@@ -18,10 +18,10 @@ import { pages } from '../data/Data';
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(false);
-  const idHomeTagetElement=document.getElementById("homepage")
-  const goHome=()=>{
-    idHomeTagetElement.scrollIntoView({behavior:"smooth"})
-  }
+  // const idHomeTagetElement=document.getElementById("homepage")
+  // const goHome=()=>{
+  //   idHomeTagetElement.scrollIntoView({behavior:"smooth"})
+  // }
   // const [anchorElUser, setAnchorElUser] = React.useState(false);
 
   const handleOpenNavMenu = () => {
