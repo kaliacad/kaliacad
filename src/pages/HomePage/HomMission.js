@@ -1,4 +1,4 @@
-import { Grid, Hidden, Stack, Typography } from '@mui/material'
+import {  Hidden, Stack } from '@mui/material'
 import React from 'react'
 // import { StaticImage } from "gatsby-plugin-image"
 import image from "../../images/bgimage2.png"

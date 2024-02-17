@@ -4,24 +4,24 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 
-const arrowStyle = {
-  position: 'absolute',
-  top: '50%',
-  transform: 'translateY(-50%)',
-  zIndex: 1,
-  cursor: 'pointer',
-  fontSize: '20px',
-  color: 'white',
-  backgroundColor: 'rgba(0, 0, 0, 0.5)',
-  border: 'none',
-  borderRadius: '50%',
-  width: '40px',
-  height: '40px',
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
-  transition: 'background-color 0.3s ease',
-};
+// const arrowStyle = {
+//   position: 'absolute',
+//   top: '50%',
+//   transform: 'translateY(-50%)',
+//   zIndex: 1,
+//   cursor: 'pointer',
+//   fontSize: '20px',
+//   color: 'white',
+//   backgroundColor: 'rgba(0, 0, 0, 0.5)',
+//   border: 'none',
+//   borderRadius: '50%',
+//   width: '40px',
+//   height: '40px',
+//   display: 'flex',
+//   justifyContent: 'center',
+//   alignItems: 'center',
+//   transition: 'background-color 0.3s ease',
+// };
 
 function useCarousel() {
 

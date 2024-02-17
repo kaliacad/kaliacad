@@ -1,10 +1,10 @@
 import * as React from "react"
 import Header from "../navigation/Header"
-import HomeAcc from "./HomePage/HomeAcc"
+import HomeAcc from "./HomePage/HomeTitle"
 import HomaCenter from "./HomePage/HomaCenter"
-import Mission from "./HomePage/Mission"
-import Homeaf from "./HomePage/Homeaf"
-import FooterFin from "./HomePage/FooterFin"
+import Mission from "./HomePage/HomMission"
+import Homeaf from "./HomePage/HomeaWatWeDo"
+import FooterFin from "./HomePage/HomeFooter"
 //
 const pageStyles = {
   color: "#232129",
