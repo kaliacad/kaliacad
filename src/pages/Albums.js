@@ -42,6 +42,21 @@ function Albums() {
          >
             Notre Galerie
         </Typography> 
+        <Stack width={"100%"} justifyContent={"center"} flexDirection={"row"} >
+        <Typography
+            fontSize={18} 
+            fontWeight={"bold"} 
+            textAlign={"center"}
+            // mt={5}
+            color={"gray"}
+            // bgcolor={"red"}
+            width={"50%"}
+            
+         >
+            Nous nous engageons à vous fournir l'accès à la communauté open source de Wikipédia. Explorez nos différentes activités
+        </Typography> 
+
+        </Stack>
         </Grid>
         <Stack width={"100%"} mt={1} flexDirection={"row"} justifyContent={"center"} >
                 <Button 

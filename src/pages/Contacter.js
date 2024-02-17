@@ -59,9 +59,7 @@ const validation=useFormik({
          >
             Maitenant que vous savez ce que nous faisons... Dite nous en quoi nous pouvons vous aider!
         </Typography> 
-
         </Stack>
-        
         </Grid>
         <Stack minHeight={"50%"} width={"50%"} m={5} >
             <ITextFieldnput 
