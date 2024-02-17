@@ -13,31 +13,27 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import { pages } from '../data/Data';
+import { useNavigate } from 'react-router-dom';
 
 
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(false);
-  // const idHomeTagetElement=document.getElementById("homepage")
-  // const goHome=()=>{
-  //   idHomeTagetElement.scrollIntoView({behavior:"smooth"})
-  // }
-  // const [anchorElUser, setAnchorElUser] = React.useState(false);
-
+  const nav=useNavigate()
   const handleOpenNavMenu = () => {
     setAnchorElNav(!anchorElNav);
   };
-  // const handleOpenUserMenu = () => {
-  //   setAnchorElUser(event.currentTarget);
-  // };
+  
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(!anchorElNav);
   };
 
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(!anchorElUser);
-  // };
+  const gotHomeTitleMenu=(e)=>{
+    if(e===1){
+      nav("/")
+    }
+  }
 
   return (
     <AppBar position="fixed"elevation={1} sx={{
@@ -98,13 +94,14 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} 
-                // onClick={handleCloseNavMenu}
+                <MenuItem key={page.id} 
+                onClick={()=>gotHomeTitleMenu(page.id)}
+                // id={page.id}
                style={{
                 color:"#000"
                }}
                 >
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography textAlign="center">{page.title}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -133,11 +130,11 @@ function Header() {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex',justifyContent:"center" } }}>
             {pages.map((page) => (
               <Button
-                key={page}
-                onClick={handleCloseNavMenu}
+                key={page.id}
                 sx={{ my: 2, color: '#000', display: 'block',fontWeight:"bold" }}
+                onClick={()=>gotHomeTitleMenu(page.id)}
               >
-                {page}
+                {page.title}
               </Button>
             ))}
           </Box>

@@ -2,22 +2,34 @@ import { Grid, Stack, Typography,Button, Hidden } from '@mui/material'
 import React from 'react'
 // import { StaticImage } from "gatsby-plugin-image"
 import image from "../../images/acc2.png"
+import { useNavigate } from 'react-router-dom'
 
 
 function HomeAcc() {
+    const nav=useNavigate()
+
+    const goToAlbum=()=>{
+        nav("/album")
+    }
     
   return (
     <div id='homepage' >
     <Hidden smDown mdDown >
     <Stack flexDirection={"row"} mt={10} justifyContent={"end"} >
-    <Button variant='outlined' sx={{
-            borderColor:"blue",
-            borderWidth:1,
-            color:'blue',
-            marginRight:2,
-            
-            
-        }} >Album</Button>
+    <Button
+    
+    onClick={()=>goToAlbum()}
+        variant='outlined' 
+        sx={{
+                borderColor:"blue",
+                borderWidth:1,
+                color:'blue',
+                marginRight:2,
+            }} 
+        >
+            Album
+        
+        </Button>
         <Button variant='contained' sx={{
             bgcolor:"blue",
             color:'#FFF'

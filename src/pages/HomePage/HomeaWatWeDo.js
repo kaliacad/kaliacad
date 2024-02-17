@@ -1,6 +1,6 @@
 import { Card, Grid, Stack, Typography ,CardActionArea,CardMedia,CardContent, Hidden} from '@mui/material'
 import React from 'react'
-import { dataCequeNousFaison, listeMenu } from '../../data/Data'
+import { dataCequeNousFaison } from '../../data/Data'
 import useCarousel from "../hooks/useCarousel"
 
 const dat=dataCequeNousFaison.map((e,index)=>(
