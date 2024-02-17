@@ -11,6 +11,9 @@ function HomeAcc() {
     const goToAlbum=()=>{
         nav("/album")
     }
+    const goToContact=()=>{
+        nav("/contacter")
+    }
     
   return (
     <div id='homepage' >
@@ -30,10 +33,14 @@ function HomeAcc() {
             Album
         
         </Button>
-        <Button variant='contained' sx={{
+        <Button
+         variant='contained' 
+        sx={{
             bgcolor:"blue",
             color:'#FFF'
-        }} >Contact</Button>
+        }} 
+        onClick={()=>goToContact()}
+        >Contact</Button>
     </Stack>
     </Hidden>
    <Grid container direction={"row"}   sx={{
