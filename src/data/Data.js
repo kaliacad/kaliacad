@@ -13,6 +13,11 @@ export const pages = [
         id:2,
         title:'SOUTENEZ-NOUS',
         path:""
+    },
+    {
+        id:3,
+        title:'Blog',
+        path:""
     }
 ];
 export const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

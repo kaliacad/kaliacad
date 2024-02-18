@@ -1,8 +1,8 @@
 import React from 'react';
 import NotFoundPage from "../pages/404";
 import HomeGolobal from "../pages/HomePage/HomeGolobal";
-import Albums from '../pages/Albums';
-import Contacter from '../pages/Contacter';
+import Albums from '../pages/album';
+import Contacter from '../pages/contacter';
 
 
 export const PrivateRouters=[

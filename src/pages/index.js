@@ -10,6 +10,7 @@ const pageStyles = {
 }
 
 const IndexPage = () => {
+  document.title="Kali Academy"
   return (
     <BrowserRouter>
         <div 

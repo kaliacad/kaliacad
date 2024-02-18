@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { Button, Card, CardActionArea, CardActions, CardMedia, Grid, IconButton, Stack, TextField, Tooltip, Typography } from '@mui/material'
+import { Button, Card, CardActionArea, CardActions, CardMedia, Grid, IconButton, Stack, TextField, Tooltip } from '@mui/material'
 import {  dataCequeNousFaisonAlbum } from '../data/Data'
 import { Download, Search } from '@mui/icons-material';
 import FooterFin from './HomePage/HomeFooter';
+import TitleHeader from '../component/titleheader';
 
 function Albums() {
     const [seacher,setSeacher]=useState("")
@@ -28,36 +29,11 @@ function Albums() {
         marginTop:50
     }}>
       <Grid container>
-        <Grid item xs={12} sm={12} md={12} lg={12} sx={{
-            bgcolor:"#f0f0f0",
-            height:200,
-            justifyContent:"center",
-            alignItems:"center"
-        }} >
-        <Typography 
-            fontSize={40} 
-            fontWeight={"bold"} 
-            textAlign={"center"}
-            mt={5}
-         >
-            Notre Galerie
-        </Typography> 
-        <Stack width={"100%"} justifyContent={"center"} flexDirection={"row"} >
-        <Typography
-            fontSize={18} 
-            fontWeight={"bold"} 
-            textAlign={"center"}
-            // mt={5}
-            color={"gray"}
-            // bgcolor={"red"}
-            width={"50%"}
             
-         >
-            Nous nous engageons à vous fournir l'accès à la communauté open source de Wikipédia. Explorez nos différentes activités
-        </Typography> 
-
-        </Stack>
-        </Grid>
+        <TitleHeader 
+        title={"Notre Galerie"} 
+        desicription={" Nous nous engageons à vous fournir l'accès à la communauté open source de Wikipédia. Explorez nos différentes activités "} />
+        
         <Stack width={"100%"} mt={1} flexDirection={"row"} justifyContent={"center"} >
                 <Button 
                     size='small' 
