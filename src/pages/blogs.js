@@ -1,4 +1,4 @@
-import { Button, Grid } from "@mui/material";
+import { AppBar, Button, Grid } from "@mui/material";
 import * as React from "react";
 import BlogMenu from "./blogs/blogMenu";
 import BlogMenuRith from "./blogs/blogMenuRith";
@@ -9,16 +9,18 @@ import { Google } from "@mui/icons-material";
 
 
 export default function Blogs() {
+    const [seach, setSeach]=React.useState("")
   
   return (
     <div style={{
         bgcolor:"#f0f0f0",
         marginTop:80
     }} >
+        <AppBar position="fixed" elevation={0} sx={{background:"#fff"}} >
         <Grid container flexDirection={"row"} sx={{bgcolor:"#fff"}} m={1} >
             <Grid item xs={0} sm={0} md={1} lg={1} xl={1} ></Grid>
             <Grid item xs={0} sm={0} md={7} lg={7} xl={7}  >
-                <ITextFieldnput  placeholder={"Recherche..."} />
+                <ITextFieldnput value={seach} onChange={(e)=>setSeach(e.target.value)}  placeholder={"Recherche..."} />
             </Grid>
             <Grid item xs={0} sm={0} md={3} lg={3} xl={3} ml={2}mt={-1.5} >
             <div 
@@ -46,6 +48,7 @@ export default function Blogs() {
                 </div>
             </Grid>
         </Grid>
+        </AppBar>
    <Grid container flexDirection={"row"}
     sx={{
     bgcolor:"#f0f0f0",
@@ -56,7 +59,7 @@ export default function Blogs() {
         <BlogMenuLefst/>
     </Grid>
     <Grid item xs={0} sm={0} md={7} lg={7} xl={7} >
-        <BlogMenu/>
+        <BlogMenu search={seach} />
     </Grid>
     <Grid item xs={0} sm={0} md={3} lg={3} xl={3} >
         <BlogMenuRith/>

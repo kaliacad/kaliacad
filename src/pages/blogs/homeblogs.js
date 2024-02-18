@@ -15,8 +15,18 @@ const useStyles = makeStyles({
   },
 });
 
-function Homeblogs() {
+function Homeblogs({search}) {
     const classes = useStyles();
+
+
+const data=dataBlog.filter((e)=> 
+                search.toUpperCase()===""
+                ?e
+                :e.title && 
+                e &&
+                e.title.toUpperCase().includes(search.toUpperCase()) 
+            );
+
   return (
     <Grid container >
         <Grid item sm={12} md={12} lg={12} >
@@ -74,7 +84,7 @@ function Homeblogs() {
                 marginTop:25
             }} >
                 {
-                    dataBlog.map((e)=>(
+                    data.map((e)=>(
                         <Card sx={{ maxWidth: "100%", mb:2 }} key={e.id} >
                             <CardHeader 
                                 avatar={

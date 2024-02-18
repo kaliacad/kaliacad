@@ -41,7 +41,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BlogMenus() {
+export default function BlogMenus({search}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -85,7 +85,7 @@ export default function BlogMenus() {
             </AppBar>
           </Box>
           <CustomTabPanel value={value} index={0}>
-            <Homeblogs/>
+            <Homeblogs search={search} />
           </CustomTabPanel>
           <CustomTabPanel value={value} index={1}>
 
