@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid, Stack, Typography } from '@mui/material'
+import { Grid, Stack } from '@mui/material'
 import FooterFin from './HomePage/HomeFooter'
 import ITextFieldnput from '../controlers/TextFieldInput'
 import { useFormik } from 'formik'

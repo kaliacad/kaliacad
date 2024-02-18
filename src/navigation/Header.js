@@ -32,6 +32,8 @@ function Header() {
   const gotHomeTitleMenu=(e)=>{
     if(e===1){
       nav("/")
+    }else if(e===3){
+      nav("/blogs")
     }
   }
 
