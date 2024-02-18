@@ -15,7 +15,7 @@ const useStyles = makeStyles({
   },
 });
 
-function Homeblogs({search}) {
+function Homeblogs({search=""}) {
     const classes = useStyles();
 
 
@@ -44,7 +44,7 @@ const data=dataBlog.filter((e)=>
                     color:"#fff",
                     mt:2
                 }} >
-                    Bienvenu sur Kalie Academy
+                    Bienvenu sur Kali Academy
                 </Typography>
                 <Typography sx={{
                     color:"#fff",
@@ -58,7 +58,7 @@ const data=dataBlog.filter((e)=>
                 <div 
                 style={
                     {
-                        marginTop:10,
+                        marginTop:20,
                         borderRadius:100,
                         width:"65%",
                         background:"blue",

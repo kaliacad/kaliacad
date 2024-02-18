@@ -1,4 +1,4 @@
-import { AppBar, Button, Grid } from "@mui/material";
+import { AppBar, Button, Grid, Typography } from "@mui/material";
 import * as React from "react";
 import BlogMenu from "./blogs/blogMenu";
 import BlogMenuRith from "./blogs/blogMenuRith";
@@ -6,6 +6,7 @@ import BlogMenuLefst from "./blogs/blogMenuLefst";
 import FooterFin from "./HomePage/HomeFooter";
 import ITextFieldnput from "../controlers/TextFieldInput";
 import { Google } from "@mui/icons-material";
+import AdbIcon from '@mui/icons-material/Adb';
 
 
 export default function Blogs() {
@@ -18,8 +19,30 @@ export default function Blogs() {
     }} >
         <AppBar position="fixed" elevation={0} sx={{background:"#fff"}} >
         <Grid container flexDirection={"row"} sx={{bgcolor:"#fff"}} m={1} >
-            <Grid item xs={0} sm={0} md={1} lg={1} xl={1} ></Grid>
-            <Grid item xs={0} sm={0} md={7} lg={7} xl={7}  >
+            <Grid item xs={0} sm={0} md={3} lg={3} xl={3} >
+          <div style={{
+            display:"flex"
+          }} >
+          <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1, mt:0.3, color:"blue" }} />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            // href="#app-bar-with-responsive-menu"
+            sx={{
+            //   mr: 2,
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              letterSpacing: '.3rem',
+              color: 'blue',
+              textDecoration: 'none',
+            }}
+          >
+            KALI ACADEMY
+          </Typography>
+          </div>
+            </Grid>
+            <Grid item xs={0} sm={0} md={5} lg={5} xl={5}  >
                 <ITextFieldnput value={seach} onChange={(e)=>setSeach(e.target.value)}  placeholder={"Recherche..."} />
             </Grid>
             <Grid item xs={0} sm={0} md={3} lg={3} xl={3} ml={2}mt={-1.5} >

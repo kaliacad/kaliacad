@@ -1,8 +1,11 @@
-import { Home, SmsFailed } from '@mui/icons-material'
-import { Button, Card, CardContent, Divider, Typography } from '@mui/material'
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { ContactMail, Home, Person2, SmsFailed } from '@mui/icons-material'
+import { Button, Card, CardContent, Divider } from '@mui/material'
+
 
 function BlogMenuLefst() {
+    const nav=useNavigate()
   return (
     <div style={{
         marginTop:10,
@@ -15,43 +18,47 @@ function BlogMenuLefst() {
         // flexDirection:"column"
       }} >
         <CardContent  >
-        <Button sx={{
+        <Button
+        onClick={()=>nav("/")} 
+        sx={{
             width:"100%",
             textAlign:"end",
             justifyContent:"flex-start",
-            // color:"blue",
+            color:"#000",
             ":hover":{
                 background:"#f0f0f0",
                 color:"blue",
             }
-        }}  variant="text" startIcon={<Home />}>
-            Home
+        }}  variant="text" startIcon={<Home sx={{color:"blue"}} />}>
+            Acceuil
         </Button>
         
         <Button sx={{
             width:"100%",
             textAlign:"end",
             justifyContent:"flex-start",
-            // color:"blue",
+            color:"#000",
             ":hover":{
                 background:"#f0f0f0",
                 color:"blue",
             }
-        }}  variant="text" startIcon={<Home />}>
-            Home
+        }}  variant="text" startIcon={<Person2 sx={{color:"red"}} />}>
+            Faire un don
         </Button>
-        <Button sx={{
+        <Button 
+        onClick={()=>nav("/contacter")}
+        sx={{
             width:"100%",
             textAlign:"end",
             justifyContent:"flex-start",
             fontSize:14,
-            // color:"blue",
+            color:"#000",
             ":hover":{
                 background:"#f0f0f0",
                 color:"blue",
             }
-        }}  variant="text" startIcon={<Home />}>
-            Home
+        }}  variant="text" startIcon={<ContactMail style={{color:"green"}} />}>
+            Contacter
         </Button>
 <Divider sx={{
     mt:1,
@@ -62,6 +69,7 @@ function BlogMenuLefst() {
             fontSize:12,
             textAlign:"end",
             justifyContent:"flex-start",
+            color:"#000",
             ":hover":{
                 background:"#f0f0f0",
                 // color:"#fff"

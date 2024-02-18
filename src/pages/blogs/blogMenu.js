@@ -41,7 +41,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BlogMenus({search}) {
+export default function BlogMenus({search=""}) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
