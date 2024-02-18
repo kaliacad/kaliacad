@@ -8,29 +8,27 @@ export default function indexs() {
     <Routes>
       <Route>
         {
-            /**
-             * definition de route publics
-             */
-        PublicRouters.map((e) => (
-          <Route 
-          path={e.path} 
-          element={e.component} 
-        //   exact={e.exact} 
-          />
-        ))
+          /**
+           * definition de route publics
+           */
+          PublicRouters.map((e) => (
+            <Route
+              path={e.path}
+              element={e.component}
+              //   exact={e.exact}
+            />
+          ))
         }
       </Route>
 
       <Route element={<ProtectRoutes />}>
         {
-            /**
-             * definition de route pprivate
-             */
-            PrivateRouters.map((e) => (
-          <Route 
-          path={e.path} 
-          element={e.component} />
-        ))
+          /**
+           * definition de route pprivate
+           */
+          PrivateRouters.map((e) => (
+            <Route path={e.path} element={e.component} />
+          ))
         }
       </Route>
     </Routes>
