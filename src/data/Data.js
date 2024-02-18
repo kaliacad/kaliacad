@@ -76,3 +76,24 @@ export const dataCequeNousFaisonAlbum=[
 
     },
 ]
+
+export const dataBlog=[
+    {
+        id:1,
+        identite:"Nzanzu Wayire Delord",
+        image:image3,
+        title:"Trois types de pirates informatiques",
+        description:"Pirate éthique qui recherche des vulnérabilités avec de bonnes intentions et qui les exploite dans le but de les signaler pour les corriger. Un exemple concret d'un pirate chapeau blanc serait un expert en sécurité informatique embauché par une entreprise pour évaluer la robustesse de son système de sécurité. Ce spécialiste pourrait utiliser diverses méthodes, telles que des tests de pénétration, pour identifier les vulnérabilités potentielles dans le réseau, les logiciels ou les applications de l'entreprise. Une fois les vulnérabilités identifiées, le pirate chapeau blanc fournirait des recommandations pour renforcer la sécurité et protéger l'entreprise contre les cybermenaces. En agissant de manière éthique et transparente, ce pirate informatique contribue à renforcer la sécurité des systèmes et à protéger les données sensibles des entreprises contre les cyberattaques.",
+        imagearticle:image,
+        date:"18-09-2022"
+    },
+    {
+        id:2,
+        identite:"Natalie Joel",
+        image:image2,
+        title:"L’avenir de la technologie : L’IA et au-delà",
+        description:"La technologie évolue à un rythme sans précédent, transformant notre façon de vivre, de travailler et de nous connecter. L’intelligence artificielle (IA) est au cœur de cette révolution, offrant des possibilités infinies pour l’avenir. L’IA a déjà commencé à remodeler notre monde. Des assistants vocaux intelligents aux voitures autonomes, l’IA est partout. Mais ce n’est que le début. Avec l’avancement de l’apprentissage profond et du traitement du langage naturel, l’IA devient de plus en plus sophistiquée, capable de comprendre et d’interagir avec le monde d’une manière presque humaine. Mais l’IA n’est pas la seule technologie qui façonne notre avenir. La réalité virtuelle (RV) et augmentée (RA), la blockchain, l’Internet des objets (IoT) et la 5G sont autant de technologies qui promettent de transformer notre monde. La RV et la RA offrent des expériences immersives, changeant la façon dont nous jouons, apprenons et communiquons. La blockchain offre une sécurité et une transparence sans précédent, avec le potentiel de révolutionner les industries allant de la finance à la santé. L’IoT et la 5G promettent de connecter notre monde comme jamais auparavant, avec des vitesses de connexion ultra-rapides et une multitude d’appareils connectés. Alors que nous nous tournons vers l’avenir, une chose est claire : la technologie continuera à évoluer et à transformer notre monde de manière inimaginable. Et nous sommes impatients de voir ce que l’avenir nous réserve.",
+        imagearticle:image2,
+        date:"18-09-2022"
+    }
+]

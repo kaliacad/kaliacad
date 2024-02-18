@@ -44,6 +44,7 @@ function BlogMenuLefst() {
             width:"100%",
             textAlign:"end",
             justifyContent:"flex-start",
+            fontSize:14,
             // color:"blue",
             ":hover":{
                 background:"#f0f0f0",
@@ -57,7 +58,8 @@ function BlogMenuLefst() {
     mb:1
 }} />
 <Button sx={{
-            width:"100%",
+            // width:"100%",
+            fontSize:12,
             textAlign:"end",
             justifyContent:"flex-start",
             ":hover":{

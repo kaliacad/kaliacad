@@ -16,10 +16,10 @@ export default function Blogs() {
     minHeight:"100%"
    }} >
 
-    <Grid item xs={0} sm={0} md={3} lg={3} xl={3} >
+    <Grid item xs={0} sm={0} md={2} lg={2} xl={2} >
         <BlogMenuLefst/>
     </Grid>
-    <Grid item xs={0} sm={0} md={6} lg={6} xl={6} >
+    <Grid item xs={0} sm={0} md={7} lg={7} xl={7} >
         <BlogMenu/>
     </Grid>
     <Grid item xs={0} sm={0} md={3} lg={3} xl={3} >
