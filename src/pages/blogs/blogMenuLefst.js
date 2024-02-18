@@ -5,7 +5,7 @@ import React from 'react'
 function BlogMenuLefst() {
   return (
     <div style={{
-        marginTop:75,
+        marginTop:10,
         padding:5
     }} >
       <Card  sx={{

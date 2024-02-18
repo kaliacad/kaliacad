@@ -5,7 +5,7 @@ import ImageVide from "../../images/Notebook-bro.png"
 export default function BlogMenuRith() {
   return (
     <div style={{
-        marginTop:75,
+        marginTop:10,
         padding:5
     }} >
       <Card>
