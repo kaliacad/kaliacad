@@ -3,10 +3,12 @@ import React from 'react'
 // import AdbIcon from '@mui/icons-material/Adb';
 import {GitHub,Email,Telegram,YouTube} from "@mui/icons-material"
 
-function FooterFin() {
+function FooterFin({bgcolo}) {
     const currentyear=new Date().getFullYear()
   return (
-    <Stack  m={3} flexDirection={"row"} justifyContent={"space-between"}>
+    <Stack sx={{
+        bgcolor:bgcolo?bgcolo:""
+    }}  m={3} flexDirection={"row"} justifyContent={"space-between"}>
         <div>
             <span style={{
                 color:"gray",
