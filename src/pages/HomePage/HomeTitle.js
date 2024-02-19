@@ -13,7 +13,7 @@ function HomeAcc() {
   const goToContact = () => {
     nav("/contacter");
   };
-
+  //ofrs yvdg etea cuzo
   return (
     <div id="homepage">
       <Hidden smDown mdDown>

@@ -24,19 +24,29 @@ function FooterFin({ bgcolo }) {
           @{currentyear} Kali Academy
         </span>
       </div>
-      <div>
-        <Stack flexDirection={"row"}>
+      <div
+        style={{
+          // background: "red",
+          width: "15%",
+        }}
+      >
+        <Stack flexDirection={"row"} justifyContent={"space-evenly"}>
           <span
             style={{
               color: "gray",
               fontSize: 12,
               marginRight: 5,
-              ":hover": {
-                color: "blue",
-              },
             }}
           >
-            <GitHub fontSize="small" />
+            <GitHub
+              fontSize="small"
+              sx={{
+                ":hover": {
+                  color: "#000",
+                  cursor: "pointer",
+                },
+              }}
+            />
           </span>
           <span
             style={{
@@ -44,7 +54,15 @@ function FooterFin({ bgcolo }) {
               fontSize: 12,
             }}
           >
-            <Email fontSize="small" />
+            <Email
+              fontSize="small"
+              sx={{
+                ":hover": {
+                  color: "red",
+                  cursor: "pointer",
+                },
+              }}
+            />
           </span>
           <span
             style={{
@@ -52,7 +70,15 @@ function FooterFin({ bgcolo }) {
               fontSize: 12,
             }}
           >
-            <Telegram fontSize="small" />
+            <Telegram
+              fontSize="small"
+              sx={{
+                ":hover": {
+                  color: "blue",
+                  cursor: "pointer",
+                },
+              }}
+            />
           </span>
           <span
             style={{
