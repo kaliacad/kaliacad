@@ -7,6 +7,8 @@ const pageStyles = {
   color: "#232129",
   // padding: 10,
   fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  marginLeft: -8,
+  marginRight: -5,
 };
 
 const IndexPage = () => {

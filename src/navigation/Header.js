@@ -14,6 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { pages } from "../data/Data";
 import { useNavigate } from "react-router-dom";
+import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(false);
@@ -45,13 +46,11 @@ function Header() {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon
-            sx={{ display: { xs: "none", md: "flex" }, mr: 1, color: "blue" }}
-          />
           <Typography
             variant="h6"
             noWrap
             component="a"
+            onClick={() => nav("/")}
             // href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
@@ -61,10 +60,21 @@ function Header() {
               letterSpacing: ".3rem",
               color: "blue",
               textDecoration: "none",
+              ":hover": {
+                cursor: "pointer",
+              },
             }}
             // onClick={()=>goHome()}
           >
-            KALI ACADEMY
+            <img
+              src={kalibackground}
+              alt="Kali academy"
+              style={{
+                width: 250,
+                height: 80,
+              }}
+              onClick={() => nav("/")}
+            />
           </Typography>
 
           <Box
@@ -119,27 +129,6 @@ function Header() {
             </Menu>
           </Box>
 
-          <AdbIcon
-            sx={{ display: { xs: "flex", md: "none", color: "blue" }, mr: 1 }}
-          />
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href="#app-bar-with-responsive-menu"
-            sx={{
-              mr: 2,
-              display: { xs: "flex", md: "none" },
-              flexGrow: 1,
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "blue",
-              textDecoration: "none",
-            }}
-          >
-            KALI ACADEMY
-          </Typography>
           <Box
             sx={{
               flexGrow: 1,

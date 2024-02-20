@@ -1,21 +1,29 @@
 import { Hidden, Stack } from "@mui/material";
 import React from "react";
 // import { StaticImage } from "gatsby-plugin-image"
-import image from "../../images/bgimage2.png";
+import image from "../../images/meetup-nov-1-19.jpeg";
 
 function Mission() {
   return (
-    <Stack flexDirection={"row"} padding={10} justifyContent={"space-between"}>
+    <Stack
+      flexDirection={"row"}
+      padding={10}
+      justifyContent={"space-between"}
+      sx={{
+        bgcolor: "#00889A",
+      }}
+    >
       <Stack
         style={{
           width: "50%",
           marginTop: -20,
         }}
       >
-        <h1>NOTRE MISSION</h1>
+        <h1 style={{ color: "#fff" }}>NOTRE MISSION</h1>
         <p
           style={{
             marginTop: -10,
+            color: "#fff",
           }}
         >
           Augmenter le nombre de développeurs contributeurs open source dans les
@@ -34,9 +42,10 @@ function Mission() {
             src={image}
             alt="test"
             style={{
-              width: "100%",
-              height: "100%",
+              width: 450,
+              height: 450,
               objectFit: "cover",
+              borderRadius: "100%",
             }}
           />
         </Hidden>
