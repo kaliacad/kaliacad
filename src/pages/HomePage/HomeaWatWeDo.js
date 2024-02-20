@@ -4,7 +4,6 @@ import {
   Stack,
   Typography,
   CardActionArea,
-  CardMedia,
   CardContent,
   Hidden,
 } from "@mui/material";
@@ -12,10 +11,18 @@ import React from "react";
 import { dataCequeNousFaison } from "../../data/Data";
 import useCarousel from "../hooks/useCarousel";
 
-const dat = dataCequeNousFaison.map((e, index) => (
-  <Card sx={{ maxWidth: 345, ml: 1 }}>
+const dataCardFormat = dataCequeNousFaison.map((e, index) => (
+  <Card
+    sx={{
+      maxWidth: 345,
+      ml: 1,
+      height: 245,
+    }}
+    elevation={0}
+  >
     <CardActionArea>
-      <CardMedia
+      {/*
+        <CardMedia
         component="img"
         height="140"
         image={e.image}
@@ -24,7 +31,15 @@ const dat = dataCequeNousFaison.map((e, index) => (
           objectFit: "cover",
         }}
       />
-      <CardContent>
+        */}
+
+      <CardContent
+        sx={{
+          justifyContent: "center",
+          alignContent: "center",
+          mt: 7,
+        }}
+      >
         <Typography
           fontWeight={"bold"}
           gutterBottom
@@ -34,7 +49,7 @@ const dat = dataCequeNousFaison.map((e, index) => (
         >
           {e.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="text.secondary" textAlign={"center"}>
           {e.description}
         </Typography>
       </CardContent>
@@ -43,7 +58,7 @@ const dat = dataCequeNousFaison.map((e, index) => (
 ));
 
 function Homeaf() {
-  const { data, dataverticale } = useCarousel();
+  const { sliderdataverticale, sliderDataHorizontal } = useCarousel();
   return (
     <Grid container justifyContent={"center"}>
       <Grid
@@ -60,10 +75,10 @@ function Homeaf() {
         </Stack>
         <div style={{ marginTop: 40 }}>
           <Hidden smDown xsDown>
-            {data({ datajx: dat })}
+            {sliderDataHorizontal({ dataslides: dataCardFormat })}
           </Hidden>
           <Hidden mdDown lgDown xlDown smUp xsUp>
-            {dataverticale({ datajx: dat })}
+            {sliderdataverticale({ dataslidesveriticale: dataCardFormat })}
           </Hidden>
         </div>
       </Grid>

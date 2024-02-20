@@ -7,9 +7,12 @@ import FooterFin from "./HomePage/HomeFooter";
 import ITextFieldnput from "../controlers/TextFieldInput";
 import { Google } from "@mui/icons-material";
 import AdbIcon from "@mui/icons-material/Adb";
+import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
+import { useNavigate } from "react-router-dom";
 
 export default function Blogs() {
   const [seach, setSeach] = React.useState("");
+  const nav = useNavigate();
 
   return (
     <div
@@ -26,18 +29,11 @@ export default function Blogs() {
                 display: "flex",
               }}
             >
-              <AdbIcon
-                sx={{
-                  display: { xs: "none", md: "flex" },
-                  mr: 1,
-                  mt: 0.3,
-                  color: "blue",
-                }}
-              />
               <Typography
                 variant="h6"
                 noWrap
                 component="a"
+                onClick={() => nav("/")}
                 // href="#app-bar-with-responsive-menu"
                 sx={{
                   //   mr: 2,
@@ -46,29 +42,40 @@ export default function Blogs() {
                   letterSpacing: ".3rem",
                   color: "blue",
                   textDecoration: "none",
+                  ":hover": {
+                    cursor: "pointer",
+                  },
                 }}
               >
-                KALI ACADEMY
+                <img
+                  src={kalibackground}
+                  alt="Kali academy"
+                  style={{
+                    width: 250,
+                    height: 80,
+                    marginTop: -15,
+                  }}
+                />
               </Typography>
             </div>
           </Grid>
-          <Grid item xs={0} sm={0} md={5} lg={5} xl={5}>
+          <Grid item xs={0} sm={0} md={5} lg={5} xl={5} mt={1}>
             <ITextFieldnput
               value={seach}
               onChange={(e) => setSeach(e.target.value)}
               placeholder={"Recherche..."}
             />
           </Grid>
-          <Grid item xs={0} sm={0} md={3} lg={3} xl={3} ml={2} mt={-1.5}>
+          <Grid item xs={0} sm={0} md={3} lg={3} xl={3} ml={2}>
             <div
               style={{
                 marginTop: 10,
                 borderRadius: 100,
                 width: "90%",
-                background: "blue",
+                background: "#B3B2B2",
                 display: "flex",
                 "&:hover": {
-                  backgroundColor: "#0d47a1",
+                  backgroundColor: "#B3B2B2",
                 },
               }}
             >

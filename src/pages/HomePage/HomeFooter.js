@@ -8,7 +8,12 @@ function FooterFin({ bgcolo }) {
   return (
     <Stack
       sx={{
-        bgcolor: bgcolo ? bgcolo : "",
+        bgcolor: "#233033",
+        marginLeft: 0,
+        marginRight: 0,
+        padding: 2,
+        margin: -1,
+        mt: 3,
       }}
       m={3}
       flexDirection={"row"}
@@ -17,7 +22,7 @@ function FooterFin({ bgcolo }) {
       <div>
         <span
           style={{
-            color: "gray",
+            color: "#fff",
             fontSize: 12,
           }}
         >
@@ -33,7 +38,7 @@ function FooterFin({ bgcolo }) {
         <Stack flexDirection={"row"} justifyContent={"space-evenly"}>
           <span
             style={{
-              color: "gray",
+              color: "#fff",
               fontSize: 12,
               marginRight: 5,
             }}
@@ -42,7 +47,7 @@ function FooterFin({ bgcolo }) {
               fontSize="small"
               sx={{
                 ":hover": {
-                  color: "#000",
+                  color: "#fff",
                   cursor: "pointer",
                 },
               }}
@@ -50,7 +55,7 @@ function FooterFin({ bgcolo }) {
           </span>
           <span
             style={{
-              color: "gray",
+              color: "#fff",
               fontSize: 12,
             }}
           >
@@ -58,7 +63,7 @@ function FooterFin({ bgcolo }) {
               fontSize="small"
               sx={{
                 ":hover": {
-                  color: "red",
+                  color: "#fff",
                   cursor: "pointer",
                 },
               }}
@@ -66,7 +71,7 @@ function FooterFin({ bgcolo }) {
           </span>
           <span
             style={{
-              color: "gray",
+              color: "#fff",
               fontSize: 12,
             }}
           >
@@ -74,7 +79,7 @@ function FooterFin({ bgcolo }) {
               fontSize="small"
               sx={{
                 ":hover": {
-                  color: "blue",
+                  color: "#fff",
                   cursor: "pointer",
                 },
               }}
@@ -82,7 +87,7 @@ function FooterFin({ bgcolo }) {
           </span>
           <span
             style={{
-              color: "gray",
+              color: "#fff",
               fontSize: 12,
             }}
           >
@@ -94,11 +99,11 @@ function FooterFin({ bgcolo }) {
         <Stack flexDirection={"row"}>
           <span
             style={{
-              color: "gray",
+              color: "#fff",
               fontSize: 12,
               marginRight: 5,
               ":hover": {
-                color: "blue",
+                color: "#fff",
               },
             }}
           >
@@ -106,7 +111,7 @@ function FooterFin({ bgcolo }) {
           </span>
           <span
             style={{
-              color: "gray",
+              color: "#fff",
               fontSize: 12,
             }}
           >

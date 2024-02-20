@@ -28,7 +28,7 @@ function HomaCenter() {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Typography fontSize={18} mt={2} width={"50%"}>
+          <Typography fontSize={18} mt={2} width={"70%"}>
             L'open source connait de plus en plus de déséquilibre alarmant. Il y
             a de plus en plus de consomateurs pour (très) peu de contributeurs.
           </Typography>
@@ -39,6 +39,15 @@ function HomaCenter() {
               ))}
             </ul>
           </div>
+          <Typography fontSize={18} mt={2} width={"70%"}>
+            Afin d'éviter l'effondrement de l'infrastructure nous devons entre
+            autre multiplier le nombre de contributeurs tel que le propose Nadia
+            Eghbal.
+          </Typography>
+          <Typography fontSize={18} mt={2} width={"70%"}>
+            Nous sommes convaincu qu'il est encore possible de retrouver
+            l'équilibre. C'est pourquoi nous proposons la solution ci-dessous:
+          </Typography>
         </Stack>
       </Grid>
     </Grid>
