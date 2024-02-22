@@ -15,24 +15,7 @@ function AppBarBlog({ seach, setSeach, nav }) {
               display: "flex",
             }}
           >
-            <Typography
-              variant="h6"
-              noWrap
-              component="a"
-              onClick={() => nav("/")}
-              // href="#app-bar-with-responsive-menu"
-              sx={{
-                //   mr: 2,
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".3rem",
-                color: "blue",
-                textDecoration: "none",
-                ":hover": {
-                  cursor: "pointer",
-                },
-              }}
-            >
+            <Typography mt={-2.5} onClick={() => nav("/")}>
               <img
                 src={kalibackground}
                 alt="Kali academy"
@@ -57,9 +40,10 @@ function AppBarBlog({ seach, setSeach, nav }) {
         <Grid item xs={0} sm={0} md={3} lg={3} xl={3} ml={2}>
           <div
             style={{
-              marginTop: 10,
+              marginTop: 5,
               borderRadius: 100,
-              width: "90%",
+
+              width: "80%",
               background: "#B3B2B2",
               display: "flex",
               "&:hover": {
@@ -77,7 +61,7 @@ function AppBarBlog({ seach, setSeach, nav }) {
             <Button
               sx={{
                 color: "#fff",
-                ml: 2,
+                // ml: 2,
               }}
             >
               Continuer avec Google

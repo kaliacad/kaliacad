@@ -25,6 +25,7 @@ function NavBar() {
     >
       <Typography
         onClick={() => nav("/")}
+        mt={-2}
         sx={{
           display: { xs: "none", md: "flex" },
         }}
