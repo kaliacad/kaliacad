@@ -7,6 +7,7 @@ import Box from "@mui/material/Box";
 import { Home, MobileFriendly, Sms } from "@mui/icons-material";
 import { AppBar } from "@mui/material";
 import Homeblogs from "./homeblogs";
+import ArticleBlog from "./articleBlog";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -89,7 +90,9 @@ export default function BlogMenus({ search = "" }) {
         <CustomTabPanel value={value} index={0}>
           <Homeblogs search={search} />
         </CustomTabPanel>
-        <CustomTabPanel value={value} index={1}></CustomTabPanel>
+        <CustomTabPanel value={value} index={1}>
+          <ArticleBlog search={search} />
+        </CustomTabPanel>
         <CustomTabPanel value={value} index={2}></CustomTabPanel>
       </Box>
     </Box>

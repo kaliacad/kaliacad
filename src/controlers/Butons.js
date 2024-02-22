@@ -10,28 +10,27 @@ function Butons({
   width,
   color,
   bgcolor,
-  texterror
+  texterror,
 }) {
   return (
     <di>
-    <Button
-      type={type}
-      sx={{
-        // mt: 2,
-        background: bgcolor ? bgcolor : "blue",
-        color: color ? color : "#FFF",
-        width: width,
-        "&:hover": {
-          background: "gray",
-        },
-      }}
-      onClick={onClick}
-      disabled={disabled}
-    >
-      {icons}
-      {title}
-    </Button>
-    
+      <Button
+        type={type}
+        sx={{
+          // mt: 2,
+          background: bgcolor ? bgcolor : "#706F6F",
+          color: color ? color : "#FFF",
+          width: width,
+          "&:hover": {
+            background: "gray",
+          },
+        }}
+        onClick={onClick}
+        disabled={disabled}
+      >
+        {icons}
+        {title}
+      </Button>
     </di>
   );
 }

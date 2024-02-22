@@ -2,6 +2,7 @@ import * as React from "react";
 import Header from "../navigation/Header";
 import Route from "../router/indexs";
 import { BrowserRouter } from "react-router-dom";
+
 //
 const pageStyles = {
   color: "#232129",
