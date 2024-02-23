@@ -38,7 +38,7 @@ function HomeMessage() {
         style={{
           marginTop: 20,
           borderRadius: 100,
-          width: "65%",
+          width: "48%",
           background: "blue",
           display: "flex",
           "&:hover": {
@@ -56,7 +56,7 @@ function HomeMessage() {
         <Button
           sx={{
             color: "#fff",
-            ml: 2,
+            // ml: 2,
           }}
         >
           Continuer avec Google

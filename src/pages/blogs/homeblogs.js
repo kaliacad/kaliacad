@@ -9,7 +9,7 @@ import {
 import React from "react";
 import { dataBlog } from "../../data/Data";
 import { makeStyles } from "@mui/styles";
-import HomeMessage from "./homeMessage";
+import HomeMessage from "./homeMessageAffichage";
 
 const useStyles = makeStyles({
   limitedLines: {
@@ -34,10 +34,6 @@ function Homeblogs({ search = "" }) {
     <Grid container>
       <Grid item sm={12} md={12} lg={12}>
         <HomeMessage />
-
-        {
-          // debut de data blog
-        }
         <div
           style={{
             marginTop: 25,

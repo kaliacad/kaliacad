@@ -12,6 +12,8 @@ function NavBar() {
       nav("/");
     } else if (e === 3) {
       nav("/blogs");
+    } else if (e === 4) {
+      nav("/publie-offre");
     }
   };
 
@@ -25,7 +27,7 @@ function NavBar() {
     >
       <Typography
         onClick={() => nav("/")}
-        mt={-2}
+        mt={-1}
         sx={{
           display: { xs: "none", md: "flex" },
         }}
