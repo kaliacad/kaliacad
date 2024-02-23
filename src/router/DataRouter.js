@@ -4,7 +4,7 @@ import HomeGolobal from "../pages/HomePage/HomeGolobal";
 import Albums from "../pages/album";
 import Contacter from "../pages/contacter";
 import Blogs from "../pages/blogs";
-import DraftsText from "../pages/Drafts/draftsText";
+import PublieOfre from "../pages/publieoffre";
 
 export const PrivateRouters = [{ path: "", component: "" }];
 
@@ -13,6 +13,6 @@ export const PublicRouters = [
   { path: "/album", component: <Albums /> },
   { path: "/contacter", component: <Contacter /> },
   { path: "/blogs", component: <Blogs /> },
-  { path: "/publie-offre", component: <DraftsText /> },
+  { path: "/publieoffre", component: <PublieOfre /> },
   { path: "/error", component: <NotFoundPage /> },
 ];

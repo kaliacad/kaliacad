@@ -3,6 +3,7 @@ import React from "react";
 import { pages } from "../data/Data";
 import { useNavigate } from "react-router-dom";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
+// import { navigate } from "@reach/router";
 
 function NavBar() {
   const nav = useNavigate();
@@ -13,7 +14,7 @@ function NavBar() {
     } else if (e === 3) {
       nav("/blogs");
     } else if (e === 4) {
-      nav("/publie-offre");
+      nav("/publieoffre");
     }
   };
 

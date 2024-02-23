@@ -21,7 +21,7 @@ export const pages = [
   {
     id: 4,
     title: "Publie",
-    path: "/publie-offre",
+    path: "/publieoffre",
   },
 ];
 export const settings = ["Profile", "Account", "Dashboard", "Logout"];
