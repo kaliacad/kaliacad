@@ -34,7 +34,8 @@ function HomeMessage() {
         Ajoutez un compte pour accéder à toutes les fonctionnalités et interagir
         avec le contenu partagé par la communauté
       </Typography>
-      <div
+      {/*
+        <div
         style={{
           marginTop: 20,
           borderRadius: 100,
@@ -62,6 +63,7 @@ function HomeMessage() {
           Continuer avec Google
         </Button>
       </div>
+        */}
     </div>
   );
 }

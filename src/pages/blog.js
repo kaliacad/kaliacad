@@ -6,6 +6,7 @@ import BlogMenuLefst from "./blogs/blogMenuLefst";
 import FooterFin from "./HomePage/HomeFooter";
 import AppBarBlog from "./blogs/appBarBlog";
 import { navigate } from "gatsby";
+import Header from "../navigation/Header";
 
 export default function Blogs() {
   const [seach, setSeach] = React.useState("");
@@ -17,7 +18,10 @@ export default function Blogs() {
         marginTop: 80,
       }}
     >
-      <AppBarBlog nav={navigate} seach={seach} setSeach={setSeach} />
+      <Header />
+      {/*
+       <AppBarBlog nav={navigate} seach={seach} setSeach={setSeach} />
+      */}
       <Grid
         container
         flexDirection={"row"}
@@ -28,14 +32,18 @@ export default function Blogs() {
         // mt={50}
         pt={1}
       >
-        <Grid item xs={0} sm={0} md={2} lg={2} xl={2}>
-          <BlogMenuLefst />
+        <Grid item xs={0} sm={0} md={3} lg={3} xl={3}>
+          {/*
+            <BlogMenuLefst />
+            */}
         </Grid>
         <Grid item xs={0} sm={0} md={7} lg={7} xl={7}>
           <BlogMenu search={seach} />
         </Grid>
         <Grid item xs={0} sm={0} md={3} lg={3} xl={3}>
-          <BlogMenuRith />
+          {/*
+           <BlogMenuRith />
+          */}
         </Grid>
       </Grid>
       <FooterFin />

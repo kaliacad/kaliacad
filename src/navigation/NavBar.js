@@ -11,7 +11,7 @@ function NavBar() {
     if (e === 1) {
       navigate("/");
     } else if (e === 3) {
-      navigate("/blogs");
+      navigate("/blog");
     } else if (e === 4) {
       navigate("/publieoffre");
     }
