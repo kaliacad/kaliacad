@@ -1,7 +1,6 @@
 import * as React from "react";
 import Header from "../navigation/Header";
-import Route from "../router/indexs";
-import { BrowserRouter } from "react-router-dom";
+import HomeGolobal from "./HomePage/HomeGolobal";
 
 //
 const pageStyles = {
@@ -15,19 +14,17 @@ const pageStyles = {
 const IndexPage = () => {
   document.title = "Kali Academy";
   return (
-    <BrowserRouter>
-      <div
-        style={{
-          // background:"beige",
-          width: "100%",
-        }}
-      >
-        <Header />
-        <main style={pageStyles}>
-          <Route />
-        </main>
-      </div>
-    </BrowserRouter>
+    <div
+      style={{
+        // background:"beige",
+        width: "100%",
+      }}
+    >
+      <Header />
+      <main style={pageStyles}>
+        <HomeGolobal />
+      </main>
+    </div>
   );
 };
 

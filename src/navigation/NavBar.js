@@ -1,20 +1,21 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { pages } from "../data/Data";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
 // import { navigate } from "@reach/router";
+import { navigate } from "gatsby";
 
 function NavBar() {
-  const nav = useNavigate();
+  // const nav = useNavigate();
 
   const gotHomeTitleMenu = (e) => {
     if (e === 1) {
-      nav("/");
+      navigate("/");
     } else if (e === 3) {
-      nav("/blogs");
+      navigate("/blogs");
     } else if (e === 4) {
-      nav("/publieoffre");
+      navigate("/publieoffre");
     }
   };
 
@@ -27,7 +28,7 @@ function NavBar() {
       }}
     >
       <Typography
-        onClick={() => nav("/")}
+        onClick={() => navigate("/")}
         mt={-1}
         sx={{
           display: { xs: "none", md: "flex" },
@@ -43,7 +44,7 @@ function NavBar() {
             margin: "0 auto",
             objectFit: "cover",
           }}
-          onClick={() => nav("/")}
+          onClick={() => navigate("/")}
         />
       </Typography>
 

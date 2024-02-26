@@ -7,10 +7,11 @@ import FooterFin from "./HomePage/HomeFooter";
 import { useNavigate } from "react-router-dom";
 import AppBarBlog from "./blogs/appBarBlog";
 // import AppBarBlog from "./blogs/appBarBlog";
+import { navigate } from "gatsby";
 
 export default function Blogs() {
   const [seach, setSeach] = React.useState("");
-  const nav = useNavigate();
+  // const nav = useNavigate();
 
   return (
     <div
@@ -19,7 +20,7 @@ export default function Blogs() {
         marginTop: 80,
       }}
     >
-      <AppBarBlog nav={nav} seach={seach} setSeach={setSeach} />
+      <AppBarBlog nav={navigate} seach={seach} setSeach={setSeach} />
       <Grid
         container
         flexDirection={"row"}

@@ -1,6 +1,12 @@
 import React from "react";
+import { GetInlineStyleDeclaration } from "./getInlineStyle";
 
-export const RenderTextWithLinks = ({ text, entityRangesLink, dataObject }) => {
+export const RenderTextWithLinks = ({
+  text,
+  entityRangesLink,
+  dataObject,
+  inlineStyleRanges,
+}) => {
   if (!entityRangesLink || entityRangesLink.length === 0) {
     return <span>{text}</span>;
   }
@@ -28,6 +34,30 @@ export const RenderTextWithLinks = ({ text, entityRangesLink, dataObject }) => {
 
   // Ajouter le texte après le dernier lien
   result.push(<span key={lastIndex}>{text.slice(lastIndex)}</span>);
+  // Appliquer les styles en ligne
+  const styleClassNames = inlineStyleRanges.map((styleRange) => {
+    return `style-${styleRange.style}-${styleRange.offset}-${styleRange.length}`;
+  });
 
-  return <>{result}</>;
+  return (
+    <span>
+      {result.map((element, index) => (
+        <span
+          key={index}
+          className={styleClassNames.join(" ")}
+          style={{ display: "inline" }}
+        >
+          {element}
+        </span>
+      ))}
+      <>
+        {styleClassNames.map(
+          (className, index) =>
+            `.${className} { ${GetInlineStyleDeclaration(
+              inlineStyleRanges[index].style
+            )} }`
+        )}
+      </>
+    </span>
+  );
 };

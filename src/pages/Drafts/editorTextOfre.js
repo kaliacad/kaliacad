@@ -24,6 +24,8 @@ function EditorTextOfre() {
     const rowContent = JSON.stringify(convertToRaw(contentStat));
     //recuperation pour affichique au page web
     const parsedData = JSON.parse(rowContent);
+    console.log(parsedData);
+
     setDataObjeParse(parsedData);
     if (parsedData && parsedData.blocks) {
       setDataObject(parsedData.blocks);
@@ -52,6 +54,7 @@ function EditorTextOfre() {
                     text: block.text,
                     entityRangesLink: block.entityRanges,
                     dataObject: dataObjetParse,
+                    inlineStyleRanges: block.inlineStyleRanges,
                   })}
                 </p>
               ))}
