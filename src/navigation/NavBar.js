@@ -1,9 +1,7 @@
 import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { pages } from "../data/Data";
-// import { useNavigate } from "react-router-dom";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
-// import { navigate } from "@reach/router";
 import { navigate } from "gatsby";
 
 function NavBar() {

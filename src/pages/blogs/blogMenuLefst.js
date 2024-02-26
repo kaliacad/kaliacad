@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { ContactMail, Home, Person2, SmsFailed } from "@mui/icons-material";
 import { Button, Card, CardContent, Divider } from "@mui/material";
 import { navigate } from "gatsby";

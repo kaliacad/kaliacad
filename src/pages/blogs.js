@@ -4,14 +4,11 @@ import BlogMenu from "./blogs/blogMenu";
 import BlogMenuRith from "./blogs/blogMenuRith";
 import BlogMenuLefst from "./blogs/blogMenuLefst";
 import FooterFin from "./HomePage/HomeFooter";
-import { useNavigate } from "react-router-dom";
 import AppBarBlog from "./blogs/appBarBlog";
-// import AppBarBlog from "./blogs/appBarBlog";
 import { navigate } from "gatsby";
 
 export default function Blogs() {
   const [seach, setSeach] = React.useState("");
-  // const nav = useNavigate();
 
   return (
     <div

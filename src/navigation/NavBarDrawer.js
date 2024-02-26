@@ -9,10 +9,9 @@ import {
 import { MenuOutlined } from "@mui/icons-material";
 import React from "react";
 import { pages } from "../data/Data";
-import { useNavigate } from "react-router-dom";
+import { navigate } from "gatsby";
 
 function NavBarDrawer() {
-  const nav = useNavigate();
   const [open, setOpen] = React.useState(false);
 
   const toggleDrawer = (newOpen) => () => {
@@ -20,9 +19,9 @@ function NavBarDrawer() {
   };
   const gotHomeTitleMenu = (e) => {
     if (e === 1) {
-      nav("/");
+      navigate("/");
     } else if (e === 3) {
-      nav("/blogs");
+      navigate("/blogs");
     }
   };
   return (
