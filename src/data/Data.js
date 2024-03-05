@@ -18,11 +18,11 @@ export const pages = [
     title: "Blog",
     path: "/blogs",
   },
-  {
-    id: 4,
-    title: "Offre",
-    path: "/publieoffre",
-  },
+  // {
+  //   id: 4,
+  //   title: "Offre",
+  //   path: "/publieoffre",
+  // },
 ];
 export const settings = ["Profile", "Account", "Dashboard", "Logout"];
 

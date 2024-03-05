@@ -41,6 +41,7 @@ function NavBar() {
             display: "block" /* Supprime l'espace réservé sous l'image */,
             margin: "0 auto",
             objectFit: "cover",
+            cursor: "pointer",
           }}
           onClick={() => navigate("/")}
         />
