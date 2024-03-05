@@ -2,9 +2,10 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { ContactMail, Home, Person2, SmsFailed } from "@mui/icons-material";
 import { Button, Card, CardContent, Divider } from "@mui/material";
+import { navigate } from "gatsby";
 
 function BlogMenuLefst() {
-  const nav = useNavigate();
+  // const nav = useNavigate();
   return (
     <div
       style={{
@@ -24,7 +25,7 @@ function BlogMenuLefst() {
       >
         <CardContent>
           <Button
-            onClick={() => nav("/")}
+            onClick={() => navigate("/")}
             sx={{
               width: "100%",
               textAlign: "end",
@@ -58,7 +59,7 @@ function BlogMenuLefst() {
             Faire un don
           </Button>
           <Button
-            onClick={() => nav("/contacter")}
+            onClick={() => navigate("/contacter")}
             sx={{
               width: "100%",
               textAlign: "end",
