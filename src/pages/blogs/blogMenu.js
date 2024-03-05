@@ -8,7 +8,6 @@ import { Home, MobileFriendly, Sms } from "@mui/icons-material";
 import { AppBar } from "@mui/material";
 import Homeblogs from "./homeblogs";
 import ArticleBlog from "./articleBlog";
-import ITextFieldnput from "../../controlers/TextFieldInput";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -43,7 +42,7 @@ function a11yProps(index) {
   };
 }
 
-export default function BlogMenus({ seach, setSeach }) {
+export default function BlogMenus({ search = "" }) {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -61,16 +60,7 @@ export default function BlogMenus({ seach, setSeach }) {
         mt: -8,
       }}
     >
-      <div style={{ marginTop: "1%", marginBottom: "3%" }}>
-        <ITextFieldnput
-          value={seach}
-          onChange={(e) => setSeach(e.target.value)}
-          placeholder={"Recherche..."}
-        />
-      </div>
-      <Homeblogs search={seach} />
-      {/*
-        <Box>
+      <Box>
         <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
           <AppBar position="static" sx={{ bgcolor: "#fff" }}>
             <Tabs value={value} onChange={handleChange}>
@@ -97,13 +87,14 @@ export default function BlogMenus({ seach, setSeach }) {
             </Tabs>
           </AppBar>
         </Box>
-        <CustomTabPanel value={value} index={0}></CustomTabPanel>
+        <CustomTabPanel value={value} index={0}>
+          <Homeblogs search={search} />
+        </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
           <ArticleBlog search={search} />
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}></CustomTabPanel>
       </Box>
-        */}
     </Box>
   );
 }
