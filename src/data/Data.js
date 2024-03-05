@@ -3,11 +3,11 @@ import image2 from "../images/acc2.png";
 import image3 from "../images/bgimage2.png";
 
 export const pages = [
-  {
-    id: 1,
-    title: "Acceuil",
-    path: "/",
-  },
+  // {
+  //   id: 1,
+  //   title: "Acceuil",
+  //   path: "/",
+  // },
   {
     id: 2,
     title: "SOUTENEZ-NOUS",
@@ -18,11 +18,11 @@ export const pages = [
     title: "Blog",
     path: "/blogs",
   },
-  {
-    id: 4,
-    title: "Publie",
-    path: "/publieoffre",
-  },
+  // {
+  //   id: 4,
+  //   title: "Offre",
+  //   path: "/publieoffre",
+  // },
 ];
 export const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
