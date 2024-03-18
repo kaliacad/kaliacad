@@ -1,5 +1,5 @@
 import image from "../images/firstDayWishitonMurch2024PresentialyInGoma2.jpg";
-import image2 from "../images/firstDayWishitonMurch2024PresentialyInGoma2.jpg";
+import image2 from "../images/firstDayWishitonMurch2024PresentialyInGoma9.jpg";
 import image3 from "../images/firstDayWishitonMurch2024PresentialyInGoma1.jpg";
 
 export const pages = [

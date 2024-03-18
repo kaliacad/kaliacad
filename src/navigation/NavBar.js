@@ -1,7 +1,7 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import { pages } from "../data/Data";
-import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
+import kalibackground from "../images/Kali_academy_-_Logo-gris-removebg-preview.png";
 import { navigate } from "gatsby";
 
 function NavBar() {
@@ -77,11 +77,11 @@ function NavBar() {
           ))}
         </Box>
       </div>
-      <Stack justifyContent={"center"} direction={"column"} mt={2}>
+      <Stack justifyContent={"center"} direction={"column"} mt={5}>
         <Typography
           variant="h4"
           textAlign={"center"}
-          color={"#000"}
+          color={"#fff"}
           fontWeight={"bold"}
           style={{
             fontFamily: "Montserrat",
@@ -92,7 +92,7 @@ function NavBar() {
         <Typography
           variant="h6"
           textAlign={"center"}
-          color={"#000"}
+          color={"#fff"}
           style={{
             fontFamily: "Montserrat",
           }}

@@ -28,18 +28,22 @@ function ITextFieldnput({
 }) {
   return (
     <Box
-      // width={"100%"}
+    // width={"100%"}
     >
       <div
         style={{
           width: "100%",
         }}
       >
-        <p style={{
-          color:"gray",
-          fontSize:14,
-          marginTop:-5
-        }} >{label}</p>
+        <p
+          style={{
+            color: "gray",
+            fontSize: 14,
+            marginTop: 5,
+          }}
+        >
+          {label}
+        </p>
         <OutlinedInput
           id={id}
           sx={{
@@ -48,14 +52,12 @@ function ITextFieldnput({
             bgcolor: "#FFF",
             marginTop: -5,
           }}
-          
           // label={label}
           value={value}
           onChange={onChange}
           size="small"
           multiline={multiline}
-          rows={3}
-          
+          rows={5}
           // variant="outlined"
           type={type}
           placeholder={placeholder}

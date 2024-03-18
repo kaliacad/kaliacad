@@ -41,6 +41,8 @@ function WeDo() {
               mt: 1,
               fontSize: 18,
               fontFamily: "Montserrat",
+              //   fontWeight: "bold",
+              color: "#000",
             }}
           >
             Since our founding in 2012, Code2040 has built one of the largest

@@ -4,7 +4,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import NavBar from "./NavBar";
 import NavBarDrawer from "./NavBarDrawer";
-import imagetitle from "../images/SecendDayWishitonMurch2024PresentialyInGoma3.jpg";
+import imagetitle from "../images/profile.jpg";
 // import { Stack, Typography } from "@mui/material";
 
 function Header() {
@@ -14,8 +14,9 @@ function Header() {
       elevation={0}
       sx={{
         backgroundImage: `url(${imagetitle})`,
-        height: "38vh",
-        objectFit: "cover",
+        height: "52vh",
+        // objectFit: "cover",
+        // opacity: 0.5,
       }}
     >
       <Toolbar disableGutters sx={{ width: "100%" }}>

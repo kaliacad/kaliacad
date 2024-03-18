@@ -7,6 +7,7 @@ import FooterFin from "./HomeFooter";
 import About from "./About";
 import WeDo from "./WeDo";
 import History from "./History";
+import ConnectWith from "./ConnectWith";
 
 function HomeGolobal() {
   return (
@@ -21,6 +22,7 @@ function HomeGolobal() {
       <History />
 
       <Homeaf />
+      <ConnectWith />
       <FooterFin />
     </div>
   );

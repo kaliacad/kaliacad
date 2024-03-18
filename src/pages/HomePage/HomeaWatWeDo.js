@@ -16,7 +16,7 @@ const dataCardFormat = dataCequeNousFaison.map((e, index) => (
   <Card
     sx={{
       maxWidth: 345,
-      ml: 1,
+      ml: 5,
       // height: 245,
     }}
     elevation={0}
@@ -36,10 +36,11 @@ const dataCardFormat = dataCequeNousFaison.map((e, index) => (
         <Typography
           fontWeight={"bold"}
           gutterBottom
-          variant="h6"
+          // variant="h6"
           component="div"
           // textAlign={"center"}
           fontFamily={"Montserrat"}
+          fontSize={18}
         >
           {e.title}
         </Typography>
@@ -62,12 +63,16 @@ function Homeaf() {
     <Grid container justifyContent={"center"}>
       <Grid
         item
-        bgcolor={"#f0f0f0"}
+        // bgcolor={"#f0f0f0"}
         width={"100%"}
         padding={5}
         justifyContent={"center"}
       >
-        <Stack>
+        <Stack
+          sx={{
+            ml: 5,
+          }}
+        >
           <Typography
             fontWeight={"bold"}
             fontSize={25}
@@ -85,7 +90,7 @@ function Homeaf() {
             ensuring an equitable distribution of power in the tech world.
           </Typography>
         </Stack>
-        <div style={{ marginTop: 40 }}>
+        <div style={{ marginTop: 20 }}>
           <Hidden smDown xsDown>
             {sliderDataHorizontal({ dataslides: dataCardFormat })}
           </Hidden>
