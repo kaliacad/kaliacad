@@ -6,6 +6,7 @@ import Homeaf from "./HomeaWatWeDo";
 import FooterFin from "./HomeFooter";
 import About from "./About";
 import WeDo from "./WeDo";
+import History from "./History";
 
 function HomeGolobal() {
   return (
@@ -13,11 +14,12 @@ function HomeGolobal() {
       {/*
         <HomeAcc />
          <HomaCenter />
+           <Mission />
         */}
       <About />
       <WeDo />
+      <History />
 
-      <Mission />
       <Homeaf />
       <FooterFin />
     </div>

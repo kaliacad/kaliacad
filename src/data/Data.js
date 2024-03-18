@@ -1,6 +1,6 @@
-import image from "../images/acc.png";
-import image2 from "../images/acc2.png";
-import image3 from "../images/bgimage2.png";
+import image from "../images/firstDayWishitonMurch2024PresentialyInGoma2.jpg";
+import image2 from "../images/firstDayWishitonMurch2024PresentialyInGoma2.jpg";
+import image3 from "../images/firstDayWishitonMurch2024PresentialyInGoma1.jpg";
 
 export const pages = [
   // {

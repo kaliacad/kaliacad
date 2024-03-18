@@ -6,6 +6,7 @@ import {
   CardActionArea,
   CardContent,
   Hidden,
+  CardMedia,
 } from "@mui/material";
 import React from "react";
 import { dataCequeNousFaison } from "../../data/Data";
@@ -16,40 +17,38 @@ const dataCardFormat = dataCequeNousFaison.map((e, index) => (
     sx={{
       maxWidth: 345,
       ml: 1,
-      height: 245,
+      // height: 245,
     }}
     elevation={0}
   >
     <CardActionArea>
-      {/*
-        <CardMedia
+      <CardMedia
         component="img"
-        height="140"
+        height="240"
         image={e.image}
         alt="green iguana"
         style={{
           objectFit: "cover",
         }}
       />
-        */}
 
-      <CardContent
-        sx={{
-          justifyContent: "center",
-          alignContent: "center",
-          mt: 7,
-        }}
-      >
+      <CardContent>
         <Typography
           fontWeight={"bold"}
           gutterBottom
           variant="h6"
           component="div"
-          textAlign={"center"}
+          // textAlign={"center"}
+          fontFamily={"Montserrat"}
         >
           {e.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary" textAlign={"center"}>
+        <Typography
+          fontFamily={"Montserrat"}
+          variant="body2"
+          color="text.secondary"
+          // textAlign={"center"}
+        >
           {e.description}
         </Typography>
       </CardContent>
@@ -69,8 +68,21 @@ function Homeaf() {
         justifyContent={"center"}
       >
         <Stack>
-          <Typography fontWeight={"bold"} fontSize={26} textAlign={"center"}>
-            CE QUE NOUS FAISONS
+          <Typography
+            fontWeight={"bold"}
+            fontSize={25}
+            fontFamily={"Montserrat"}
+          >
+            Our Programs, Pillars, Partners
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Montserrat",
+              mt: 1,
+            }}
+          >
+            Our programs are designed to uplift Black and Latinx talent,
+            ensuring an equitable distribution of power in the tech world.
           </Typography>
         </Stack>
         <div style={{ marginTop: 40 }}>
