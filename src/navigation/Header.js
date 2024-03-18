@@ -15,7 +15,7 @@ function Header() {
       sx={{
         backgroundImage: `url(${imagetitle})`,
         height: "52vh",
-        // objectFit: "cover",
+        objectFit: "cover",
         // opacity: 0.5,
       }}
     >

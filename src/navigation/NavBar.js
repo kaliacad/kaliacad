@@ -81,7 +81,7 @@ function NavBar() {
         <Typography
           variant="h4"
           textAlign={"center"}
-          color={"#fff"}
+          color={"##6F6F6F"}
           fontWeight={"bold"}
           style={{
             fontFamily: "Montserrat",
@@ -90,9 +90,9 @@ function NavBar() {
           CATALYSEUR DE LA CONTRIBUTION OPEN SOURCE
         </Typography>
         <Typography
-          variant="h6"
+          variant="h5"
           textAlign={"center"}
-          color={"#fff"}
+          color={"##6F6F6F"}
           style={{
             fontFamily: "Montserrat",
           }}

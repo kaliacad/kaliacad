@@ -15,7 +15,7 @@ export default function Blogs() {
     <div
       style={{
         bgcolor: "#f0f0f0",
-        marginTop: 80,
+        // marginTop: 80,
       }}
     >
       <Header />
