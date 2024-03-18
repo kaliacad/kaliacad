@@ -8,6 +8,7 @@ import About from "./About";
 import WeDo from "./WeDo";
 import History from "./History";
 import ConnectWith from "./ConnectWith";
+import JoinGroup from "./JoinGroup";
 
 function HomeGolobal() {
   return (
@@ -23,6 +24,7 @@ function HomeGolobal() {
 
       <Homeaf />
       <ConnectWith />
+      <JoinGroup />
       <FooterFin />
     </div>
   );

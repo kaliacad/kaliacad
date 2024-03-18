@@ -22,6 +22,8 @@ function NavBar() {
       style={{
         width: "100%",
         margin: 0,
+        background: "#000",
+        opacity: 0.5,
       }}
     >
       <div
@@ -77,12 +79,20 @@ function NavBar() {
           ))}
         </Box>
       </div>
-      <Stack justifyContent={"center"} direction={"column"} mt={5}>
+      <Stack
+        justifyContent={"center"}
+        direction={"column"}
+        mt={8}
+        sx={{
+          height: "21.5vh",
+        }}
+      >
         <Typography
           variant="h4"
           textAlign={"center"}
           color={"##6F6F6F"}
           fontWeight={"bold"}
+          mt={3}
           style={{
             fontFamily: "Montserrat",
           }}
