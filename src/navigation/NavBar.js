@@ -66,7 +66,9 @@ function NavBar() {
                 my: 2,
                 color: "#000",
                 display: "block",
-                fontWeight: "bold",
+                // fontWeight: "bold",
+                fontFamily: "Montserrat",
+                fontSize: 12,
               }}
               onClick={() => gotHomeTitleMenu(page.id)}
             >
@@ -81,10 +83,20 @@ function NavBar() {
           textAlign={"center"}
           color={"#000"}
           fontWeight={"bold"}
+          style={{
+            fontFamily: "Montserrat",
+          }}
         >
           CATALYSEUR DE LA CONTRIBUTION OPEN SOURCE
         </Typography>
-        <Typography variant="h6" textAlign={"center"} color={"#000"}>
+        <Typography
+          variant="h6"
+          textAlign={"center"}
+          color={"#000"}
+          style={{
+            fontFamily: "Montserrat",
+          }}
+        >
           changer le monde grâce au code
         </Typography>
       </Stack>

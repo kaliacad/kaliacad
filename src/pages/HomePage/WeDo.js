@@ -2,40 +2,47 @@ import { Grid, Typography } from "@mui/material";
 import React from "react";
 import imageabout from "../../images/SecendDayWishitonMurch2024PresentialyInGoma3.jpg";
 
-function About() {
+function WeDo() {
   return (
     <div
       style={{
         margin: 100,
       }}
     >
-      <Grid container flexDirection={"row"}>
-        <Grid item xs={"none"} sm={"none"} md={6} lg={6} xl={6}>
-          <img
-            src={imageabout}
-            alt="Kali academy"
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block" /* Supprime l'espace réservé sous l'image */,
-              margin: "0 auto",
-              objectFit: "cover",
-              cursor: "pointer",
-              background: "none",
-            }}
-          />
-        </Grid>
-        <Grid item xs={"none"} sm={"none"} md={5} lg={5} xl={5} ml={5}>
+      <Grid container>
+        <Grid
+          item
+          xs={"none"}
+          sm={"none"}
+          md={12}
+          lg={12}
+          xl={12}
+          sx={{
+            backgroundImage: `url(${imageabout})`,
+            width: "100%",
+            height: "auto",
+            objectFit: "contain",
+            p: 10,
+          }}
+        >
           <Typography
             sx={{
               fontWeight: "700",
-              fontSize: 25,
+              fontSize: 50,
+              textAlign: "center",
               fontFamily: "Montserrat",
             }}
           >
-            About Us
+            Why we do this
           </Typography>
-          <Typography sx={{ mt: 1, fontSize: 16, fontFamily: "Montserrat" }}>
+          <Typography
+            sx={{
+              textAlign: "center",
+              mt: 1,
+              fontSize: 18,
+              fontFamily: "Montserrat",
+            }}
+          >
             Since our founding in 2012, Code2040 has built one of the largest
             communities of Black and Latinx technologists, leaders, and
             innovators in the tech industry. We’ve been the entry point into the
@@ -53,4 +60,4 @@ function About() {
   );
 }
 
-export default About;
+export default WeDo;

@@ -1,6 +1,7 @@
 import * as React from "react";
 import Header from "../navigation/Header";
 import HomeGolobal from "./HomePage/HomeGolobal";
+import "typeface-montserrat";
 
 //
 const pageStyles = {
