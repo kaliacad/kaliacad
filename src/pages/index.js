@@ -14,16 +14,9 @@ const pageStyles = {
 const IndexPage = () => {
   document.title = "Kali Academy";
   return (
-    <div
-      style={{
-        // background:"beige",
-        width: "100%",
-      }}
-    >
+    <div style={pageStyles}>
       <Header />
-      <main style={pageStyles}>
-        <HomeGolobal />
-      </main>
+      <HomeGolobal />
     </div>
   );
 };

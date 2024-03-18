@@ -4,11 +4,15 @@ import HomaCenter from "./HomaCenter";
 import Mission from "./HomMission";
 import Homeaf from "./HomeaWatWeDo";
 import FooterFin from "./HomeFooter";
+import About from "./About";
 
 function HomeGolobal() {
   return (
     <div>
-      <HomeAcc />
+      {/*
+        <HomeAcc />
+        */}
+      <About />
       <HomaCenter />
       <Mission />
       <Homeaf />

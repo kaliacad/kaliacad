@@ -4,25 +4,23 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import NavBar from "./NavBar";
 import NavBarDrawer from "./NavBarDrawer";
+import imagetitle from "../images/SecendDayWishitonMurch2024PresentialyInGoma3.jpg";
+// import { Stack, Typography } from "@mui/material";
 
 function Header() {
   return (
     <AppBar
-      position="fixed"
-      elevation={1}
+      position="static"
+      elevation={0}
       sx={{
-        background: "#FFF",
-        display: "flex",
+        backgroundImage: `url(${imagetitle})`,
+        height: "38vh",
+        objectFit: "cover",
       }}
     >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <NavBar />
-          {/*
-            <NavBarDrawer />
-            */}
-        </Toolbar>
-      </Container>
+      <Toolbar disableGutters sx={{ width: "100%" }}>
+        <NavBar />
+      </Toolbar>
     </AppBar>
   );
 }
