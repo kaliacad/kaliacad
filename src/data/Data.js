@@ -10,7 +10,7 @@ export const pages = [
   // },
   {
     id: 2,
-    title: "SOUTENEZ-NOUS",
+    title: "Soutenez-nous",
     path: "",
   },
   {

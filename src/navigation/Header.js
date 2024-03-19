@@ -16,6 +16,9 @@ function Header() {
         backgroundImage: `url(${imagetitle})`,
         height: "52vh",
         objectFit: "cover",
+        backgroundPosition: "center top", // Ajustez la position de l'image selon vos besoins
+        backgroundSize: "cover",
+        display: "flex",
         // opacity: 0.5,
       }}
     >

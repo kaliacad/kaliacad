@@ -22,8 +22,6 @@ function NavBar() {
       style={{
         width: "100%",
         margin: 0,
-        background: "#000",
-        opacity: 0.5,
       }}
     >
       <div
@@ -82,9 +80,11 @@ function NavBar() {
       <Stack
         justifyContent={"center"}
         direction={"column"}
-        mt={8}
+        mt={10.4}
         sx={{
-          height: "21.5vh",
+          height: "18vh",
+          background: "#000",
+          opacity: 0.5,
         }}
       >
         <Typography
@@ -105,6 +105,7 @@ function NavBar() {
           color={"##6F6F6F"}
           style={{
             fontFamily: "Montserrat",
+            marginBottom: 2,
           }}
         >
           changer le monde grâce au code

@@ -15,6 +15,7 @@ function Butons({
   return (
     <di>
       <Button
+        variant="contained"
         type={type}
         sx={{
           mt: 2,
@@ -24,6 +25,7 @@ function Butons({
           "&:hover": {
             background: "gray",
           },
+          // textTransform: "none",
         }}
         onClick={onClick}
         disabled={disabled}

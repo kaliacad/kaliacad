@@ -7,6 +7,7 @@ function About() {
     <div
       style={{
         margin: 100,
+        marginBottom: 0,
       }}
     >
       <Grid container flexDirection={"row"}>
