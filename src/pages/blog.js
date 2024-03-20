@@ -1,11 +1,11 @@
 import { Grid } from "@mui/material";
 import * as React from "react";
 import BlogMenu from "./blogs/blogMenu";
-import BlogMenuRith from "./blogs/blogMenuRith";
-import BlogMenuLefst from "./blogs/blogMenuLefst";
+// import BlogMenuRith from "./blogs/blogMenuRith";
+// import BlogMenuLefst from "./blogs/blogMenuLefst";
 import FooterFin from "./HomePage/HomeFooter";
-import AppBarBlog from "./blogs/appBarBlog";
-import { navigate } from "gatsby";
+// import AppBarBlog from "./blogs/appBarBlog";
+// import { navigate } from "gatsby";
 import Header from "../navigation/Header";
 
 export default function Blogs() {
