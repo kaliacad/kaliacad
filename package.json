@@ -9,6 +9,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
+    
   },
   "author": "Abel L Mbula",
   "license": "MIT",
