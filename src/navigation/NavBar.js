@@ -1,7 +1,7 @@
-import { Box, Button, Typography } from "@mui/material";
+import { Box, Button, Stack, Typography } from "@mui/material";
 import React from "react";
 import { pages } from "../data/Data";
-import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
+import kalibackground from "../images/Kali_academy_-_Logo-gris-removebg-preview.png";
 import { navigate } from "gatsby";
 
 function NavBar() {
@@ -20,54 +20,97 @@ function NavBar() {
   return (
     <div
       style={{
-        display: "flex",
-        // flexDirection: "row",
         width: "100%",
+        margin: 0,
       }}
     >
-      <Typography
-        onClick={() => navigate("/")}
-        mt={-1}
-        sx={{
-          display: { xs: "none", md: "flex" },
+      <div
+        style={{
+          display: "flex",
         }}
       >
-        <img
-          src={kalibackground}
-          alt="Kali academy"
+        <div
           style={{
-            width: "auto",
-            height: 80,
-            display: "block" /* Supprime l'espace réservé sous l'image */,
-            margin: "0 auto",
-            objectFit: "cover",
-            cursor: "pointer",
+            // position: "absolute",
+            margin: 15,
+            marginLeft: 45,
+            background: "none",
           }}
-          onClick={() => navigate("/")}
-        />
-      </Typography>
+        >
+          <img
+            src={kalibackground}
+            alt="Kali academy"
+            style={{
+              width: "auto",
+              height: 80,
+              display: "block" /* Supprime l'espace réservé sous l'image */,
+              margin: "0 auto",
+              objectFit: "cover",
+              cursor: "pointer",
+              background: "none",
+            }}
+            onClick={() => navigate("/")}
+          />
+        </div>
 
-      <Box
+        <Box
+          sx={{
+            flexGrow: 1,
+            display: { xs: "none", md: "flex", justifyContent: "center" },
+          }}
+        >
+          {pages.map((page) => (
+            <Button
+              key={page.id}
+              sx={{
+                my: 2,
+                color: "#000",
+                display: "block",
+                // fontWeight: "bold",
+                fontFamily: "Montserrat",
+                fontSize: 12,
+              }}
+              onClick={() => gotHomeTitleMenu(page.id)}
+            >
+              {page.title}
+            </Button>
+          ))}
+        </Box>
+      </div>
+      <Stack
+        justifyContent={"center"}
+        direction={"column"}
+        mt={17}
         sx={{
-          flexGrow: 1,
-          display: { xs: "none", md: "flex", justifyContent: "center" },
+          height: "18vh",
+          background: "#000",
+          opacity: 0.5,
         }}
       >
-        {pages.map((page) => (
-          <Button
-            key={page.id}
-            sx={{
-              my: 2,
-              color: "#000",
-              display: "block",
-              fontWeight: "bold",
-            }}
-            onClick={() => gotHomeTitleMenu(page.id)}
-          >
-            {page.title}
-          </Button>
-        ))}
-      </Box>
+        <Typography
+          variant="h4"
+          textAlign={"center"}
+          color={"##6F6F6F"}
+          fontWeight={"bold"}
+          mt={3}
+          style={{
+            fontFamily: "Montserrat",
+          }}
+        >
+          CATALYSEUR DE LA CONTRIBUTION OPEN SOURCE
+        </Typography>
+        <Typography
+          variant="h5"
+          textAlign={"center"}
+          color={"##6F6F6F"}
+          style={{
+            fontFamily: "Montserrat",
+            marginBottom: 2,
+          }}
+        >
+          changer le monde grâce au code
+        </Typography>
+      </Stack>
     </div>
   );
 }

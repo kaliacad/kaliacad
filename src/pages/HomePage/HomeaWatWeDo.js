@@ -6,6 +6,7 @@ import {
   CardActionArea,
   CardContent,
   Hidden,
+  CardMedia,
 } from "@mui/material";
 import React from "react";
 import { dataCequeNousFaison } from "../../data/Data";
@@ -15,41 +16,40 @@ const dataCardFormat = dataCequeNousFaison.map((e, index) => (
   <Card
     sx={{
       maxWidth: 345,
-      ml: 1,
-      height: 245,
+      ml: 5,
+      // height: 245,
     }}
     elevation={0}
   >
     <CardActionArea>
-      {/*
-        <CardMedia
+      <CardMedia
         component="img"
-        height="140"
+        height="240"
         image={e.image}
         alt="green iguana"
         style={{
           objectFit: "cover",
         }}
       />
-        */}
 
-      <CardContent
-        sx={{
-          justifyContent: "center",
-          alignContent: "center",
-          mt: 7,
-        }}
-      >
+      <CardContent>
         <Typography
           fontWeight={"bold"}
           gutterBottom
-          variant="h6"
+          // variant="h6"
           component="div"
-          textAlign={"center"}
+          // textAlign={"center"}
+          fontFamily={"Montserrat"}
+          fontSize={18}
         >
           {e.title}
         </Typography>
-        <Typography variant="body2" color="text.secondary" textAlign={"center"}>
+        <Typography
+          fontFamily={"Montserrat"}
+          variant="body2"
+          color="text.secondary"
+          // textAlign={"center"}
+        >
           {e.description}
         </Typography>
       </CardContent>
@@ -63,17 +63,34 @@ function Homeaf() {
     <Grid container justifyContent={"center"}>
       <Grid
         item
-        bgcolor={"#f0f0f0"}
+        // bgcolor={"#f0f0f0"}
         width={"100%"}
         padding={5}
         justifyContent={"center"}
       >
-        <Stack>
-          <Typography fontWeight={"bold"} fontSize={26} textAlign={"center"}>
-            CE QUE NOUS FAISONS
+        <Stack
+          sx={{
+            ml: 5,
+          }}
+        >
+          <Typography
+            fontWeight={"bold"}
+            fontSize={25}
+            fontFamily={"Montserrat"}
+          >
+            Our Programs, Pillars, Partners
+          </Typography>
+          <Typography
+            sx={{
+              fontFamily: "Montserrat",
+              mt: 1,
+            }}
+          >
+            Our programs are designed to uplift Black and Latinx talent,
+            ensuring an equitable distribution of power in the tech world.
           </Typography>
         </Stack>
-        <div style={{ marginTop: 40 }}>
+        <div style={{ marginTop: 20 }}>
           <Hidden smDown xsDown>
             {sliderDataHorizontal({ dataslides: dataCardFormat })}
           </Hidden>

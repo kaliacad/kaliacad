@@ -1,13 +1,13 @@
 import * as React from "react";
 import PropTypes from "prop-types";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
+// import Tabs from "@mui/material/Tabs";
+// import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { Home, MobileFriendly, Sms } from "@mui/icons-material";
-import { AppBar } from "@mui/material";
+// import { Home, MobileFriendly, Sms } from "@mui/icons-material";
+// import { AppBar } from "@mui/material";
 import Homeblogs from "./homeblogs";
-import ArticleBlog from "./articleBlog";
+// import ArticleBlog from "./articleBlog";
 import ITextFieldnput from "../../controlers/TextFieldInput";
 
 function CustomTabPanel(props) {
@@ -36,19 +36,19 @@ CustomTabPanel.propTypes = {
   value: PropTypes.number.isRequired,
 };
 
-function a11yProps(index) {
-  return {
-    id: `simple-tab-${index}`,
-    "aria-controls": `simple-tabpanel-${index}`,
-  };
-}
+// function a11yProps(index) {
+//   return {
+//     id: `simple-tab-${index}`,
+//     "aria-controls": `simple-tabpanel-${index}`,
+//   };
+// }
 
 export default function BlogMenus({ seach, setSeach }) {
-  const [value, setValue] = React.useState(0);
+  // const [value, setValue] = React.useState(0);
 
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  // const handleChange = (event, newValue) => {
+  //   setValue(newValue);
+  // };
 
   return (
     <Box

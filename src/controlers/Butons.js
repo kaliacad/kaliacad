@@ -15,15 +15,17 @@ function Butons({
   return (
     <di>
       <Button
+        variant="contained"
         type={type}
         sx={{
-          // mt: 2,
+          mt: 2,
           background: bgcolor ? bgcolor : "#706F6F",
           color: color ? color : "#FFF",
           width: width,
           "&:hover": {
             background: "gray",
           },
+          // textTransform: "none",
         }}
         onClick={onClick}
         disabled={disabled}

@@ -1,12 +1,13 @@
 import * as React from "react";
 import Header from "../navigation/Header";
 import HomeGolobal from "./HomePage/HomeGolobal";
+import "typeface-montserrat";
 
 //
 const pageStyles = {
   color: "#232129",
   // padding: 10,
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
+  fontFamily: "Montserrat, Roboto, sans-serif, serif",
   marginLeft: -8,
   marginRight: -5,
 };
@@ -14,16 +15,9 @@ const pageStyles = {
 const IndexPage = () => {
   document.title = "Kali Academy";
   return (
-    <div
-      style={{
-        // background:"beige",
-        width: "100%",
-      }}
-    >
+    <div style={pageStyles}>
       <Header />
-      <main style={pageStyles}>
-        <HomeGolobal />
-      </main>
+      <HomeGolobal />
     </div>
   );
 };

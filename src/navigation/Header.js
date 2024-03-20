@@ -1,28 +1,30 @@
 import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import Container from "@mui/material/Container";
+// import Container from "@mui/material/Container";
 import NavBar from "./NavBar";
-import NavBarDrawer from "./NavBarDrawer";
+// import NavBarDrawer from "./NavBarDrawer";
+import imagetitle from "../images/profile.jpg";
+// import { Stack, Typography } from "@mui/material";
 
 function Header() {
   return (
     <AppBar
-      position="fixed"
-      elevation={1}
+      position="static"
+      elevation={0}
       sx={{
-        background: "#FFF",
+        backgroundImage: `url(${imagetitle})`,
+        height: "61vh",
+        objectFit: "cover",
+        backgroundPosition: "center top", // Ajustez la position de l'image selon vos besoins
+        backgroundSize: "cover",
         display: "flex",
+        // opacity: 0.5,
       }}
     >
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <NavBar />
-          {/*
-            <NavBarDrawer />
-            */}
-        </Toolbar>
-      </Container>
+      <Toolbar disableGutters sx={{ width: "100%" }}>
+        <NavBar />
+      </Toolbar>
     </AppBar>
   );
 }
