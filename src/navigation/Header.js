@@ -14,7 +14,7 @@ function Header() {
       elevation={0}
       sx={{
         backgroundImage: `url(${imagetitle})`,
-        height: "52vh",
+        height: "61vh",
         objectFit: "cover",
         backgroundPosition: "center top", // Ajustez la position de l'image selon vos besoins
         backgroundSize: "cover",

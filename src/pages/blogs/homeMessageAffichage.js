@@ -1,5 +1,5 @@
-import { Google } from "@mui/icons-material";
-import { Button, Typography } from "@mui/material";
+// import { Google } from "@mui/icons-material";
+import { Typography } from "@mui/material";
 import React from "react";
 import imagebackground from "../../images/image.jpg";
 

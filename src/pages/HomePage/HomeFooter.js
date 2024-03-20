@@ -5,7 +5,7 @@ import { GitHub, Email, Telegram, YouTube } from "@mui/icons-material";
 import imageKali from "../../images/Kali_academy_-_Logo-gris-removebg-preview.png";
 
 function FooterFin({ bgcolo }) {
-  const currentyear = new Date().getFullYear();
+  // const currentyear = new Date().getFullYear();
   return (
     <div
       style={{
@@ -20,7 +20,7 @@ function FooterFin({ bgcolo }) {
           }}
         >
           <GitHub
-            fontSize="large"
+            fontSize="medium"
             sx={{
               ":hover": {
                 color: "#fff",
@@ -37,7 +37,7 @@ function FooterFin({ bgcolo }) {
           }}
         >
           <Email
-            fontSize="large"
+            fontSize="medium"
             sx={{
               ":hover": {
                 color: "#fff",
@@ -54,7 +54,7 @@ function FooterFin({ bgcolo }) {
           }}
         >
           <Telegram
-            fontSize="large"
+            fontSize="medium"
             sx={{
               ":hover": {
                 color: "#fff",
@@ -69,7 +69,7 @@ function FooterFin({ bgcolo }) {
             // fontSize: 12,
           }}
         >
-          <YouTube fontSize="large" />
+          <YouTube fontSize="medium" />
         </span>
       </Stack>
       <div
@@ -80,7 +80,7 @@ function FooterFin({ bgcolo }) {
         <div
           style={{
             margin: 100,
-            marginTop: 10,
+            marginTop: -10,
             marginBottom: 0,
           }}
         >

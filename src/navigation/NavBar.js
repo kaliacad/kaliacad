@@ -80,7 +80,7 @@ function NavBar() {
       <Stack
         justifyContent={"center"}
         direction={"column"}
-        mt={10.4}
+        mt={17}
         sx={{
           height: "18vh",
           background: "#000",

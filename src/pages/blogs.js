@@ -6,13 +6,13 @@ import BlogMenuLefst from "./blogs/blogMenuLefst";
 import FooterFin from "./HomePage/HomeFooter";
 import ITextFieldnput from "../controlers/TextFieldInput";
 import { Google } from "@mui/icons-material";
-import AdbIcon from "@mui/icons-material/Adb";
+// import AdbIcon from "@mui/icons-material/Adb";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 export default function Blogs() {
   const [seach, setSeach] = React.useState("");
-  const nav = useNavigate();
+  // const nav = useNavigate();
 
   return (
     <div
@@ -33,7 +33,7 @@ export default function Blogs() {
                 variant="h6"
                 noWrap
                 component="a"
-                onClick={() => nav("/")}
+                // onClick={() => nav("/")}
                 // href="#app-bar-with-responsive-menu"
                 sx={{
                   //   mr: 2,
