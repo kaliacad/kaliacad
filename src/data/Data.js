@@ -111,3 +111,23 @@ export const dataBlog = [
     date: "18-09-2022",
   },
 ];
+
+export const dataGetInVolved = [
+  { title: " Partner With Us", id: 1 },
+  { title: " Make A Donation", id: 2 },
+  { title: " Start An S.C.A Chapter", id: 3 },
+  { title: " Summit", id: 4 },
+];
+
+export const dataAboutUs = [
+  { title: " Partner With Us", id: 1 },
+  { title: " Code Of Conduct", id: 2 },
+  { title: " Privacy Policy", id: 3 },
+  { title: " Terms And Condition", id: 4 },
+];
+
+export const dataCommunity = [
+  { title: " UpComing Events", id: 2 },
+  { title: " Join Our Slack Community ", id: 3 },
+  { title: " Follow Use on Social Media", id: 4 },
+];
