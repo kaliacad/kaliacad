@@ -84,7 +84,7 @@ function NavBar() {
         sx={{
           height: "18vh",
           background: "#000",
-          opacity: 0.5,
+          opacity: 0.6,
         }}
       >
         <Typography
@@ -106,6 +106,7 @@ function NavBar() {
           style={{
             fontFamily: "Montserrat",
             marginBottom: 2,
+            fontStyle: "italic",
           }}
         >
           changer le monde grâce au code

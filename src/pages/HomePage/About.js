@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import imageabout from "../../images/firstDayWishitonMurch2024PresentialyInGoma4.jpg";
+import imageabout from "../../images/4V1A3901.jpg";
 
 function About() {
   return (
