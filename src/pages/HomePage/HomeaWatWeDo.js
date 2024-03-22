@@ -105,9 +105,6 @@ function Homeaf() {
               <Hidden smDown xsDown>
                 {sliderDataHorizontal({ dataslides: dataCardFormat })}
               </Hidden>
-              <Hidden mdDown lgDown xlDown smUp xsUp>
-                {sliderdataverticale({ dataslidesveriticale: dataCardFormat })}
-              </Hidden>
             </div>
           </Grid>
         </Grid>

@@ -9,218 +9,461 @@ import { dataAboutUs, dataCommunity, dataGetInVolved } from "../../data/Data";
 function FooterFin({ bgcolo }) {
   // const currentyear = new Date().getFullYear();
   return (
-    <div
-      style={{
-        background: "#fff",
-      }}
-    >
-      <div
-        style={{
-          background: "#fff",
+    <div>
+      <Grid
+        container
+        display={{
+          xs: "none",
+          md: "flex",
+          sm: "none",
+          lg: "flex",
+          xl: "flex",
         }}
       >
         <div
           style={{
-            margin: 100,
-            marginTop: -10,
-            marginBottom: 0,
+            background: "#fff",
           }}
         >
-          <Grid container pb={"5%"} justifyContent={"center"}>
-            <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
-              <Typography
-                sx={{
-                  fontFamily: "Montserrat",
-                  fontSize: 25,
-                  color: "#000",
-                  fontWeight: 700,
-                }}
-              >
-                Get Involved
-              </Typography>
-              {dataGetInVolved.map((e, index) => (
-                <span key={e.id} color="#000">
+          <div
+            style={{
+              background: "#fff",
+            }}
+          >
+            <div
+              style={{
+                margin: 100,
+                marginTop: -10,
+                marginBottom: 0,
+              }}
+            >
+              <Grid container pb={"5%"} justifyContent={"center"}>
+                <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
                   <Typography
-                    color={"#000"}
                     sx={{
                       fontFamily: "Montserrat",
-                      color: "gray",
-                      fontSize: 16,
-                      mt: 1,
-                      ":hover": {
-                        color: "#000",
-                        fontSize: 18,
-                        cursor: "pointer",
-                        // textDecoration: "underLine",
-                      },
+                      fontSize: 25,
+                      color: "#000",
+                      fontWeight: 700,
                     }}
                   >
-                    {e.title}
+                    Get Involved
                   </Typography>
-                </span>
-              ))}
-            </Grid>
-            <Grid item xs={3} sm={3} md={3} lg={3} xl={3} ml={3}>
-              <Typography
-                sx={{
-                  fontFamily: "Montserrat",
-                  fontSize: 25,
-                  color: "#000",
-                  fontWeight: 700,
-                }}
-              >
-                About Us
-              </Typography>
-              {dataAboutUs.map((e, index) => (
-                <span key={e.id} color="#000">
+                  {dataGetInVolved.map((e, index) => (
+                    <span key={e.id} color="#000">
+                      <Typography
+                        color={"#000"}
+                        sx={{
+                          fontFamily: "Montserrat",
+                          color: "gray",
+                          fontSize: 16,
+                          mt: 1,
+                          ":hover": {
+                            color: "#000",
+                            fontSize: 18,
+                            cursor: "pointer",
+                            // textDecoration: "underLine",
+                          },
+                        }}
+                      >
+                        {e.title}
+                      </Typography>
+                    </span>
+                  ))}
+                </Grid>
+                <Grid item xs={3} sm={3} md={3} lg={3} xl={3} ml={3}>
                   <Typography
-                    color={"#000"}
                     sx={{
                       fontFamily: "Montserrat",
-                      color: "gray",
-                      fontSize: 16,
-                      mt: 1,
-                      ":hover": {
-                        color: "#000",
-                        fontSize: 18,
-                        cursor: "pointer",
-                        // textDecoration: "underLine",
-                      },
+                      fontSize: 25,
+                      color: "#000",
+                      fontWeight: 700,
                     }}
                   >
-                    {e.title}
+                    About Us
                   </Typography>
-                </span>
-              ))}
-            </Grid>
-            <Grid item xs={4} sm={4} md={4} lg={4} xl={4} ml={4}>
-              <Typography
-                sx={{
-                  fontFamily: "Montserrat",
-                  fontSize: 25,
-                  color: "#000",
-                  fontWeight: 700,
-                }}
-              >
-                Community
-              </Typography>
-              {dataCommunity.map((e, index) => (
-                <span key={e.id} color="#000">
+                  {dataAboutUs.map((e, index) => (
+                    <span key={e.id} color="#000">
+                      <Typography
+                        color={"#000"}
+                        sx={{
+                          fontFamily: "Montserrat",
+                          color: "gray",
+                          fontSize: 16,
+                          mt: 1,
+                          ":hover": {
+                            color: "#000",
+                            fontSize: 18,
+                            cursor: "pointer",
+                            // textDecoration: "underLine",
+                          },
+                        }}
+                      >
+                        {e.title}
+                      </Typography>
+                    </span>
+                  ))}
+                </Grid>
+                <Grid item xs={4} sm={4} md={4} lg={4} xl={4} ml={4}>
                   <Typography
-                    color={"#000"}
                     sx={{
                       fontFamily: "Montserrat",
-                      color: "gray",
-                      fontSize: 16,
-                      mt: 1,
-                      ":hover": {
-                        color: "#000",
-                        fontSize: 18,
-                        cursor: "pointer",
-                        // textDecoration: "underLine",
-                      },
+                      fontSize: 25,
+                      color: "#000",
+                      fontWeight: 700,
                     }}
                   >
-                    {e.title}
+                    Community
                   </Typography>
-                </span>
-              ))}
+                  {dataCommunity.map((e, index) => (
+                    <span key={e.id} color="#000">
+                      <Typography
+                        color={"#000"}
+                        sx={{
+                          fontFamily: "Montserrat",
+                          color: "gray",
+                          fontSize: 16,
+                          mt: 1,
+                          ":hover": {
+                            color: "#000",
+                            fontSize: 18,
+                            cursor: "pointer",
+                            // textDecoration: "underLine",
+                          },
+                        }}
+                      >
+                        {e.title}
+                      </Typography>
+                    </span>
+                  ))}
 
-              <Stack flexDirection={"row"} pt={2}>
-                <span
-                  style={{
-                    color: "#000",
-                    marginRight: 20,
-                  }}
-                >
-                  <GitHub
-                    fontSize="small"
-                    sx={{
-                      ":hover": {
+                  <Stack flexDirection={"row"} pt={2}>
+                    <span
+                      style={{
                         color: "#000",
-                        cursor: "pointer",
-                      },
+                        marginRight: 20,
+                      }}
+                    >
+                      <GitHub
+                        fontSize="small"
+                        sx={{
+                          ":hover": {
+                            color: "#000",
+                            cursor: "pointer",
+                          },
+                        }}
+                      />
+                    </span>
+                    <span
+                      style={{
+                        color: "#000",
+                        // fontSize: 12,
+                        marginRight: 20,
+                      }}
+                    >
+                      <Email
+                        fontSize="small"
+                        sx={{
+                          ":hover": {
+                            color: "#000",
+                            cursor: "pointer",
+                          },
+                        }}
+                      />
+                    </span>
+                    <span
+                      style={{
+                        color: "#000",
+                        // fontSize: 12,
+                        marginRight: 20,
+                      }}
+                    >
+                      <Telegram
+                        fontSize="small"
+                        sx={{
+                          ":hover": {
+                            color: "#000",
+                            cursor: "pointer",
+                          },
+                        }}
+                      />
+                    </span>
+                    <span
+                      style={{
+                        color: "#000",
+                        // fontSize: 12,
+                      }}
+                    >
+                      <YouTube fontSize="small" />
+                    </span>
+                  </Stack>
+                  <img
+                    src={imageKali}
+                    alt="Kali academy"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      display:
+                        "block" /* Supprime l'espace réservé sous l'image */,
+                      margin: "0 auto",
+                      objectFit: "cover",
+                      cursor: "pointer",
+                      background: "none",
+                      marginLeft: -20,
                     }}
                   />
-                </span>
-                <span
-                  style={{
-                    color: "#000",
-                    // fontSize: 12,
-                    marginRight: 20,
-                  }}
-                >
-                  <Email
-                    fontSize="small"
-                    sx={{
-                      ":hover": {
-                        color: "#000",
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </span>
-                <span
-                  style={{
-                    color: "#000",
-                    // fontSize: 12,
-                    marginRight: 20,
-                  }}
-                >
-                  <Telegram
-                    fontSize="small"
-                    sx={{
-                      ":hover": {
-                        color: "#000",
-                        cursor: "pointer",
-                      },
-                    }}
-                  />
-                </span>
-                <span
-                  style={{
-                    color: "#000",
-                    // fontSize: 12,
-                  }}
-                >
-                  <YouTube fontSize="small" />
-                </span>
-              </Stack>
-              <img
-                src={imageKali}
-                alt="Kali academy"
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  display: "block" /* Supprime l'espace réservé sous l'image */,
-                  margin: "0 auto",
-                  objectFit: "cover",
-                  cursor: "pointer",
-                  background: "none",
-                  marginLeft: -20,
-                }}
-              />
-            </Grid>
-          </Grid>
+                </Grid>
+              </Grid>
+            </div>
+          </div>
+          <Stack
+            sx={{
+              background: "#000",
+            }}
+            flexDirection={"row"}
+            p={2}
+            justifyContent={"center"}
+          >
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Montserrat",
+              }}
+            >
+              All right reserved She code Kali Academy ©2024
+            </Typography>
+          </Stack>
         </div>
-      </div>
-      <Stack
-        sx={{
-          background: "#000",
+      </Grid>
+      {
+        //affichage mobile
+      }
+
+      <Grid
+        container
+        display={{
+          xs: "flex",
+          md: "none",
+          sm: "felx",
+          lg: "none",
+          xl: "none",
         }}
-        flexDirection={"row"}
-        p={2}
-        justifyContent={"center"}
       >
-        <Typography
-          sx={{
-            color: "#fff",
-            fontFamily: "Montserrat",
+        <div
+          style={{
+            background: "#fff",
           }}
         >
-          All right reserved She code Kali Academy ©2024
-        </Typography>
-      </Stack>
+          <div
+            style={{
+              background: "#fff",
+            }}
+          >
+            <div
+              style={{
+                margin: 20,
+                marginTop: 0,
+                marginBottom: 0,
+              }}
+            >
+              <Grid container pb={"5%"}>
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Montserrat",
+                      fontSize: 25,
+                      color: "#000",
+                      fontWeight: 700,
+                    }}
+                  >
+                    Get Involved
+                  </Typography>
+                  {dataGetInVolved.map((e, index) => (
+                    <span key={e.id} color="#000">
+                      <Typography
+                        color={"#000"}
+                        sx={{
+                          fontFamily: "Montserrat",
+                          color: "gray",
+                          fontSize: 16,
+                          mt: 1,
+                          ":hover": {
+                            color: "#000",
+                            fontSize: 18,
+                            cursor: "pointer",
+                            // textDecoration: "underLine",
+                          },
+                        }}
+                      >
+                        {e.title}
+                      </Typography>
+                    </span>
+                  ))}
+                </Grid>
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Montserrat",
+                      fontSize: 25,
+                      color: "#000",
+                      fontWeight: 700,
+                    }}
+                  >
+                    About Us
+                  </Typography>
+                  {dataAboutUs.map((e, index) => (
+                    <span key={e.id} color="#000">
+                      <Typography
+                        color={"#000"}
+                        sx={{
+                          fontFamily: "Montserrat",
+                          color: "gray",
+                          fontSize: 16,
+                          mt: 1,
+                          ":hover": {
+                            color: "#000",
+                            fontSize: 18,
+                            cursor: "pointer",
+                            // textDecoration: "underLine",
+                          },
+                        }}
+                      >
+                        {e.title}
+                      </Typography>
+                    </span>
+                  ))}
+                </Grid>
+                <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+                  <Typography
+                    sx={{
+                      fontFamily: "Montserrat",
+                      fontSize: 25,
+                      color: "#000",
+                      fontWeight: 700,
+                    }}
+                  >
+                    Community
+                  </Typography>
+                  {dataCommunity.map((e, index) => (
+                    <span key={e.id} color="#000">
+                      <Typography
+                        color={"#000"}
+                        sx={{
+                          fontFamily: "Montserrat",
+                          color: "gray",
+                          fontSize: 16,
+                          mt: 1,
+                          ":hover": {
+                            color: "#000",
+                            fontSize: 18,
+                            cursor: "pointer",
+                            // textDecoration: "underLine",
+                          },
+                        }}
+                      >
+                        {e.title}
+                      </Typography>
+                    </span>
+                  ))}
+
+                  <Stack flexDirection={"row"} pt={2}>
+                    <span
+                      style={{
+                        color: "#000",
+                        marginRight: 20,
+                      }}
+                    >
+                      <GitHub
+                        fontSize="small"
+                        sx={{
+                          ":hover": {
+                            color: "#000",
+                            cursor: "pointer",
+                          },
+                        }}
+                      />
+                    </span>
+                    <span
+                      style={{
+                        color: "#000",
+                        // fontSize: 12,
+                        marginRight: 20,
+                      }}
+                    >
+                      <Email
+                        fontSize="small"
+                        sx={{
+                          ":hover": {
+                            color: "#000",
+                            cursor: "pointer",
+                          },
+                        }}
+                      />
+                    </span>
+                    <span
+                      style={{
+                        color: "#000",
+                        // fontSize: 12,
+                        marginRight: 20,
+                      }}
+                    >
+                      <Telegram
+                        fontSize="small"
+                        sx={{
+                          ":hover": {
+                            color: "#000",
+                            cursor: "pointer",
+                          },
+                        }}
+                      />
+                    </span>
+                    <span
+                      style={{
+                        color: "#000",
+                        // fontSize: 12,
+                      }}
+                    >
+                      <YouTube fontSize="small" />
+                    </span>
+                  </Stack>
+                  <img
+                    src={imageKali}
+                    alt="Kali academy"
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      display:
+                        "block" /* Supprime l'espace réservé sous l'image */,
+                      margin: "0 auto",
+                      objectFit: "cover",
+                      cursor: "pointer",
+                      background: "none",
+                      marginLeft: -20,
+                    }}
+                  />
+                </Grid>
+              </Grid>
+            </div>
+          </div>
+          <Stack
+            sx={{
+              background: "#000",
+            }}
+            flexDirection={"row"}
+            p={2}
+            justifyContent={"center"}
+          >
+            <Typography
+              sx={{
+                color: "#fff",
+                fontFamily: "Montserrat",
+              }}
+            >
+              All right reserved She code Kali Academy ©2024
+            </Typography>
+          </Stack>
+        </div>
+      </Grid>
     </div>
   );
 }
