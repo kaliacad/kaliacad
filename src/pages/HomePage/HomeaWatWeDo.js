@@ -60,46 +60,108 @@ const dataCardFormat = dataCequeNousFaison.map((e, index) => (
 function Homeaf() {
   const { sliderdataverticale, sliderDataHorizontal } = useCarousel();
   return (
-    <Grid container justifyContent={"center"}>
+    <div>
       <Grid
-        item
-        // bgcolor={"#f0f0f0"}
-        width={"100%"}
-        padding={5}
-        justifyContent={"center"}
+        container
+        display={{
+          xs: "none",
+          md: "flex",
+          sm: "none",
+          lg: "flex",
+          xl: "flex",
+        }}
       >
-        <Stack
-          sx={{
-            ml: 5,
-          }}
-        >
-          <Typography
-            fontWeight={"bold"}
-            fontSize={25}
-            fontFamily={"Montserrat"}
+        <Grid container justifyContent={"center"}>
+          <Grid
+            item
+            // bgcolor={"#f0f0f0"}
+            width={"100%"}
+            padding={5}
+            justifyContent={"center"}
           >
-            Our Programs, Pillars, Partners
-          </Typography>
-          <Typography
-            sx={{
-              fontFamily: "Montserrat",
-              mt: 1,
-            }}
-          >
-            Our programs are designed to uplift Black and Latinx talent,
-            ensuring an equitable distribution of power in the tech world.
-          </Typography>
-        </Stack>
-        <div style={{ marginTop: 20 }}>
-          <Hidden smDown xsDown>
-            {sliderDataHorizontal({ dataslides: dataCardFormat })}
-          </Hidden>
-          <Hidden mdDown lgDown xlDown smUp xsUp>
-            {sliderdataverticale({ dataslidesveriticale: dataCardFormat })}
-          </Hidden>
-        </div>
+            <Stack
+              sx={{
+                ml: 5,
+              }}
+            >
+              <Typography
+                fontWeight={"bold"}
+                fontSize={25}
+                fontFamily={"Montserrat"}
+              >
+                Our Programs, Pillars, Partners
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat",
+                  mt: 1,
+                }}
+              >
+                Our programs are designed to uplift Black and Latinx talent,
+                ensuring an equitable distribution of power in the tech world.
+              </Typography>
+            </Stack>
+            <div style={{ marginTop: 20 }}>
+              <Hidden smDown xsDown>
+                {sliderDataHorizontal({ dataslides: dataCardFormat })}
+              </Hidden>
+              <Hidden mdDown lgDown xlDown smUp xsUp>
+                {sliderdataverticale({ dataslidesveriticale: dataCardFormat })}
+              </Hidden>
+            </div>
+          </Grid>
+        </Grid>
       </Grid>
-    </Grid>
+
+      <Grid
+        container
+        display={{
+          xs: "flex",
+          md: "none",
+          sm: "flex",
+          lg: "none",
+          xl: "none",
+        }}
+      >
+        <Grid container m={2}>
+          <Grid
+            item
+            // bgcolor={"#f0f0f0"}
+            width={"100%"}
+            // padding={5}
+            // justifyContent={"center"}
+          >
+            <Stack
+              sx={
+                {
+                  // ml: 5,
+                }
+              }
+            >
+              <Typography
+                fontWeight={"bold"}
+                fontSize={25}
+                fontFamily={"Montserrat"}
+              >
+                Our Programs, Pillars, Partners
+              </Typography>
+              <Typography
+                sx={{
+                  fontFamily: "Montserrat",
+                  mt: 1,
+                }}
+              >
+                Our programs are designed to uplift Black and Latinx talent,
+                ensuring an equitable distribution of power in the tech world.
+              </Typography>
+              <div style={{ marginTop: 20, marginLeft: -35 }}>
+                {sliderdataverticale({ dataslidesveriticale: dataCardFormat })}
+              </div>
+            </Stack>
+          </Grid>
+        </Grid>
+      </Grid>
+    </div>
   );
 }
 
