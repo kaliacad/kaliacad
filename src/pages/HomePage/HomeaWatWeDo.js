@@ -56,6 +56,51 @@ const dataCardFormat = dataCequeNousFaison.map((e, index) => (
     </CardActionArea>
   </Card>
 ));
+const dataCardFormat2 = dataCequeNousFaison.map((e, index) => (
+  <Card
+    sx={{
+      maxWidth: 345,
+      // ml: 5,
+      // height: 245,
+      // marginBottom: 50,
+    }}
+    elevation={0}
+  >
+    <CardActionArea>
+      <CardMedia
+        component="img"
+        height="240"
+        image={e.image}
+        alt="green iguana"
+        style={{
+          objectFit: "cover",
+        }}
+      />
+
+      <CardContent>
+        <Typography
+          fontWeight={"bold"}
+          gutterBottom
+          // variant="h6"
+          component="div"
+          // textAlign={"center"}
+          fontFamily={"Montserrat"}
+          fontSize={18}
+        >
+          {e.title}
+        </Typography>
+        <Typography
+          fontFamily={"Montserrat"}
+          variant="body2"
+          color="text.secondary"
+          // textAlign={"center"}
+        >
+          {e.description}
+        </Typography>
+      </CardContent>
+    </CardActionArea>
+  </Card>
+));
 
 function Homeaf() {
   const { sliderdataverticale, sliderDataHorizontal } = useCarousel();
@@ -109,7 +154,9 @@ function Homeaf() {
           </Grid>
         </Grid>
       </Grid>
-
+      {
+        //affichage mobile
+      }
       <Grid
         container
         display={{
@@ -151,8 +198,8 @@ function Homeaf() {
                 Our programs are designed to uplift Black and Latinx talent,
                 ensuring an equitable distribution of power in the tech world.
               </Typography>
-              <div style={{ marginTop: 20, marginLeft: -35 }}>
-                {sliderdataverticale({ dataslidesveriticale: dataCardFormat })}
+              <div style={{ marginTop: 20 }}>
+                {sliderdataverticale({ dataslidesveriticale: dataCardFormat2 })}
               </div>
             </Stack>
           </Grid>

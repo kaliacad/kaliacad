@@ -64,6 +64,9 @@ function History() {
           </Grid>
         </div>
       </Grid>
+      {
+        //affichage mobile
+      }
       <Grid
         container
         display={{

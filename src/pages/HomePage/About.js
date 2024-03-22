@@ -65,6 +65,9 @@ function About() {
           </Grid>
         </div>
       </Grid>
+      {
+        //affichage mobile
+      }
       <Grid
         container
         display={{

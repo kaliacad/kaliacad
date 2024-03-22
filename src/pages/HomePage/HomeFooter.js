@@ -262,7 +262,7 @@ function FooterFin({ bgcolo }) {
             <div
               style={{
                 margin: 20,
-                marginTop: 0,
+                marginTop: 10,
                 marginBottom: 0,
               }}
             >
@@ -457,6 +457,7 @@ function FooterFin({ bgcolo }) {
               sx={{
                 color: "#fff",
                 fontFamily: "Montserrat",
+                fontSize: 13,
               }}
             >
               All right reserved She code Kali Academy ©2024

@@ -6,14 +6,17 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { pages } from "../data/Data";
 import kalibackground from "../images/Kali_academy_-_Logo-gris-removebg-preview.png";
 import { navigate } from "gatsby";
 import { Menu } from "@mui/icons-material";
+import DrawerLaningPage from "./DrawerLaningPage";
+// import Drawer from "./Drawer";
 
 function NavBar() {
   // const nav = useNavigate();
+  const [open, setOpen] = useState(false);
 
   const gotHomeTitleMenu = (e) => {
     if (e === 1) {
@@ -23,6 +26,10 @@ function NavBar() {
     } else if (e === 4) {
       navigate("/publieoffre");
     }
+  };
+
+  const OpenDialog = () => {
+    setOpen(!open);
   };
 
   return (
@@ -181,7 +188,7 @@ function NavBar() {
               display: { xs: "flex", md: "flex", justifyContent: "center" },
             }}
           >
-            <IconButton size="large">
+            <IconButton size="large" onClick={() => OpenDialog()}>
               <Menu fontSize="large" />
             </IconButton>
           </Box>
@@ -226,6 +233,7 @@ function NavBar() {
           </Typography>
         </Stack>
       </Grid>
+      <DrawerLaningPage open={open} setOpen={() => setOpen(!open)} />
     </div>
   );
 }
