@@ -23,8 +23,10 @@ function HomeGolobal() {
       <History />
 
       <Homeaf />
-      <ConnectWith />
+      {/*
+        <ConnectWith />
       <JoinGroup />
+        */}
       <FooterFin />
     </div>
   );

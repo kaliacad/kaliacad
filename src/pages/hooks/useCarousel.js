@@ -24,7 +24,7 @@ function useCarousel() {
     return (
       <div>
         <Slider
-          slidesToShow={3}
+          slidesToShow={4}
           dots={false}
           infinite={true}
           speed={500}

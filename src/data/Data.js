@@ -1,6 +1,7 @@
 import image from "../images/firstDayWishitonMurch2024PresentialyInGoma2.jpg";
 import image2 from "../images/firstDayWishitonMurch2024PresentialyInGoma9.jpg";
 import image3 from "../images/firstDayWishitonMurch2024PresentialyInGoma1.jpg";
+import imageabout from "../images/firstDayWishitonMurch2024PresentialyInGoma4.jpg";
 
 export const pages = [
   // {
@@ -38,18 +39,18 @@ export const dataCequeNousFaison = [
     title: "DES FORMATIONS",
     description:
       "pour apprendre les bases de la programmation et l'importance de l'open source",
-    image: image,
+    image: image2,
   },
   {
     title: "DU MENTORAT",
     description:
       "pour accompagner efficacement dans la contribution open source",
-    image: image2,
+    image: image,
   },
   {
     title: "DES HACK-A-THONS",
     description: "pour motiver plus du monde à rejoindre la communauté",
-    image: image3,
+    image: imageabout,
   },
 ];
 export const dataCequeNousFaisonAlbum = [
@@ -115,8 +116,6 @@ export const dataBlog = [
 export const dataGetInVolved = [
   { title: " Partner With Us", id: 1 },
   { title: " Make A Donation", id: 2 },
-  { title: " Start An S.C.A Chapter", id: 3 },
-  { title: " Summit", id: 4 },
 ];
 
 export const dataAboutUs = [
@@ -128,6 +127,6 @@ export const dataAboutUs = [
 
 export const dataCommunity = [
   { title: " UpComing Events", id: 2 },
-  { title: " Join Our Slack Community ", id: 3 },
+  { title: " Join Our Telegram Community ", id: 3 },
   { title: " Follow Use on Social Media", id: 4 },
 ];
