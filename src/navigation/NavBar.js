@@ -110,6 +110,7 @@ function NavBar() {
             height: "18vh",
             background: "#000",
             opacity: 0.6,
+            width: "100%",
           }}
         >
           <Typography

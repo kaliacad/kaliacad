@@ -14,6 +14,7 @@ const pageStyles = {
 
 const IndexPage = () => {
   document.title = "Kali Academy";
+
   return (
     <div style={pageStyles}>
       <Header />
