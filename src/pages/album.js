@@ -13,8 +13,8 @@ import {
 } from "@mui/material";
 import { dataCequeNousFaisonAlbum } from "../data/Data";
 import { Download, Search } from "@mui/icons-material";
-import FooterFin from "./HomePage/HomeFooter";
-import TitleHeader from "../component/titleheader";
+import FooterFin from "../components/footer/HomeFooter";
+import TitleHeader from "../components/titleheader";
 
 function Albums() {
   const [seacher, setSeacher] = useState("");

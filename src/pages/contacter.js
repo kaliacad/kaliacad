@@ -1,12 +1,13 @@
 import React from "react";
 import { Grid, Stack } from "@mui/material";
-import FooterFin from "./HomePage/HomeFooter";
-import ITextFieldnput from "../controlers/TextFieldInput";
+// import FooterFin from "./HomePage/HomeFooter";
+import ITextFieldnput from "../components/formElements/TextFieldInput";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import Butons from "../controlers/Butons";
+import Butons from "../components/formElements/Butons";
 import { Telegram } from "@mui/icons-material";
-import TitleHeader from "../component/titleheader";
+import TitleHeader from "../components/titleheader";
+import FooterFin from "../components/footer/HomeFooter";
 
 function Contacter() {
   const validation = useFormik({

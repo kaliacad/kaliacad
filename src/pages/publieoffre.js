@@ -1,7 +1,6 @@
 import React from "react";
-import TitleHeader from "../component/titleheader";
-import EditorTextOfre from "./Drafts/editorTextOfre";
-import Header from "../navigation/Header";
+import Header from "../components/header/Header";
+import TitleHeader from "../components/titleheader";
 
 function PublieOfre() {
   return (
@@ -15,7 +14,6 @@ function PublieOfre() {
           }
         />
       </div>
-      <EditorTextOfre />
     </div>
   );
 }
