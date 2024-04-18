@@ -10,7 +10,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import { dataCequeNousFaison } from "../../data/Data";
-import useCarousel from "../hooks/useCarousel";
+import useCarousel from "../carousel";
 
 const dataCardFormat = dataCequeNousFaison.map((e, index) => (
   <Card
@@ -141,8 +141,7 @@ function Homeaf() {
                   fontFamily: "Montserrat",
                   mt: 1,
                 }}
-              >
-              </Typography>
+              ></Typography>
             </Stack>
             <div style={{ marginTop: 20 }}>
               <Hidden smDown xsDown>

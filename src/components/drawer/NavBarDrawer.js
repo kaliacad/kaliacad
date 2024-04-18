@@ -8,7 +8,7 @@ import {
 } from "@mui/material";
 import { MenuOutlined } from "@mui/icons-material";
 import React from "react";
-import { pages } from "../data/Data";
+import { pages } from "../../data/Data";
 import { navigate } from "gatsby";
 
 function NavBarDrawer() {

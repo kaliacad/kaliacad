@@ -5,6 +5,12 @@ import imageKali from "../../images/Kali_academy_-_Logo-gris-removebg-preview.pn
 import { dataAboutUs, dataCommunity, dataGetInVolved } from "../../data/Data";
 
 function FooterFin({ bgcolo }) {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Pour un défilement fluide, utilisez "smooth"
+    });
+  };
   return (
     <div>
       <Grid
@@ -141,15 +147,16 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                      <a href="https://github.com/kaliacad"><GitHub
-                        fontSize="small"
-                        sx={{
-                          ":hover": {
-                            color: "#000",
-                            cursor: "pointer",
-                          },
-                        }}
-                      />
+                      <a href="https://github.com/kaliacad">
+                        <GitHub
+                          fontSize="small"
+                          sx={{
+                            ":hover": {
+                              color: "#000",
+                              cursor: "pointer",
+                            },
+                          }}
+                        />
                       </a>
                     </span>
                     <span
@@ -159,15 +166,16 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                      <a href="mailto:bam6192@gmail.com"><Email
-                        fontSize="small"
-                        sx={{
-                          ":hover": {
-                            color: "#000",
-                            cursor: "pointer",
-                          },
-                        }}
-                      />
+                      <a href="mailto:bam6192@gmail.com">
+                        <Email
+                          fontSize="small"
+                          sx={{
+                            ":hover": {
+                              color: "#000",
+                              cursor: "pointer",
+                            },
+                          }}
+                        />
                       </a>
                     </span>
                     <span
@@ -177,15 +185,17 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                    <a href="https://t.me/+U3aniTiCTysyNmQ0">  <Telegram
-                        fontSize="small"
-                        sx={{
-                          ":hover": {
-                            color: "#000",
-                            cursor: "pointer",
-                          },
-                        }}
-                      />
+                      <a href="https://t.me/+U3aniTiCTysyNmQ0">
+                        {" "}
+                        <Telegram
+                          fontSize="small"
+                          sx={{
+                            ":hover": {
+                              color: "#000",
+                              cursor: "pointer",
+                            },
+                          }}
+                        />
                       </a>
                     </span>
                     <span
@@ -193,9 +203,7 @@ function FooterFin({ bgcolo }) {
                         color: "#000",
                         // fontSize: 12,
                       }}
-                    >
-                    
-                    </span>
+                    ></span>
                   </Stack>
                   <img
                     src={imageKali}
@@ -211,6 +219,7 @@ function FooterFin({ bgcolo }) {
                       background: "none",
                       marginLeft: -20,
                     }}
+                    onClick={scrollToTop}
                   />
                 </Grid>
               </Grid>
@@ -230,7 +239,7 @@ function FooterFin({ bgcolo }) {
                 fontFamily: "Montserrat",
               }}
             >
-            Kali Academy 2024
+              Kali Academy 2024
             </Typography>
           </Stack>
         </div>
@@ -435,11 +444,12 @@ function FooterFin({ bgcolo }) {
                       display:
                         "block" /* Supprime l'espace réservé sous l'image */,
                       margin: "0 auto",
-                      objectFit: "cover",
+                      objectFit: "contain",
                       cursor: "pointer",
                       background: "none",
                       marginLeft: -20,
                     }}
+                    onClick={scrollToTop}
                   />
                 </Grid>
               </Grid>

@@ -14,11 +14,11 @@ export const pages = [
     title: "Soutenez-nous",
     path: "",
   },
-  {
-    id: 3,
-    title: "Blog",
-    path: "/blogs",
-  },
+  // {
+  //   id: 3,
+  //   title: "Blog",
+  //   path: "/blogs",
+  // },
   // {
   //   id: 4,
   //   title: "Offre",

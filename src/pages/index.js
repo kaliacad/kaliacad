@@ -1,6 +1,5 @@
 import * as React from "react";
-import Header from "../navigation/Header";
-import HomeGolobal from "./HomePage/HomeGolobal";
+import HomeGolobal from "../components/uiomponents/HomeGolobal";
 import "typeface-montserrat";
 
 const pageStyles = {
@@ -13,7 +12,6 @@ const pageStyles = {
 const IndexPage = () => {
   return (
     <div style={pageStyles}>
-      <Header />
       <HomeGolobal />
     </div>
   );

@@ -1,32 +1,32 @@
 import {
   Box,
-  Button,
+  // Button,
   Grid,
   IconButton,
   Stack,
   Typography,
 } from "@mui/material";
 import React, { useState } from "react";
-import { pages } from "../data/Data";
-import kalibackground from "../images/Kali_academy_-_Logo-gris-removebg-preview.png";
+// import { pages } from "../../data/Data";
+import kalibackground from "../../images/Kali_academy_-_Logo-gris-removebg-preview.png";
 import { navigate } from "gatsby";
 import { Menu } from "@mui/icons-material";
-import DrawerLaningPage from "./DrawerLaningPage";
+import DrawerLaningPage from "../drawer/DrawerLaningPage";
 // import Drawer from "./Drawer";
 
 function NavBar() {
   // const nav = useNavigate();
   const [open, setOpen] = useState(false);
 
-  const gotHomeTitleMenu = (e) => {
-    if (e === 1) {
-      navigate("/");
-    } else if (e === 3) {
-      navigate("/blog");
-    } else if (e === 4) {
-      navigate("/publieoffre");
-    }
-  };
+  // const gotHomeTitleMenu = (e) => {
+  //   if (e === 1) {
+  //     navigate("/");
+  //   } else if (e === 3) {
+  //     navigate("/blog");
+  //   } else if (e === 4) {
+  //     navigate("/publieoffre");
+  //   }
+  // };
 
   const OpenDialog = () => {
     setOpen(!open);
@@ -70,7 +70,7 @@ function NavBar() {
                 height: 80,
                 display: "block" /* Supprime l'espace réservé sous l'image */,
                 margin: "0 auto",
-                objectFit: "cover",
+                objectFit: "contain",
                 cursor: "pointer",
                 background: "none",
               }}
@@ -83,9 +83,7 @@ function NavBar() {
               flexGrow: 1,
               display: { xs: "none", md: "flex", justifyContent: "center" },
             }}
-          >
-            
-          </Box>
+          ></Box>
         </div>
         <Stack
           justifyContent={"center"}
@@ -95,6 +93,7 @@ function NavBar() {
             height: "18vh",
             background: "#000",
             opacity: 0.6,
+            width: "100%",
           }}
         >
           <Typography
