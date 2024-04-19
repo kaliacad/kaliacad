@@ -2,6 +2,7 @@ import image from "../images/firstDayWishitonMurch2024PresentialyInGoma2.jpg";
 import image2 from "../images/firstDayWishitonMurch2024PresentialyInGoma9.jpg";
 import image3 from "../images/firstDayWishitonMurch2024PresentialyInGoma1.jpg";
 import imageabout from "../images/firstDayWishitonMurch2024PresentialyInGoma4.jpg";
+import wkmrdc from "../images/wkmrdc.png";
 
 export const pages = [
   // {
@@ -53,6 +54,14 @@ export const dataCequeNousFaison = [
     image: imageabout,
   },
 ];
+
+export const dataRemerciement = [
+  {
+    title: "WIKIMEDIA RDC",
+    image: wkmrdc,
+  },
+];
+
 export const dataCequeNousFaisonAlbum = [
   {
     title: "DES FORMATIONS",
