@@ -64,7 +64,7 @@ function supporters() {
             fontFamily={"Montserrat"}
             sx={{
               textDecoration: "underLine",
-              color: "blue",
+              color: "#2D9562",
             }}
           >
             Tous les Supporters
