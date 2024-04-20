@@ -4,6 +4,7 @@ import FooterFin from "../footer/HomeFooter";
 import About from "./About";
 import WeDo from "./WeDo";
 import Header from "../header/Header";
+import ThankYou from "./ThankYou";
 
 function HomeGolobal() {
   return (
@@ -12,6 +13,7 @@ function HomeGolobal() {
       <About />
       <WeDo />
       <Homeaf />
+      <ThankYou />
       <FooterFin />
     </div>
   );
