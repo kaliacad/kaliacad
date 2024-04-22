@@ -1,47 +1,16 @@
 import {
-  Button,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
   Grid,
-  Hidden,
   Stack,
   Typography,
 } from "@mui/material";
 import React from "react";
-import { dataRemerciement } from "../../data/Data";
-import useCarousel from "../carousel";
-import { navigate } from "gatsby";
+import { supporters } from "../../data/Data";
+import { Link } from "gatsby";
 
-const dataCardFormat = dataRemerciement.slice(0, 6).map((e, index) => (
-  <Card
-    key={index}
-    sx={{
-      maxWidth: 250,
-      ml: 5,
-      // height: 245,
-    }}
-    elevation={0}
-  >
-    <CardActionArea>
-      <CardMedia
-        component="img"
-        height={100}
-        image={e.image}
-        alt="green iguana"
-        style={{
-          objectFit: "contain",
-        }}
-      />
-
-      <CardContent></CardContent>
-    </CardActionArea>
-  </Card>
-));
 function ThankYou() {
-  const { sliderDataHorizontal } = useCarousel();
-
+  const supportersList = supporters.map((supporter, index) => 
+    supporter.name + (index < supporters.length - 1 ? " • " : "")
+  )
   return (
     <div>
       <Grid
@@ -57,7 +26,6 @@ function ThankYou() {
         <Grid container justifyContent={"center"}>
           <Grid
             item
-            // bgcolor={"#f0f0f0"}
             width={"100%"}
             padding={5}
             justifyContent={"center"}
@@ -69,38 +37,28 @@ function ThankYou() {
               }}
             >
               <Typography
-                fontWeight={"bold"}
-                fontSize={25}
                 fontFamily={"Montserrat"}
                 textAlign={"center"}
+                variant="h4"
+                sx={{mb: 3}}
               >
-                Kali Academy remercie tout ceux qui l'ont soutenu
+                Kali Academy remercie
               </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "Montserrat",
-                  mt: 5,
-                }}
-              ></Typography>
+              
             </Stack>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              {dataCardFormat}
-            </div>
+            <Typography sx={{mb: 3, textAlign: "center "}}>
+              {supportersList}
+            </Typography>
+            
             <div
               style={{
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              <Button
-                variant="text"
-                sx={{
-                  textDecoration: "underLine",
-                }}
-                onClick={() => navigate("/supporters")}
-              >
-                Tous afficher
-              </Button>
+              <Link to = "/supporters">
+                Voir tous nos supporteurs
+              </Link>
             </div>
           </Grid>
         </Grid>
