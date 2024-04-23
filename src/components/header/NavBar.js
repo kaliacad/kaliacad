@@ -97,23 +97,23 @@ function NavBar() {
           }}
         >
           <Typography
-            variant="h4"
+            variant="h1"
             textAlign={"center"}
             color={"##6F6F6F"}
             fontWeight={"bold"}
             mt={3}
-            style={{
-              fontFamily: "Montserrat",
-            }}
+            // style={{
+            //   fontFamily: "Montserrat",
+            // }}
           >
             CATALYSEUR DE LA CONTRIBUTION OPEN SOURCE
           </Typography>
           <Typography
-            variant="h5"
+            variant="h2"
             textAlign={"center"}
             color={"##6F6F6F"}
             style={{
-              fontFamily: "Montserrat",
+              // fontFamily: "Montserrat",
               marginBottom: 2,
               fontStyle: "italic",
             }}

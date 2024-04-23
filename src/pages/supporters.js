@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { supporters as supportersList } from "../data/Data";
 import Header from "../components/header/Header";
+import Layout from "../theme/layout";
 
 const dataCardFormat = supportersList.map((supporter, index) => (
   <Card
@@ -37,16 +38,13 @@ const dataCardFormat = supportersList.map((supporter, index) => (
 
 function supporters() {
   return (
-    <div>
+    <Layout>
       <Header />
-      <Grid container mt={5}>
+      <Grid container>
         <Grid item xs={false} sm={false} md={2} lg={2} xl={2}></Grid>
-        <Grid item xs={12} sm={12} md={8} lg={8} xl={8}>
-          <Typography variant="h3" fontFamily={"Montserrat"}>
-            Nos Supporteurs
-          </Typography>
-         
-         
+        <Grid item xs={12} sm={12} md={8} lg={8} xl={8} mt={5}>
+          <Typography variant="h2">Nos Supporteurs</Typography>
+
           <div
             style={{
               display: "flex",
@@ -60,7 +58,7 @@ function supporters() {
         </Grid>
         <Grid item xs={false} sm={false} md={2} lg={2} xl={2}></Grid>
       </Grid>
-    </div>
+    </Layout>
   );
 }
 
