@@ -42,7 +42,7 @@ function FooterFin({ bgcolo }) {
             >
               <Grid container pb={"5%"} justifyContent={"center"}>
                 <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
-                  <Typography variant="h2">Get Involved</Typography>
+                  <Typography variant="h3">Get Involved</Typography>
                   {dataGetInVolved.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
@@ -67,7 +67,7 @@ function FooterFin({ bgcolo }) {
                   ))}
                 </Grid>
                 <Grid item xs={3} sm={3} md={3} lg={3} xl={3} ml={3}>
-                  <Typography variant="h2">About Us</Typography>
+                  <Typography variant="h3">About Us</Typography>
                   {dataAboutUs.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
@@ -89,7 +89,7 @@ function FooterFin({ bgcolo }) {
                   ))}
                 </Grid>
                 <Grid item xs={4} sm={4} md={4} lg={4} xl={4} ml={4}>
-                  <Typography variant="h2">Community</Typography>
+                  <Typography variant="h3">Community</Typography>
                   {dataCommunity.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
@@ -249,7 +249,7 @@ function FooterFin({ bgcolo }) {
             >
               <Grid container pb={"5%"}>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                  <Typography variant="h2">Get Involved</Typography>
+                  <Typography variant="h3">Get Involved</Typography>
                   {dataGetInVolved.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
@@ -272,7 +272,7 @@ function FooterFin({ bgcolo }) {
                   ))}
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                  <Typography variant="h2">About Us</Typography>
+                  <Typography variant="h3">About Us</Typography>
                   {dataAboutUs.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
@@ -295,7 +295,7 @@ function FooterFin({ bgcolo }) {
                   ))}
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                  <Typography variant="h2">Community</Typography>
+                  <Typography variant="h3">Community</Typography>
                   {dataCommunity.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography

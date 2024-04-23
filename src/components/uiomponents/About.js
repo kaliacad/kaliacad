@@ -38,7 +38,7 @@ function About() {
               />
             </Grid>
             <Grid item xs={"none"} sm={"none"} md={5} lg={5} xl={5} ml={5}>
-              <Typography variant="h2">A propos de nous</Typography>
+              <Typography variant="h3">A propos de nous</Typography>
               <Typography variant="body1">
                 Kali Academy est une académie qui vise à promouvoir les valeurs
                 de l'open source dans les régions les moins représentées

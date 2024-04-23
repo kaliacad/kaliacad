@@ -96,7 +96,7 @@ function Homeaf() {
                 marginTop: -15,
               }}
             >
-              <Typography variant="h2">Ce que nous faisons</Typography>
+              <Typography variant="h3">Ce que nous faisons</Typography>
             </Stack>
             <div style={{ marginTop: 20 }}>
               <Hidden smDown xsDown>
@@ -134,7 +134,7 @@ function Homeaf() {
                 }
               }
             >
-              <Typography variant="h2">Ce que nous faisons</Typography>
+              <Typography variant="h3">Ce que nous faisons</Typography>
 
               <div style={{ marginTop: 20 }}>
                 {sliderdataverticale({ dataslidesveriticale: dataCardFormat2 })}
