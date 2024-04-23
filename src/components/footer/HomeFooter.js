@@ -249,24 +249,14 @@ function FooterFin({ bgcolo }) {
             >
               <Grid container pb={"5%"}>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                  <Typography
-                    sx={{
-                      fontFamily: "Montserrat",
-                      fontSize: 25,
-                      color: "#000",
-                      fontWeight: 700,
-                    }}
-                  >
-                    Get Involved
-                  </Typography>
+                  <Typography variant="h2">Get Involved</Typography>
                   {dataGetInVolved.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
                         color={"#000"}
+                        variant="body1"
                         sx={{
-                          fontFamily: "Montserrat",
                           color: "gray",
-                          fontSize: 16,
                           mt: 1,
                           ":hover": {
                             color: "#000",
@@ -282,24 +272,14 @@ function FooterFin({ bgcolo }) {
                   ))}
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                  <Typography
-                    sx={{
-                      fontFamily: "Montserrat",
-                      fontSize: 25,
-                      color: "#000",
-                      fontWeight: 700,
-                    }}
-                  >
-                    About Us
-                  </Typography>
+                  <Typography variant="h2">About Us</Typography>
                   {dataAboutUs.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
                         color={"#000"}
+                        variant="body1"
                         sx={{
-                          fontFamily: "Montserrat",
                           color: "gray",
-                          fontSize: 16,
                           mt: 1,
                           ":hover": {
                             color: "#000",
@@ -315,24 +295,13 @@ function FooterFin({ bgcolo }) {
                   ))}
                 </Grid>
                 <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                  <Typography
-                    sx={{
-                      fontFamily: "Montserrat",
-                      fontSize: 25,
-                      color: "#000",
-                      fontWeight: 700,
-                    }}
-                  >
-                    Community
-                  </Typography>
+                  <Typography variant="h2">Community</Typography>
                   {dataCommunity.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
-                        color={"#000"}
+                        variant="body1"
                         sx={{
-                          fontFamily: "Montserrat",
                           color: "gray",
-                          fontSize: 16,
                           mt: 1,
                           ":hover": {
                             color: "#000",
@@ -354,15 +323,17 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                      <GitHub
-                        fontSize="small"
-                        sx={{
-                          ":hover": {
-                            color: "#000",
-                            cursor: "pointer",
-                          },
-                        }}
-                      />
+                      <a href="https://github.com/kaliacad">
+                        <GitHub
+                          fontSize="small"
+                          sx={{
+                            ":hover": {
+                              color: "#000",
+                              cursor: "pointer",
+                            },
+                          }}
+                        />
+                      </a>
                     </span>
                     <span
                       style={{
@@ -371,15 +342,17 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                      <Email
-                        fontSize="small"
-                        sx={{
-                          ":hover": {
-                            color: "#000",
-                            cursor: "pointer",
-                          },
-                        }}
-                      />
+                      <a href="mailto:bam6192@gmail.com">
+                        <Email
+                          fontSize="small"
+                          sx={{
+                            ":hover": {
+                              color: "#000",
+                              cursor: "pointer",
+                            },
+                          }}
+                        />
+                      </a>
                     </span>
                     <span
                       style={{
@@ -388,24 +361,25 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                      <Telegram
-                        fontSize="small"
-                        sx={{
-                          ":hover": {
-                            color: "#000",
-                            cursor: "pointer",
-                          },
-                        }}
-                      />
+                      <a href="https://t.me/+U3aniTiCTysyNmQ0">
+                        {" "}
+                        <Telegram
+                          fontSize="small"
+                          sx={{
+                            ":hover": {
+                              color: "#000",
+                              cursor: "pointer",
+                            },
+                          }}
+                        />
+                      </a>
                     </span>
                     <span
                       style={{
                         color: "#000",
                         // fontSize: 12,
                       }}
-                    >
-                      <YouTube fontSize="small" />
-                    </span>
+                    ></span>
                   </Stack>
                   <img
                     src={imageKali}
