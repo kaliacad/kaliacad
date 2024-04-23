@@ -29,7 +29,7 @@ function Header() {
             backgroundSize: "cover",
             display: "flex",
             // opacity: 0.5,
-            width: "100%",
+            // width: "100%",
           }}
         >
           <Toolbar disableGutters sx={{ width: "100%" }}>
