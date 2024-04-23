@@ -63,3 +63,4 @@ function supporters() {
 }
 
 export default supporters;
+export const Head = () => <title>Kali Academy | Supporteurs</title>;
