@@ -38,25 +38,15 @@ function About() {
               />
             </Grid>
             <Grid item xs={"none"} sm={"none"} md={5} lg={5} xl={5} ml={5}>
-              <Typography
-                sx={{
-                  fontWeight: "700",
-                  fontSize: 25,
-                  fontFamily: "Montserrat",
-                }}
-              >
-                A propos de nous
-              </Typography>
-              <Typography
-                sx={{ mt: 1, fontSize: 16, fontFamily: "Montserrat" }}
-              >
+              <Typography variant="h2">A propos de nous</Typography>
+              <Typography variant="body1">
                 Kali Academy est une académie qui vise à promouvoir les valeurs
-                de l'open source dans les régions les moins représentées  notament
-                en Afrique. Les valeurs clés de l'open source sont le partage, la 
-                collaboration et bien sûr aussi la contribution. Notre cible majeur
-                est les étudiants ainsi que les récents diplômés. Mais nous n'
-                oublions pas aussi toute la communauté qui doit être aussi sensibilisée
-                sur l'open source.
+                de l'open source dans les régions les moins représentées
+                notament en Afrique. Les valeurs clés de l'open source sont le
+                partage, la collaboration et bien sûr aussi la contribution.
+                Notre cible majeur est les étudiants ainsi que les récents
+                diplômés. Mais nous n' oublions pas aussi toute la communauté
+                qui doit être aussi sensibilisée sur l'open source.
               </Typography>
             </Grid>
           </Grid>

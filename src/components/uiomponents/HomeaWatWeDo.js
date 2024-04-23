@@ -33,25 +33,8 @@ const dataCardFormat = dataCequeNousFaison.map((e, index) => (
       />
 
       <CardContent>
-        <Typography
-          fontWeight={"bold"}
-          gutterBottom
-          // variant="h6"
-          component="div"
-          // textAlign={"center"}
-          fontFamily={"Montserrat"}
-          fontSize={18}
-        >
-          {e.title}
-        </Typography>
-        <Typography
-          fontFamily={"Montserrat"}
-          variant="body2"
-          color="text.secondary"
-          // textAlign={"center"}
-        >
-          {e.description}
-        </Typography>
+        <Typography variant="h6">{e.title}</Typography>
+        <Typography variant="body2">{e.description}</Typography>
       </CardContent>
     </CardActionArea>
   </Card>
@@ -78,25 +61,8 @@ const dataCardFormat2 = dataCequeNousFaison.map((e, index) => (
       />
 
       <CardContent>
-        <Typography
-          fontWeight={"bold"}
-          gutterBottom
-          // variant="h6"
-          component="div"
-          // textAlign={"center"}
-          fontFamily={"Montserrat"}
-          fontSize={18}
-        >
-          {e.title}
-        </Typography>
-        <Typography
-          fontFamily={"Montserrat"}
-          variant="body2"
-          color="text.secondary"
-          // textAlign={"center"}
-        >
-          {e.description}
-        </Typography>
+        <Typography variant="h3">{e.title}</Typography>
+        <Typography variant="body1">{e.description}</Typography>
       </CardContent>
     </CardActionArea>
   </Card>
@@ -130,19 +96,7 @@ function Homeaf() {
                 marginTop: -15,
               }}
             >
-              <Typography
-                fontWeight={"bold"}
-                fontSize={25}
-                fontFamily={"Montserrat"}
-              >
-                Ce que nous faisons
-              </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "Montserrat",
-                  mt: 1,
-                }}
-              ></Typography>
+              <Typography variant="h2">Ce que nous faisons</Typography>
             </Stack>
             <div style={{ marginTop: 20 }}>
               <Hidden smDown xsDown>
@@ -180,22 +134,8 @@ function Homeaf() {
                 }
               }
             >
-              <Typography
-                fontWeight={"bold"}
-                fontSize={25}
-                fontFamily={"Montserrat"}
-              >
-                Our Programs, Pillars, Partners
-              </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "Montserrat",
-                  mt: 1,
-                }}
-              >
-                Our programs are designed to uplift Black and Latinx talent,
-                ensuring an equitable distribution of power in the tech world.
-              </Typography>
+              <Typography variant="h2">Ce que nous faisons</Typography>
+
               <div style={{ marginTop: 20 }}>
                 {sliderdataverticale({ dataslidesveriticale: dataCardFormat2 })}
               </div>

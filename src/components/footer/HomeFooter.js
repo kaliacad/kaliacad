@@ -42,24 +42,16 @@ function FooterFin({ bgcolo }) {
             >
               <Grid container pb={"5%"} justifyContent={"center"}>
                 <Grid item xs={3} sm={3} md={3} lg={3} xl={3}>
-                  <Typography
-                    sx={{
-                      fontFamily: "Montserrat",
-                      fontSize: 25,
-                      color: "#000",
-                      fontWeight: 700,
-                    }}
-                  >
-                    Get Involved
-                  </Typography>
+                  <Typography variant="h2">Get Involved</Typography>
                   {dataGetInVolved.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
                         color={"#000"}
+                        variant="body1"
                         sx={{
-                          fontFamily: "Montserrat",
+                          // fontFamily: "Montserrat",
                           color: "gray",
-                          fontSize: 16,
+                          // fontSize: 16,
                           mt: 1,
                           ":hover": {
                             color: "#000",
@@ -75,30 +67,19 @@ function FooterFin({ bgcolo }) {
                   ))}
                 </Grid>
                 <Grid item xs={3} sm={3} md={3} lg={3} xl={3} ml={3}>
-                  <Typography
-                    sx={{
-                      fontFamily: "Montserrat",
-                      fontSize: 25,
-                      color: "#000",
-                      fontWeight: 700,
-                    }}
-                  >
-                    About Us
-                  </Typography>
+                  <Typography variant="h2">About Us</Typography>
                   {dataAboutUs.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
                         color={"#000"}
+                        variant="body1"
                         sx={{
-                          fontFamily: "Montserrat",
                           color: "gray",
-                          fontSize: 16,
                           mt: 1,
                           ":hover": {
                             color: "#000",
                             fontSize: 18,
                             cursor: "pointer",
-                            // textDecoration: "underLine",
                           },
                         }}
                       >
@@ -108,24 +89,14 @@ function FooterFin({ bgcolo }) {
                   ))}
                 </Grid>
                 <Grid item xs={4} sm={4} md={4} lg={4} xl={4} ml={4}>
-                  <Typography
-                    sx={{
-                      fontFamily: "Montserrat",
-                      fontSize: 25,
-                      color: "#000",
-                      fontWeight: 700,
-                    }}
-                  >
-                    Community
-                  </Typography>
+                  <Typography variant="h2">Community</Typography>
                   {dataCommunity.map((e, index) => (
                     <span key={e.id} color="#000">
                       <Typography
                         color={"#000"}
+                        variant="body1"
                         sx={{
-                          fontFamily: "Montserrat",
                           color: "gray",
-                          fontSize: 16,
                           mt: 1,
                           ":hover": {
                             color: "#000",
@@ -230,13 +201,14 @@ function FooterFin({ bgcolo }) {
               background: "#000",
             }}
             flexDirection={"row"}
-            p={2}
+            p={1}
             justifyContent={"center"}
           >
             <Typography
+              variant="body2"
               sx={{
                 color: "#fff",
-                fontFamily: "Montserrat",
+                // fontFamily: "Montserrat",
               }}
             >
               Kali Academy 2024
