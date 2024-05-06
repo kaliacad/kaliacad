@@ -3,7 +3,7 @@ import image2 from "../images/firstDayWishitonMurch2024PresentialyInGoma9.jpg";
 import image3 from "../images/firstDayWishitonMurch2024PresentialyInGoma1.jpg";
 import imageabout from "../images/firstDayWishitonMurch2024PresentialyInGoma4.jpg";
 import wkmRdcLogo from "../images/wkmrdc.png";
-import wmChLogo from "../images/WikimediaCHLogo.svg"
+import wmChLogo from "../images/WikimediaCHLogo.svg";
 
 export const pages = [
   // {

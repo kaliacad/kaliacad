@@ -1,16 +1,13 @@
-import {
-  Grid,
-  Stack,
-  Typography,
-} from "@mui/material";
+import { Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import { supporters } from "../../data/Data";
 import { Link } from "gatsby";
 
 function ThankYou() {
-  const supportersList = supporters.map((supporter, index) => 
-    supporter.name + (index < supporters.length - 1 ? " • " : "")
-  )
+  const supportersList = supporters.map(
+    (supporter, index) =>
+      supporter.name + (index < supporters.length - 1 ? " • " : "")
+  );
   return (
     <div>
       <Grid
@@ -24,12 +21,7 @@ function ThankYou() {
         }}
       >
         <Grid container justifyContent={"center"}>
-          <Grid
-            item
-            width={"100%"}
-            padding={5}
-            justifyContent={"center"}
-          >
+          <Grid item width={"100%"} padding={5} justifyContent={"center"}>
             <Stack
               sx={{
                 ml: 5,
@@ -37,28 +29,62 @@ function ThankYou() {
               }}
             >
               <Typography
-                fontFamily={"Montserrat"}
                 textAlign={"center"}
                 variant="h4"
-                sx={{mb: 3}}
+                sx={{ mb: 3, width: "100%" }}
               >
                 Kali Academy remercie
               </Typography>
-              
             </Stack>
-            <Typography sx={{mb: 3, textAlign: "center "}}>
+            <Typography sx={{ mb: 3, textAlign: "center " }}>
               {supportersList}
             </Typography>
-            
+
             <div
               style={{
                 display: "flex",
                 justifyContent: "center",
               }}
             >
-              <Link to = "/supporters">
-                Voir tous nos supporteurs
-              </Link>
+              <Link to="/supporters">Voir tous nos supporteurs</Link>
+            </div>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        display={{
+          xs: "flex",
+          md: "none",
+          sm: "flex",
+          lg: "none",
+          xl: "none",
+        }}
+      >
+        <Grid container justifyContent={"center"}>
+          <Grid item width={"100%"} padding={5} justifyContent={"center"}>
+            <Stack
+              sx={{
+                // ml: 5,
+                // marginTop: -10,
+                ml: -2,
+              }}
+            >
+              <Typography variant="h4" sx={{ mb: 3, width: "100%" }}>
+                Kali Academy remercie
+              </Typography>
+            </Stack>
+            <Typography sx={{ mb: 3, textAlign: "center " }}>
+              {supportersList}
+            </Typography>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Link to="/supporters">Voir tous nos supporteurs</Link>
             </div>
           </Grid>
         </Grid>
