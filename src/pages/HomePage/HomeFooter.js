@@ -1,13 +1,10 @@
 import { Grid, Stack, Typography } from "@mui/material";
 import React from "react";
-// import AdbIcon from '@mui/icons-material/Adb';
 import { GitHub, Email, Telegram, YouTube } from "@mui/icons-material";
 import imageKali from "../../images/Kali_academy_-_Logo-gris-removebg-preview.png";
-import CopyrightIcon from "@mui/icons-material/Copyright";
 import { dataAboutUs, dataCommunity, dataGetInVolved } from "../../data/Data";
 
 function FooterFin({ bgcolo }) {
-  // const currentyear = new Date().getFullYear();
   return (
     <div>
       <Grid
@@ -144,7 +141,7 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                      <GitHub
+                      <a href="https://github.com/kaliacad"><GitHub
                         fontSize="small"
                         sx={{
                           ":hover": {
@@ -153,6 +150,7 @@ function FooterFin({ bgcolo }) {
                           },
                         }}
                       />
+                      </a>
                     </span>
                     <span
                       style={{
@@ -161,7 +159,7 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                      <Email
+                      <a href="mailto:bam6192@gmail.com"><Email
                         fontSize="small"
                         sx={{
                           ":hover": {
@@ -170,6 +168,7 @@ function FooterFin({ bgcolo }) {
                           },
                         }}
                       />
+                      </a>
                     </span>
                     <span
                       style={{
@@ -178,7 +177,7 @@ function FooterFin({ bgcolo }) {
                         marginRight: 20,
                       }}
                     >
-                      <Telegram
+                    <a href="https://t.me/+U3aniTiCTysyNmQ0">  <Telegram
                         fontSize="small"
                         sx={{
                           ":hover": {
@@ -187,6 +186,7 @@ function FooterFin({ bgcolo }) {
                           },
                         }}
                       />
+                      </a>
                     </span>
                     <span
                       style={{
@@ -194,7 +194,7 @@ function FooterFin({ bgcolo }) {
                         // fontSize: 12,
                       }}
                     >
-                      <YouTube fontSize="small" />
+                    
                     </span>
                   </Stack>
                   <img
@@ -230,7 +230,7 @@ function FooterFin({ bgcolo }) {
                 fontFamily: "Montserrat",
               }}
             >
-              All right reserved She code Kali Academy ©2024
+            Kali Academy 2024
             </Typography>
           </Stack>
         </div>
@@ -460,7 +460,7 @@ function FooterFin({ bgcolo }) {
                 fontSize: 13,
               }}
             >
-              All right reserved She code Kali Academy ©2024
+              Kali Academy 2024
             </Typography>
           </Stack>
         </div>

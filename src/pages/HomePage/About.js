@@ -1,6 +1,6 @@
 import { Grid, Typography } from "@mui/material";
 import React from "react";
-import imageabout from "../../images/4V1A3901.jpg";
+import imageabout from "../../images/aboutus-kali.jpg";
 
 function About() {
   return (
@@ -45,21 +45,18 @@ function About() {
                   fontFamily: "Montserrat",
                 }}
               >
-                About Us
+                A propos de nous
               </Typography>
               <Typography
                 sx={{ mt: 1, fontSize: 16, fontFamily: "Montserrat" }}
               >
-                Since our founding in 2012, Code2040 has built one of the
-                largest communities of Black and Latinx technologists, leaders,
-                and innovators in the tech industry. We’ve been the entry point
-                into the industry for hundreds of Computer Science undergrads.
-                We’ve worked alongside over 250 tech-driven organizations to
-                advance the recruitment, retention, and advancement of Black and
-                Latinx talent in tech. Today, we know the power to dismantle
-                structural racism in tech lives in community. We create spaces
-                to center and celebrate the imaginations, expertise, and
-                experience of Black and Latinx people working in tech.
+                Kali Academy est une académie qui vise à promouvoir les valeurs
+                de l'open source dans les régions les moins représentées  notament
+                en Afrique. Les valeurs clés de l'open source sont le partage, la 
+                collaboration et bien sûr aussi la contribution. Notre cible majeur
+                est les étudiants ainsi que les récents diplômés. Mais nous n'
+                oublions pas aussi toute la communauté qui doit être aussi sensibilisée
+                sur l'open source.
               </Typography>
             </Grid>
           </Grid>

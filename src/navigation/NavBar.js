@@ -84,22 +84,7 @@ function NavBar() {
               display: { xs: "none", md: "flex", justifyContent: "center" },
             }}
           >
-            {pages.map((page) => (
-              <Button
-                key={page.id}
-                sx={{
-                  my: 2,
-                  color: "#000",
-                  display: "block",
-                  // fontWeight: "bold",
-                  fontFamily: "Montserrat",
-                  fontSize: 12,
-                }}
-                onClick={() => gotHomeTitleMenu(page.id)}
-              >
-                {page.title}
-              </Button>
-            ))}
+            
           </Box>
         </div>
         <Stack

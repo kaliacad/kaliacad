@@ -3,17 +3,14 @@ import Header from "../navigation/Header";
 import HomeGolobal from "./HomePage/HomeGolobal";
 import "typeface-montserrat";
 
-//
 const pageStyles = {
   color: "#232129",
-  // padding: 10,
   fontFamily: "Montserrat, Roboto, sans-serif, serif",
   marginLeft: -8,
   marginRight: -5,
 };
 
 const IndexPage = () => {
-  document.title = "Kali Academy";
   return (
     <div style={pageStyles}>
       <Header />
@@ -24,4 +21,4 @@ const IndexPage = () => {
 
 export default IndexPage;
 
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <title>Kali Academy | Home</title>;

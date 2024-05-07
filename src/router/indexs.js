@@ -24,7 +24,7 @@ export default function indexs() {
       <Route element={<ProtectRoutes />}>
         {
           /**
-           * definition de route pprivate
+           * definition de route private
            */
           PrivateRouters.map((e) => (
             <Route path={e.path} element={e.component} />

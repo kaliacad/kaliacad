@@ -134,7 +134,7 @@ function Homeaf() {
                 fontSize={25}
                 fontFamily={"Montserrat"}
               >
-                Our Programs, Pillars, Partners
+                Ce que nous faisons
               </Typography>
               <Typography
                 sx={{
@@ -142,8 +142,6 @@ function Homeaf() {
                   mt: 1,
                 }}
               >
-                Our programs are designed to uplift Black and Latinx talent,
-                ensuring an equitable distribution of power in the tech world.
               </Typography>
             </Stack>
             <div style={{ marginTop: 20 }}>
