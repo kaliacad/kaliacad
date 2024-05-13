@@ -46,7 +46,14 @@ function ThankYou() {
                 justifyContent: "center",
               }}
             >
-              <Link to="/supporters">Voir tous nos supporteurs</Link>
+              <Link
+                style={{
+                  fontFamily: "Montserrat",
+                }}
+                to="/supporters"
+              >
+                Voir tous nos supporteurs
+              </Link>
             </div>
           </Grid>
         </Grid>
