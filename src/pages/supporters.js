@@ -17,7 +17,7 @@ const GoldSupports = GoldSupport.map((supporter, index) => (
     key={index}
     sx={{
       maxWidth: 250,
-      ml: 5,
+      // ml: 5,
     }}
     elevation={0}
   >
@@ -40,7 +40,7 @@ const PlatiumSupports = PlatiumSupport.map((supporter, index) => (
     key={index}
     sx={{
       maxWidth: 250,
-      ml: 5,
+      // ml: 5,
     }}
     elevation={0}
   >
