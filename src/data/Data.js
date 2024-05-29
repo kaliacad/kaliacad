@@ -67,6 +67,28 @@ export const supporters = [
   },
 ];
 
+export const GoldSupport = [
+  {
+    name: "Wikimedia CH",
+    logo: wmChLogo,
+  },
+  // {
+  //   name: "Wikimedia RDC",
+  //   logo: wkmRdcLogo,
+  // },
+];
+
+export const PlatiumSupport = [
+  // {
+  //   name: "Wikimedia CH",
+  //   logo: wmChLogo,
+  // },
+  {
+    name: "Wikimedia RDC",
+    logo: wkmRdcLogo,
+  },
+];
+
 export const dataCequeNousFaisonAlbum = [
   {
     title: "DES FORMATIONS",
