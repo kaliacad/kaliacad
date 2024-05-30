@@ -11,31 +11,10 @@ import React from "react";
 import { GoldSupport, PlatiumSupport } from "../data/Data";
 import Header from "../components/header/Header";
 import Layout from "../theme/layout";
+import bgthankyou from "../images/thankyou3.jpg";
+import FooterFin from "../components/footer/HomeFooter";
 
 const GoldSupports = GoldSupport.map((supporter, index) => (
-  <Card
-    key={index}
-    sx={{
-      maxWidth: 250,
-      // ml: 5,
-    }}
-    elevation={0}
-  >
-    <CardActionArea>
-      <CardMedia
-        component="img"
-        height={100}
-        image={supporter.logo}
-        alt=""
-        style={{
-          objectFit: "contain",
-        }}
-      />
-    </CardActionArea>
-  </Card>
-));
-
-const PlatiumSupports = PlatiumSupport.map((supporter, index) => (
   <Card
     key={index}
     sx={{
@@ -58,10 +37,33 @@ const PlatiumSupports = PlatiumSupport.map((supporter, index) => (
   </Card>
 ));
 
+const PlatiumSupports = PlatiumSupport.map((supporter, index) => (
+  <Card
+    key={index}
+    sx={{
+      maxWidth: 250,
+      ml: 1,
+    }}
+    elevation={0}
+  >
+    <CardActionArea>
+      <CardMedia
+        component="img"
+        height={100}
+        image={supporter.logo}
+        alt=""
+        style={{
+          objectFit: "contain",
+        }}
+      />
+    </CardActionArea>
+  </Card>
+));
+
 function supporters() {
   return (
     <Layout>
-      <Header />
+      <Header title={"Nos Supporteurs"} imagebg={bgthankyou} subtitle={"_"} />
       <Grid
         container
         sx={{
@@ -70,7 +72,7 @@ function supporters() {
       >
         <Grid item xs={false} sm={false} md={2} lg={2} xl={2}></Grid>
         <Grid item xs={12} sm={12} md={8} lg={8} xl={8} mt={5}>
-          <Typography variant="h2">Nos Supporteurs</Typography>
+          {/* <Typography variant="h2"></Typography> */}
           <Typography mt={2} mb={3}>
             Code.org is sincerely grateful for our vibrant community of
             corporate, institutional, and individual donors. We acknowledge the
@@ -126,7 +128,7 @@ function supporters() {
                   fontWeight: "bold",
                 }}
               >
-                Institutional Supporters
+                Supporteurs Institutionnels
               </Typography>
               <Typography
                 sx={{
@@ -135,7 +137,7 @@ function supporters() {
                   marginLeft: 20,
                 }}
               >
-                Individual Supporters
+                Supporteurs Individuelle
               </Typography>
             </Stack>
             <Stack
@@ -289,6 +291,13 @@ function supporters() {
         </Grid>
         <Grid item xs={false} sm={false} md={2} lg={2} xl={2}></Grid>
       </Grid>
+      <div
+        style={{
+          marginTop: 10,
+        }}
+      >
+        <FooterFin />
+      </div>
     </Layout>
   );
 }

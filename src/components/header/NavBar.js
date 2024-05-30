@@ -14,7 +14,7 @@ import { Menu } from "@mui/icons-material";
 import DrawerLaningPage from "../drawer/DrawerLaningPage";
 // import Drawer from "./Drawer";
 
-function NavBar() {
+function NavBar({ title, subtitle, imageback }) {
   // const nav = useNavigate();
   const [open, setOpen] = useState(false);
 
@@ -90,10 +90,11 @@ function NavBar() {
           direction={"column"}
           mt={17}
           sx={{
-            height: "18vh",
+            height: "27vh",
             background: "#000",
             opacity: 0.6,
             width: "100%",
+            bottom: 0,
           }}
         >
           <Typography
@@ -106,7 +107,7 @@ function NavBar() {
             //   fontFamily: "Montserrat",
             // }}
           >
-            CATALYSEUR DE LA CONTRIBUTION OPEN SOURCE
+            {title ? title : "CATALYSEUR DE LA CONTRIBUTION OPEN SOURCE"}
           </Typography>
           <Typography
             variant="h2"
@@ -118,7 +119,7 @@ function NavBar() {
               fontStyle: "italic",
             }}
           >
-            changer le monde grâce au code
+            {subtitle ? subtitle : "changer le monde grâce au code"}
           </Typography>
         </Stack>
       </Grid>

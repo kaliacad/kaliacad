@@ -2,10 +2,10 @@ import * as React from "react";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import NavBar from "./NavBar";
-import imagetitle from "../../images/profile.jpg";
+import imagetitles from "../../images/profile.jpg";
 import { Grid } from "@mui/material";
 
-function Header() {
+function Header({ imagebg, title, subtitle }) {
   return (
     <div>
       <Grid
@@ -22,18 +22,26 @@ function Header() {
           position="static"
           elevation={0}
           sx={{
-            backgroundImage: `url(${imagetitle})`,
-            height: "61vh",
+            backgroundImage: `url(${imagebg ? imagebg : imagetitles})`,
+            height: "70vh",
             objectFit: "contain",
-            backgroundPosition: "center top", // Ajustez la position de l'image selon vos besoins
+            // backgroundPosition: "center top", // Ajustez la position de l'image selon vos besoins
             backgroundSize: "cover",
+            backgroundPosition: "top",
+            backgroundRepeat: "no-repeat",
             display: "flex",
             // opacity: 0.5,
             // width: "100%",
+            backgroundColor: "#fff",
           }}
         >
-          <Toolbar disableGutters sx={{ width: "100%" }}>
-            <NavBar />
+          <Toolbar
+            disableGutters
+            sx={{
+              width: "100%",
+            }}
+          >
+            <NavBar imageback={imagebg} title={title} subtitle={subtitle} />
           </Toolbar>
         </AppBar>
       </Grid>
@@ -52,7 +60,7 @@ function Header() {
           position="static"
           elevation={0}
           sx={{
-            backgroundImage: `url(${imagetitle})`,
+            backgroundImage: `url(${imagebg ? imagebg : imagetitles})`,
             height: "45vh",
             objectFit: "cover",
             // backgroundPosition: "center top",`` // Ajustez la position de l'image selon vos besoins
@@ -62,8 +70,11 @@ function Header() {
             width: "100%",
           }}
         >
-          <Toolbar disableGutters sx={{ width: "100%" }}>
-            <NavBar />
+          <Toolbar
+            disableGutters
+            sx={{ width: "100%", position: "fixed", bottom: 0 }}
+          >
+            <NavBar imageback={imagebg} title={title} subtitle={subtitle} />
           </Toolbar>
         </AppBar>
       </Grid>
