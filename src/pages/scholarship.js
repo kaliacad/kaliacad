@@ -11,6 +11,21 @@ function Scholarship() {
   return (
     <div className="scholarship">
       <Navbar />
+      <section className="presentation">
+        <div>
+          <img src={kalibackground} alt="Kali Academy" />
+          <h1>Vodacom Mozambique Foundation STEM Scholarship Program</h1>
+          <p>
+            Vodacom Mozambique Foundation Vodacom Mozambique Foundation and
+            Udacity are teaming up to offer fully-funded Nanodegree programs to
+            female citizens of Mozambique as an effort to empower women in the
+            tech industry.
+          </p>
+        </div>
+        <div>
+          <img src={kalibackground} alt="Kali Academy" />
+        </div>
+      </section>
       <section className="how-it-work">
         <h3>How does it work?</h3>
         <div>
@@ -76,6 +91,10 @@ function Scholarship() {
             world.
           </p>
         </div>
+      </section>
+      <section className="faq">
+        <h1>General & Application FAQs</h1>
+        <div></div>
       </section>
     </div>
   );
