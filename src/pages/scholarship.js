@@ -1,13 +1,14 @@
-import { AppBar, Button, Grid, Typography } from "@mui/material";
-import { Google } from "@mui/icons-material";
+import { AppBar, Grid, Typography } from "@mui/material";
+import { Google, ExpandMore } from "@mui/icons-material";
 import React from "react";
-import ITextFieldnput from "../controlers/TextFieldInput";
+import ITextFieldInput from "../controlers/TextFieldInput";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
 import Navbar from "../component/navbar";
 import "./../../style/style.css";
 import { datafaq } from "./../data/Data.js";
+
 function Scholarship() {
-  const [seach, setSeach] = React.useState("");
+  const [search, setSearch] = React.useState("");
   const [data, setData] = React.useState(datafaq);
 
   return (
@@ -59,7 +60,6 @@ function Scholarship() {
           </div>
           <div>
             <p> June 7, 2024.</p>
-
             <p>
               Last day to submit applications to earn scholarship access on
               Udacity's website
@@ -67,7 +67,6 @@ function Scholarship() {
           </div>
           <div>
             <p> June 7, 2024.</p>
-
             <p>
               Last day to submit applications to earn scholarship access on
               Udacity's website
@@ -75,7 +74,6 @@ function Scholarship() {
           </div>
           <div>
             <p> June 7, 2024.</p>
-
             <p>Classroom start date</p>
           </div>
         </div>
@@ -98,8 +96,8 @@ function Scholarship() {
         <div>
           <div>
             <div>
-              <p>first question </p>
-              <button>derouler</button>
+              <p>First question</p>
+              <ExpandMore />
             </div>
             <p>
               As a student in the Vodacom Mozambique Foundation STEM Scholarship
@@ -112,8 +110,8 @@ function Scholarship() {
           </div>
           <div>
             <div>
-              <p>first question </p>
-              <button>derouler</button>
+              <p>First question</p>
+              <ExpandMore />
             </div>
             <p>
               As a student in the Vodacom Mozambique Foundation STEM Scholarship
@@ -126,8 +124,8 @@ function Scholarship() {
           </div>
           <div>
             <div>
-              <p>first question </p>
-              <button>derouler</button>
+              <p>First question</p>
+              <ExpandMore />
             </div>
             <p>
               As a student in the Vodacom Mozambique Foundation STEM Scholarship
@@ -143,4 +141,5 @@ function Scholarship() {
     </div>
   );
 }
+
 export default Scholarship;
