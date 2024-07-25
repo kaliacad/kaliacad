@@ -5,9 +5,11 @@ import ITextFieldnput from "../controlers/TextFieldInput";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
 import Navbar from "../component/navbar";
 import "./../../style/style.css";
-
+import { datafaq } from "./../data/Data.js";
 function Scholarship() {
   const [seach, setSeach] = React.useState("");
+  const [data, setData] = React.useState(datafaq);
+
   return (
     <div className="scholarship">
       <Navbar />
@@ -53,12 +55,11 @@ function Scholarship() {
         <div>
           <div>
             <p> June 7, 2024.</p>
-            <span>|</span>
             <p>Applications open on Udacity's website</p>
           </div>
           <div>
             <p> June 7, 2024.</p>
-            <span>|</span>
+
             <p>
               Last day to submit applications to earn scholarship access on
               Udacity's website
@@ -66,7 +67,7 @@ function Scholarship() {
           </div>
           <div>
             <p> June 7, 2024.</p>
-            <span>|</span>
+
             <p>
               Last day to submit applications to earn scholarship access on
               Udacity's website
@@ -74,7 +75,7 @@ function Scholarship() {
           </div>
           <div>
             <p> June 7, 2024.</p>
-            <span>|</span>
+
             <p>Classroom start date</p>
           </div>
         </div>
@@ -94,7 +95,50 @@ function Scholarship() {
       </section>
       <section className="faq">
         <h1>General & Application FAQs</h1>
-        <div></div>
+        <div>
+          <div>
+            <div>
+              <p>first question </p>
+              <button>derouler</button>
+            </div>
+            <p>
+              As a student in the Vodacom Mozambique Foundation STEM Scholarship
+              Program, your learning journey will be 3 months and self-guided.
+              Throughout your entire learning journey, you will have access to
+              an online community platform, where you will get to ask other
+              students and mentors for support to help you through any learning
+              difficulties or even to network!
+            </p>
+          </div>
+          <div>
+            <div>
+              <p>first question </p>
+              <button>derouler</button>
+            </div>
+            <p>
+              As a student in the Vodacom Mozambique Foundation STEM Scholarship
+              Program, your learning journey will be 3 months and self-guided.
+              Throughout your entire learning journey, you will have access to
+              an online community platform, where you will get to ask other
+              students and mentors for support to help you through any learning
+              difficulties or even to network!
+            </p>
+          </div>
+          <div>
+            <div>
+              <p>first question </p>
+              <button>derouler</button>
+            </div>
+            <p>
+              As a student in the Vodacom Mozambique Foundation STEM Scholarship
+              Program, your learning journey will be 3 months and self-guided.
+              Throughout your entire learning journey, you will have access to
+              an online community platform, where you will get to ask other
+              students and mentors for support to help you through any learning
+              difficulties or even to network!
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   );
