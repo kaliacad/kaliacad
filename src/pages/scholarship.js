@@ -94,48 +94,15 @@ function Scholarship() {
       <section className="faq">
         <h1>General & Application FAQs</h1>
         <div>
-          <div>
+          {data?.map((quiz) => (
             <div>
-              <p>First question</p>
-              <ExpandMore />
+              <div>
+                <p>{quiz.question}</p>
+                <ExpandMore />
+              </div>
+              <p>{quiz.answer}</p>
             </div>
-            <p>
-              As a student in the Vodacom Mozambique Foundation STEM Scholarship
-              Program, your learning journey will be 3 months and self-guided.
-              Throughout your entire learning journey, you will have access to
-              an online community platform, where you will get to ask other
-              students and mentors for support to help you through any learning
-              difficulties or even to network!
-            </p>
-          </div>
-          <div>
-            <div>
-              <p>First question</p>
-              <ExpandMore />
-            </div>
-            <p>
-              As a student in the Vodacom Mozambique Foundation STEM Scholarship
-              Program, your learning journey will be 3 months and self-guided.
-              Throughout your entire learning journey, you will have access to
-              an online community platform, where you will get to ask other
-              students and mentors for support to help you through any learning
-              difficulties or even to network!
-            </p>
-          </div>
-          <div>
-            <div>
-              <p>First question</p>
-              <ExpandMore />
-            </div>
-            <p>
-              As a student in the Vodacom Mozambique Foundation STEM Scholarship
-              Program, your learning journey will be 3 months and self-guided.
-              Throughout your entire learning journey, you will have access to
-              an online community platform, where you will get to ask other
-              students and mentors for support to help you through any learning
-              difficulties or even to network!
-            </p>
-          </div>
+          ))}
         </div>
       </section>
     </div>
