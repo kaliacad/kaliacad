@@ -91,6 +91,9 @@ body {
       font-size: 60px;
       font-weight: 400;
     }
+    p {
+      margin: 30px 0px;
+    }
   }
   div:last-of-type {
     height: 70vh;
@@ -230,7 +233,7 @@ body {
   display: flex;
   gap: 20px;
   box-sizing: border-box;
-  padding: 70px 50px;
+  padding: 70px 50px 70px 7vw;
   background: linear-gradient(to bottom right, #4550e0, #b563ec);
   margin-left: -7vw;
   margin-bottom: 5vh;
@@ -269,6 +272,7 @@ body {
     }
     .expanded {
       min-height: var(--question-height) !important;
+      background-color: rgb(238, 237, 237);
     }
     .notexpanded {
       max-height: var(--question-height) !important;
@@ -288,12 +292,14 @@ body {
 
         width: 90%;
         justify-content: space-between;
+
         button {
           height: 15px;
         }
       }
       p {
         padding: 10px 20px;
+        background-color: white;
       }
     }
   }
