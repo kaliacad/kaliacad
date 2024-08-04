@@ -17,12 +17,10 @@ function Scholarship() {
       <section className="presentation">
         <div>
           <img src={kalibackground} alt="Kali Academy" />
-          <h1>Vodacom Mozambique Foundation STEM Scholarship Program</h1>
+          <h1>WMA STEM Scholarship Program</h1>
           <p>
-            Vodacom Mozambique Foundation Vodacom Mozambique Foundation and
-            Udacity are teaming up to offer fully-funded Nanodegree programs to
-            female citizens of Mozambique as an effort to empower women in the
-            tech industry.
+            Wikimedia Igbo under Wiki Mentor Africa Program and
+            KALI Academy are teaming up to offer a fully-funded Programming 101 course for Africans to empower them with technical skills to contribute technically in Wikimedia Technical Projects.
           </p>
         </div>
         <div>
@@ -38,15 +36,14 @@ function Scholarship() {
             <p>
               Fill out the application form for the Business Analytics
               Nanodegree program and submit before the applications close on
-              June 7, 2024.
+              August 4, 2024.
             </p>
           </div>
           <div>
             <h1 className="number_title">2</h1>
             <h2 className="title">Scholarship Recipients Announced</h2>
             <p>
-              Scholarship recipients notified by email. To learn more about
-              Business Analytics, please visit the page for Business Analytics
+              Scholarship recipients will be notified by email.
             </p>
           </div>
         </div>
@@ -55,25 +52,23 @@ function Scholarship() {
         <h1>Scholarship Timeline</h1>
         <div>
           <div>
-            <p> June 7, 2024.</p>
-            <p>Applications open on Udacity's website</p>
+            <p> Jully 23, 2024.</p>
+            <p>Applications open </p>
           </div>
           <div>
-            <p> June 7, 2024.</p>
+            <p> August 4, 2024.</p>
             <p>
-              Last day to submit applications to earn scholarship access on
-              Udacity's website
+              Last day to submit applications to earn a scholarship 
             </p>
           </div>
           <div>
-            <p> June 7, 2024.</p>
+            <p> August 20, 2024.</p>
             <p>
-              Last day to submit applications to earn scholarship access on
-              Udacity's website
+              Scholarship recipients are notified of their admission to the course
             </p>
           </div>
           <div>
-            <p> June 7, 2024.</p>
+            <p> August 29, 2024.</p>
             <p>Classroom start date</p>
           </div>
         </div>
@@ -83,11 +78,7 @@ function Scholarship() {
         <div>
           <h1>About Kali Academy</h1>
           <p>
-            Kali Academy is a non-profit organization dedicated to providing
-            affordable and accessible education to underserved communities in
-            Goma, Tanzania. Our mission is to empower individuals to develop the
-            skills they need to succeed in today's complex and challenging
-            world.
+            Kali Academy is a non-profit organization whose mission is to train the next generation of open-source developers within Africa.
           </p>
         </div>
       </section>
