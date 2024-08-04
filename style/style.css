@@ -1,14 +1,23 @@
 body {
   font-size: 18px;
+  font-size: 18px;
 }
 
 .navbar {
   background-color: rgba(26, 36, 38, 0.5);
   min-height: 5em;
   font-weight: 600;
+  background-color: rgba(26, 36, 38, 0.5);
+  min-height: 5em;
+  font-weight: 600;
 }
 
 .jumbotron {
+  margin: 0px auto;
+  background: #00889a !important;
+  color: floralwhite;
+  min-height: 24rem;
+  border-radius: 0;
   margin: 0px auto;
   background: #00889a !important;
   color: floralwhite;
