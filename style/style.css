@@ -67,7 +67,7 @@ body {
 }
 /*---------------presentation--------------*/
 .presentation {
-  margin: 120px 0;
+  margin: 120px 0 20px 0px;
   height: auto;
   display: flex;
   div {
@@ -159,12 +159,21 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
+  gap: 30px;
+  .notaclass {
+    display: none;
+  }
+  .title {
+    font-size: 50px;
+    font-weight: 300;
+  }
   div {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
-    margin: 20px 0;
+
     div {
       width: 100%;
       display: flex;
@@ -246,15 +255,23 @@ body {
     flex-wrap: wrap;
     gap: 3%;
 
-    div {
-      height: var(--question-height);
+    .notaclass {
+      display: none;
+    }
+    .expanded {
+      min-height: var(--question-height) !important;
+    }
+    .notexpanded {
+      max-height: var(--question-height) !important;
       overflow: hidden;
+    }
+    .expanded,
+    .notexpanded {
+      border: 1px solid gray;
       width: 47%;
-      border: 1px solid black;
-
       div {
-        border: 0px solid black;
-        padding: 5px 10px;
+        border: 0px solid gray;
+        padding: 5px 20px;
         box-sizing: border-box;
         display: flex;
         height: var(--question-height);
@@ -266,16 +283,24 @@ body {
           height: 15px;
         }
       }
+      p {
+        padding: 10px 20px;
+      }
     }
   }
 }
 @media (max-width: 800px) {
   .faq {
     div {
-      div {
+      .notaclass {
+        display: none;
+      }
+      .expanded,
+      .notexpanded {
         width: 100%;
-        div {
-          padding: 1px 2px;
+        div,
+        p {
+          padding: 5px 10px;
         }
       }
     }

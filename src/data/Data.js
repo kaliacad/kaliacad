@@ -150,4 +150,10 @@ export const datafaq = [
     answer:
       "As a student in the Vodacom Mozambique Foundation STEM Scholarship Program, your learning journey will be 3 months and self-guided. Throughout your entire learning journey, you will have access to an online community platform, where you will get to ask other students and mentors for support to help you through any learning difficulties or even to network!",
   },
+  {
+    id: 4,
+    question: "forst question",
+    answer:
+      "As a student in the Vodacom Mozambique Foundation STEM Scholarship Program, your learning journey will be 3 months and self-guided. Throughout your entire learning journey, you will have access to an online community platform, where you will get to ask other students and mentors for support to help you through any learning difficulties or even to network!",
+  },
 ];

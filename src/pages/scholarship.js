@@ -10,7 +10,19 @@ import { datafaq } from "./../data/Data.js";
 function Scholarship() {
   const [search, setSearch] = React.useState("");
   const [data, setData] = React.useState(datafaq);
+  const [expandedIndex, setExpandedIndex] = React.useState(null);
+  const [showAnswers, setShowAnswers] = React.useState(
+    Array(data?.length).fill(false)
+  );
 
+  const handleClick = (index) => {
+    setShowAnswers((prevState) => {
+      const newState = [...prevState];
+      newState[index] = !newState[index];
+      return newState;
+    });
+    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
   return (
     <div className="scholarship">
       <Navbar />
@@ -52,7 +64,7 @@ function Scholarship() {
         </div>
       </section>
       <section className="timeline">
-        <h1>Scholarship Timeline</h1>
+        <h6 className="title">Scholarship Timeline</h6>
         <div>
           <div>
             <p> June 7, 2024.</p>
@@ -94,13 +106,19 @@ function Scholarship() {
       <section className="faq">
         <h1>General & Application FAQs</h1>
         <div>
-          {data?.map((quiz) => (
-            <div>
+          {data?.map((quiz, index) => (
+            <div
+              className={`${
+                expandedIndex === index ? "expanded" : "notexpanded"
+              }`}
+              key={index}
+              onClick={() => handleClick(index)}
+            >
               <div>
-                <p>{quiz.question}</p>
+                <h5>{quiz.question}</h5>
                 <ExpandMore />
               </div>
-              <p>{quiz.answer}</p>
+              {showAnswers[index] && <p>{quiz.answer}</p>}
             </div>
           ))}
         </div>
