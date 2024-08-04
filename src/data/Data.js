@@ -166,3 +166,24 @@ export const dataCommunity = [
   { title: " Join Our Telegram Community ", id: 3 },
   { title: " Follow Use on Social Media", id: 4 },
 ];
+
+export const datafaq = [
+  {
+    id: 1,
+    question: "first question",
+    answer:
+      "As a student in the Vodacom Mozambique Foundation STEM Scholarship Program, your learning journey will be 3 months and self-guided. Throughout your entire learning journey, you will have access to an online community platform, where you will get to ask other students and mentors for support to help you through any learning difficulties or even to network!",
+  },
+  {
+    id: 2,
+    question: "second question",
+    answer:
+      "As a student in the Vodacom Mozambique Foundation STEM Scholarship Program, your learning journey will be 3 months and self-guided. Throughout your entire learning journey, you will have access to an online community platform, where you will get to ask other students and mentors for support to help you through any learning difficulties or even to network!",
+  },
+  {
+    id: 3,
+    question: "thirst question",
+    answer:
+      "As a student in the Vodacom Mozambique Foundation STEM Scholarship Program, your learning journey will be 3 months and self-guided. Throughout your entire learning journey, you will have access to an online community platform, where you will get to ask other students and mentors for support to help you through any learning difficulties or even to network!",
+  },
+];

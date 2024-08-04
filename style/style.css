@@ -1,0 +1,289 @@
+body {
+  font-size: 18px;
+}
+
+.navbar {
+  background-color: rgba(26, 36, 38, 0.5);
+  min-height: 5em;
+  font-weight: 600;
+}
+
+.jumbotron {
+  margin: 0px auto;
+  background: #00889a !important;
+  color: floralwhite;
+  min-height: 24rem;
+  border-radius: 0;
+}
+
+.row-content {
+  margin: 0px auto;
+  padding: 50px 0px 50px 0px;
+  min-height: 400px;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.headerOpenSource,
+.jumbotron h3 {
+  font-style: italic;
+}
+
+#theIssue_detail {
+  margin-top: 4em;
+}
+
+#ourOrganization.image_wrapper {
+  width: 45em;
+}
+
+#ourOrganization img {
+  height: 38em;
+  width: 100%;
+}
+
+#ourSolution-bckgnd {
+  background: #00889a !important;
+  color: floralwhite;
+}
+
+#ourSolution-imgWrapper img {
+  border-radius: 50%;
+  width: 20em;
+  height: 20em;
+  border: 2px solid floralwhite;
+}
+
+#ourActivities_detail h5 {
+  color: #00889a;
+  margin-top: 1.8em;
+}
+
+#ourActivities_detail .fa {
+  font-size: 3.5em;
+  margin-top: 1em;
+}
+/*---------------presentation--------------*/
+.presentation {
+  margin: 120px 0;
+  height: auto;
+  display: flex;
+  div {
+    width: 50%;
+    padding-right: 10%;
+  }
+  div:first-of-type {
+    img {
+      width: 150px;
+    }
+    h1 {
+      font-size: 60px;
+      font-weight: 400;
+    }
+  }
+  div:last-of-type {
+    height: 70vh;
+    padding: 5vh;
+    img {
+      width: 100%;
+      height: 100%;
+
+      border-radius: 10px;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .presentation {
+    z-index: 30;
+    flex-direction: column;
+    div {
+      width: 100%;
+      padding-right: 1%;
+    }
+  }
+}
+/*---------------scholarship-------------- */
+.scholarship {
+  display: flex;
+  flex-direction: column;
+  margin: 0 7vw;
+}
+.how-it-work {
+  height: auto;
+  width: auto;
+  color: black;
+  margin: 60px 0;
+
+  div {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vh;
+    div {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      height: 50vh;
+      background-color: rgb(3, 3, 73);
+      border-radius: 7px;
+      padding: 50px 35px;
+      box-sizing: border-box;
+
+      .number_title {
+        font-size: 40px;
+        color: yellow;
+      }
+      .title {
+        color: white;
+        font-size: 24px;
+      }
+      p {
+        color: white;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .how-it-work {
+    div {
+      flex-direction: column;
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+/*--------------timeline------------------*/
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin: 20px 0;
+    div {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      padding: 20px;
+      background-color: rgb(214, 223, 233);
+      span {
+        height: 100%;
+        color: blue;
+        font-size: 30px;
+      }
+      p {
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+      }
+      p:first-of-type {
+        width: 30%;
+        color: blue;
+      }
+      p:last-of-type {
+        border-left: 1px solid blue;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .timeline {
+    div {
+      div {
+        flex-direction: column;
+        p:last-of-type {
+          border-left: 0px solid blue;
+          border-top: 2px solid blue;
+        }
+      }
+    }
+  }
+}
+/*---------------about----------------------*/
+.about {
+  height: auto;
+  width: 98.6vw;
+  overflow: hidden;
+  display: flex;
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 70px 50px;
+  background: linear-gradient(to bottom right, #4550e0, #b563ec);
+  margin-left: -7vw;
+  margin-bottom: 5vh;
+  color: white;
+
+  img {
+    height: 30%;
+    width: 220px;
+    object-fit: cover;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column;
+  }
+}
+:root {
+  --question-height: 50px;
+}
+/*----------faq--------------------------*/
+
+.faq {
+  div {
+    margin: 2vh 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+
+    div {
+      height: var(--question-height);
+      overflow: hidden;
+      width: 47%;
+      border: 1px solid black;
+
+      div {
+        border: 0px solid black;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        display: flex;
+        height: var(--question-height);
+        overflow: hidden;
+
+        width: 90%;
+        justify-content: space-between;
+        button {
+          height: 15px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .faq {
+    div {
+      div {
+        width: 100%;
+        div {
+          padding: 1px 2px;
+        }
+      }
+    }
+  }
+}
+/*-------------footer--------------------*/
+footer {
+  color: floralwhite;
+  background-color: #233033;
+  min-height: 4em;
+}
