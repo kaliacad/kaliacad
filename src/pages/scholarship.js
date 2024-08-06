@@ -50,21 +50,25 @@ function Scholarship() {
       </section>
 
       <section className="how-it-work">
-        <h3>How does it work?</h3>
+        <h3 className="title">How does it work?</h3>
         <div>
           <div>
             <h1 className="number_title">1</h1>
-            <h2 className="title">Apply For The Program</h2>
-            <p>
-              Fill out the application form for the Business Analytics
-              Nanodegree program and submit before the applications close on
-              August 4, 2024.
-            </p>
+            <div>
+              <h2 className="title_box">Apply For The Program</h2>
+              <p>
+                Fill out the application form for the Business Analytics
+                Nanodegree program and submit before the applications close on
+                August 4, 2024.
+              </p>
+            </div>
           </div>
           <div>
             <h1 className="number_title">2</h1>
-            <h2 className="title">Scholarship Recipients Announced</h2>
-            <p>Scholarship recipients will be notified by email.</p>
+            <div>
+              <h2 className="title_box">Scholarship Recipients Announced</h2>
+              <p>Scholarship recipients will be notified by email.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -95,10 +99,9 @@ function Scholarship() {
       </section>
 
       <section className="about">
-        <StaticImage
-          alt="Kali Academy Logo"
-          src="../images/Kali_academy_-_Logo-gris.png"
-        />
+        <div className="about-logo">
+          <StaticImage alt="WMA Logo" src="../images/WMA-Logo.png" />
+        </div>
         <div>
           <h1>About Kali Academy</h1>
           <p>
