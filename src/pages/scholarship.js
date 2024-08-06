@@ -1,4 +1,4 @@
-import { ExpandMore } from "@mui/icons-material";
+import { ExpandMore, ExpandLess } from "@mui/icons-material";
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -8,18 +8,32 @@ import { datafaq } from "./../data/Data.js";
 function Scholarship() {
   const [search, setSearch] = React.useState("");
   const [data, setData] = React.useState(datafaq);
+  const [expandedIndex, setExpandedIndex] = React.useState(null);
+  const [showAnswers, setShowAnswers] = React.useState(
+    Array(data?.length).fill(false)
+  );
+
+  const handleClick = (index) => {
+    setShowAnswers((prevState) => {
+      const newState = [...prevState];
+      newState[index] = !newState[index];
+      return newState;
+    });
+    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <div className="scholarship">
       <section className="presentation">
-        <StaticImage
-          alt="WMA Logo"
-          src="../images/WMA-Logo.png"
-          layout="fixed"
-          width={50}
-          height={50}
-        />
         <div>
+          <StaticImage
+            alt="WMA Logo"
+            src="../images/WMA-Logo.png"
+            layout="fixed"
+            width={100}
+            height={50}
+            style={{ marginLeft: "-20px" }}
+          />
           <h1>WMA STEM Scholarship Program</h1>
           <p>
             Wikimedia Igbo under Wiki Mentor Africa Program and KALI Academy are
@@ -36,30 +50,34 @@ function Scholarship() {
       </section>
 
       <section className="how-it-work">
-        <h3>How does it work?</h3>
+        <h3 className="title">How does it work?</h3>
         <div>
           <div>
             <h1 className="number_title">1</h1>
-            <h2 className="title">Apply For The Program</h2>
-            <p>
-              Fill out the application form for the Business Analytics
-              Nanodegree program and submit before the applications close on
-              August 4, 2024.
-            </p>
+            <div>
+              <h2 className="title_box">Apply For The Program</h2>
+              <p>
+                Fill out the application form for the Business Analytics
+                Nanodegree program and submit before the applications close on
+                August 4, 2024.
+              </p>
+            </div>
           </div>
           <div>
             <h1 className="number_title">2</h1>
-            <h2 className="title">Scholarship Recipients Announced</h2>
-            <p>Scholarship recipients will be notified by email.</p>
+            <div>
+              <h2 className="title_box">Scholarship Recipients Announced</h2>
+              <p>Scholarship recipients will be notified by email.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <section className="timeline">
-        <h1>Scholarship Timeline</h1>
+        <h1 className="title">Scholarship Timeline</h1>
         <div>
           <div>
-            <p> Jully 23, 2024.</p>
+            <p> July 23, 2024.</p>
             <p>Applications open </p>
           </div>
           <div>
@@ -81,10 +99,9 @@ function Scholarship() {
       </section>
 
       <section className="about">
-        <StaticImage
-          alt="Kali Academy Logo"
-          src="../images/Kali_academy_-_Logo-gris.png"
-        />
+        <div className="about-logo">
+          <StaticImage alt="WMA Logo" src="../images/WMA-Logo.png" />
+        </div>
         <div>
           <h1>About Kali Academy</h1>
           <p>
@@ -97,13 +114,19 @@ function Scholarship() {
       <section className="faq">
         <h1>General & Application FAQs</h1>
         <div>
-          {data?.map((quiz) => (
-            <div>
+          {data?.map((quiz, index) => (
+            <div
+              className={`${
+                expandedIndex === index ? "expanded" : "notexpanded"
+              }`}
+              key={index}
+              onClick={() => handleClick(index)}
+            >
               <div>
-                <p>{quiz.question}</p>
-                <ExpandMore />
+                <h5>{quiz.question}</h5>
+                {expandedIndex === index ? <ExpandLess /> : <ExpandMore />}
               </div>
-              <p>{quiz.answer}</p>
+              {showAnswers[index] && <p>{quiz.answer}</p>}
             </div>
           ))}
         </div>
