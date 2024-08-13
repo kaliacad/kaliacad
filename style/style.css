@@ -80,7 +80,7 @@ body {
 }
 /*---------------presentation--------------*/
 .presentation {
-  margin: 120px 0 20px 0px;
+  margin: 12vh 0 4vh 0px;
   height: auto;
   display: flex;
   div {
@@ -89,10 +89,10 @@ body {
   }
   div:first-of-type {
     img {
-      width: 150px;
+      width: 15vw;
     }
     h1 {
-      font-size: 60px;
+      font-size: 4vw;
       font-weight: 400;
     }
     p {
@@ -122,7 +122,7 @@ body {
 }
 /*-------------common element--------------*/
 .title {
-  font-size: 50px;
+  font-size: 4vw;
   font-weight: 300;
 }
 /*---------------scholarship , how it works-------------- */
@@ -150,11 +150,11 @@ body {
       overflow: hidden;
       background-color: rgb(3, 3, 73);
       border-radius: 7px;
-      padding: 45px 35px;
+      padding: 4.5vh 3vw;
       box-sizing: border-box;
 
       .number_title {
-        font-size: 40px;
+        font-size: 3vw;
         color: yellow;
       }
       div {
@@ -164,10 +164,10 @@ body {
 
         .title_box {
           color: white;
-          font-size: 24px;
+          font-size: 2vw;
         }
         p {
-          margin-top: 30px;
+          margin-top: 4vh;
           color: white;
         }
       }
@@ -304,7 +304,6 @@ body {
         display: flex;
         height: var(--question-height);
         overflow: hidden;
-
         width: 90%;
         justify-content: space-between;
 
