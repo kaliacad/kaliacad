@@ -2,7 +2,12 @@
   font-family: "Montserrat" !important;
 }
 
+* {
+  font-family: "Montserrat" !important;
+}
+
 body {
+  font-size: 18px;
   font-size: 18px;
   font-size: 18px;
 }
@@ -80,7 +85,7 @@ body {
 }
 /*---------------presentation--------------*/
 .presentation {
-  margin: 12vh 0 4vh 0px;
+  margin: 120px 0;
   height: auto;
   display: flex;
   div {
@@ -120,12 +125,7 @@ body {
     }
   }
 }
-/*-------------common element--------------*/
-.title {
-  font-size: 4vw;
-  font-weight: 300;
-}
-/*---------------scholarship , how it works-------------- */
+/*---------------scholarship-------------- */
 .scholarship {
   display: flex;
   flex-direction: column;
@@ -150,26 +150,19 @@ body {
       overflow: hidden;
       background-color: rgb(3, 3, 73);
       border-radius: 7px;
-      padding: 4.5vh 3vw;
+      padding: 50px 35px;
       box-sizing: border-box;
 
       .number_title {
         font-size: 3vw;
         color: yellow;
       }
-      div {
-        width: 100%;
-        padding: 0;
-        height: auto;
-
-        .title_box {
-          color: white;
-          font-size: 2vw;
-        }
-        p {
-          margin-top: 4vh;
-          color: white;
-        }
+      .title {
+        color: white;
+        font-size: 24px;
+      }
+      p {
+        color: white;
       }
     }
   }
