@@ -1,9 +1,9 @@
 import { navigate } from "gatsby";
 import React from "react";
 import Drawer from "@mui/material/Drawer";
-import { pages } from "../data/Data";
+import { pages } from "../../data/Data";
 import { Button, Divider } from "@mui/material";
-import kalibackground from "../images/Kali_academy_-_Logo-gris-removebg-preview.png";
+import kalibackground from "../../images/Kali_academy_-_Logo-gris-removebg-preview.png";
 
 function DrawerLaningPage({ open, setOpen }) {
   //

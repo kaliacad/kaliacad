@@ -88,9 +88,9 @@ function WeDo() {
       <Grid
         container
         display={{
-          xs: "flex",
+          xs: "none",
           md: "none",
-          sm: "flex",
+          sm: "none",
           lg: "none",
           xl: "none",
         }}

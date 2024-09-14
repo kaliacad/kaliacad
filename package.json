@@ -8,7 +8,8 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b source"
   },
   "author": "Abel L Mbula",
   "license": "MIT",
@@ -39,5 +40,6 @@
     "slick-carousel": "^1.8.1",
     "typeface-montserrat": "^1.1.13",
     "yup": "^1.3.3"
-  }
+  },
+  "devDependencies": {}
 }
