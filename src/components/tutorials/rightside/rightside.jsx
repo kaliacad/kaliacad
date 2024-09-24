@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 import "./../../../../style/tutorials.css";
 
-export default function RightSideTuto() {
-  const tagData = [
-    "JavaScript",
-    "React",
-    "CSS",
-    "HTML",
-    "TypeScript",
-    "Node.js",
-  ];
-
-  const [selectedTags, setSelectedTags] = useState([]);
-
+export default function RightSideTuto({
+  tagData,
+  selectedTags,
+  setSelectedTags,
+}) {
   const handleTagClick = (tag) => {
     if (selectedTags.includes(tag)) {
       setSelectedTags(
