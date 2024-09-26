@@ -3,9 +3,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "kali-academi-upgrade",
-    siteUrl: "https://www.yourdomain.tld",
-    title: `kali Academy`,
+    title: `Kali Academy`,
     siteUrl: `https://kaliacademy.org`,
   },
   plugins: [
@@ -19,8 +17,8 @@ module.exports = {
         icons: [
           {
             src: "/public/static/Kali_academy_-_Logo-gris-removebg-icon.png",
-            sizes: "3848x1554", // icon size
-            type: "image/png", // Type MIME de l'image
+            sizes: "3848x1554",
+            type: "image/png", 
           },
         ],
       },
