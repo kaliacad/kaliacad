@@ -5,6 +5,7 @@ import Albums from "../pages/album";
 import Contacter from "../pages/contacter";
 import Blogs from "../pages/blogs";
 import PublieOfre from "../pages/publieoffre";
+import Scholarship from "../pages/scholarship";
 
 export const PrivateRouters = [{ path: "", component: "" }];
 
@@ -15,4 +16,5 @@ export const PublicRouters = [
   { path: "/blogs", component: <Blogs /> },
   { path: "/publieoffre", component: <PublieOfre /> },
   { path: "/error", component: <NotFoundPage /> },
+  { path: "/scholarship", component: <Scholarship /> },
 ];
