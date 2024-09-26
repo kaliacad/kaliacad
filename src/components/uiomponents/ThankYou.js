@@ -115,7 +115,6 @@ function ThankYou() {
             <Typography sx={{ mb: 3, textAlign: "center " }}>
               {supportersList}
             </Typography>
-
             <div
               style={{
                 display: "flex",

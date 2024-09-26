@@ -62,6 +62,10 @@ function supporters() {
   return (
     <Layout>
       <Header />
+      <Grid container>
+        <Grid item xs={false} sm={false} md={2} lg={2} xl={2}></Grid>
+        <Grid item xs={12} sm={12} md={8} lg={8} xl={8} mt={5}>
+          <Typography variant="h2">Nos Supporteurs</Typography>
       <Grid
         container
         sx={{
@@ -145,7 +149,6 @@ function supporters() {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 mt: 0.5,
-                // width: "145%",
               }}
             >
               <Typography
@@ -166,7 +169,6 @@ function supporters() {
               <Stack
                 sx={{
                   flexDirection: "row",
-                  // justifyContent: "space-between",
                 }}
               >
                 <Stack>
@@ -194,7 +196,6 @@ function supporters() {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 mt: 0.5,
-                // width: "145%",
               }}
             >
               <Typography
@@ -215,7 +216,6 @@ function supporters() {
               <Stack
                 sx={{
                   flexDirection: "row",
-                  // justifyContent: "space-between",
                 }}
               >
                 <Stack>
@@ -243,7 +243,6 @@ function supporters() {
                 flexDirection: "row",
                 justifyContent: "space-between",
                 mt: 0.5,
-                // width: "145%",
               }}
             >
               <Typography
@@ -264,7 +263,6 @@ function supporters() {
               <Stack
                 sx={{
                   flexDirection: "row",
-                  // justifyContent: "space-between",
                 }}
               >
                 <Stack>

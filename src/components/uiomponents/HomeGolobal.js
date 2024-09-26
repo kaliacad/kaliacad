@@ -24,6 +24,12 @@ function HomeGolobal() {
   }, []);
   return (
     <Layout>
+      <Header />
+      <About />
+      <WeDo />
+      <Homeaf />
+      <ThankYou />
+      <FooterFin />
       {loading === true ? (
         <Skeletons />
       ) : (
