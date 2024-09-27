@@ -17,6 +17,7 @@ function Tutorials() {
   useEffect(() => {
     const fetchArticles = async () => {
       const allArticles = await getArticles();
+      console.log("article", allArticles[0]);
 
       const allTags = [];
       allArticles.forEach((article) => {
@@ -43,10 +44,11 @@ function Tutorials() {
     if (selectedTags?.length > 0) {
       const taggedArticles = articles?.filter((article) => {
         const tags = article?.tags.split(",");
-        const hasMatchingTags =
-          Array.isArray(tags) && tags.some((tag) => selectedTags.includes(tag));
+        const hasAllTags =
+          Array.isArray(tags) &&
+          selectedTags.every((tag) => tags.includes(tag));
 
-        return hasMatchingTags;
+        return hasAllTags;
       });
 
       setDisplayedArticles(taggedArticles);
@@ -96,10 +98,12 @@ function Tutorials() {
                   displayedArticles?.map((answer, index) => (
                     <div className="answer-card" key={index}>
                       <div className="title-container">
-                        <Link href={`/article/${answer.id}`}>
-                          <h3>{answer.title}</h3>
+                        <Link href={`${answer.canonical_url}`} passHref>
+                          <a target="_blank" rel="noopener noreferrer">
+                            <h3>{answer.title}</h3>
+                          </a>
                         </Link>
-                        <div
+                        {/* <div
                           className={`icon-container `}
                           onClick={() => handleIconClick(answer.id)}
                         >
@@ -126,7 +130,7 @@ function Tutorials() {
                           >
                             <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
                           </svg>
-                        </div>
+                        </div> */}
                       </div>
                       <p>{answer.description}</p>
                       <div className="tags tags-main">

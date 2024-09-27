@@ -3,7 +3,7 @@
   width: 100%;
 }
 .tuto-side-div {
-  /* display: hidden !important; */
+  display: hidden !important;
   width: 24%;
   border-left: 1px solid rgba(99, 98, 98, 0.3);
   border-bottom: 1px solid rgba(99, 98, 98, 0.3);
@@ -11,7 +11,7 @@
   padding: 10px;
 }
 .tuto-side-div-left {
-  /* display: none; */
+  display: none;
   height: 120px;
 }
 .left-menu-option,
@@ -125,7 +125,7 @@
   padding: 20px;
   background-color: #f4f4f4;
   border-left: 1px solid #ddd;
-  /* display: none; */
+  display: none;
   /* display: hidden;
   flex-direction: column;
   gap: 30px; */
