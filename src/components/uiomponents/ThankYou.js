@@ -65,6 +65,43 @@ function ThankYou() {
           <Grid item width={"100%"} padding={5} justifyContent={"center"}>
             <Stack
               sx={{
+                ml: -2,
+              }}
+            >
+              <Typography variant="h4" sx={{ mb: 3, width: "100%" }}>
+                Kali Academy remercie
+              </Typography>
+            </Stack>
+            <Typography sx={{ mb: 3, textAlign: "center " }}
+
+              {supportersList}
+            </Typography>
+
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Link to="/supporters">Voir tous nos supporteurs</Link>
+            </div>
+          </Grid>
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        display={{
+          xs: "flex",
+          md: "none",
+          sm: "flex",
+          lg: "none",
+          xl: "none",
+        }}
+      >
+        <Grid container justifyContent={"center"}>
+          <Grid item width={"100%"} padding={5} justifyContent={"center"}>
+            <Stack
+              sx={{
                 // ml: 5,
                 // marginTop: -10,
                 ml: -2,
@@ -77,7 +114,6 @@ function ThankYou() {
             <Typography sx={{ mb: 3, textAlign: "center " }}>
               {supportersList}
             </Typography>
-
             <div
               style={{
                 display: "flex",
