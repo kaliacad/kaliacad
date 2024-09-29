@@ -6,7 +6,9 @@ import WeDo from "./WeDo";
 import Header from "../header/Header";
 import ThankYou from "./ThankYou";
 import Layout from "../../theme/layout";
+
 import Skeletons from "../Loader";
+
 
 function HomeGolobal() {
   const [loading, setLoading] = useState(true);
