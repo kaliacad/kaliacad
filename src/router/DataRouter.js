@@ -6,8 +6,6 @@ import Contacter from "../pages/contacter";
 import Blogs from "../pages/blogs";
 import PublieOfre from "../pages/publieoffre";
 import Scholarship from "../pages/scholarship";
-import Tutorials from "../pages/tutorials";
-// import Article from "../pages/article";
 
 export const PrivateRouters = [{ path: "", component: "" }];
 
@@ -19,6 +17,4 @@ export const PublicRouters = [
   { path: "/publieoffre", component: <PublieOfre /> },
   { path: "/error", component: <NotFoundPage /> },
   { path: "/scholarship", component: <Scholarship /> },
-  { path: "/tutorials", component: <Tutorials /> },
-  // { path: `/article/${id}`, component: <Article /> },
 ];
