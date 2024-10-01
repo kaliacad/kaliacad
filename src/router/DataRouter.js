@@ -18,7 +18,4 @@ export const PublicRouters = [
   { path: "/blogs", component: <Blogs /> },
   { path: "/publieoffre", component: <PublieOfre /> },
   { path: "/error", component: <NotFoundPage /> },
-  { path: "/scholarship", component: <Scholarship /> },
-  { path: "/tutorials", component: <Tutorials /> },
-  // { path: `/article/${id}`, component: <Article /> },
 ];

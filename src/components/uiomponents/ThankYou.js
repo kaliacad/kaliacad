@@ -51,7 +51,7 @@ function ThankYou() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid
+      {/* <Grid
         container
         display={{
           xs: "flex",
@@ -65,8 +65,6 @@ function ThankYou() {
           <Grid item width={"100%"} padding={5} justifyContent={"center"}>
             <Stack
               sx={{
-                // ml: 5,
-                // marginTop: -10,
                 ml: -2,
               }}
             >
@@ -74,7 +72,8 @@ function ThankYou() {
                 Kali Academy remercie
               </Typography>
             </Stack>
-            <Typography sx={{ mb: 3, textAlign: "center " }}>
+            <Typography sx={{ mb: 3, textAlign: "center " }}
+
               {supportersList}
             </Typography>
 
@@ -115,7 +114,6 @@ function ThankYou() {
             <Typography sx={{ mb: 3, textAlign: "center " }}>
               {supportersList}
             </Typography>
-
             <div
               style={{
                 display: "flex",
@@ -126,7 +124,7 @@ function ThankYou() {
             </div>
           </Grid>
         </Grid>
-      </Grid>
+      </Grid> */}
     </div>
   );
 }

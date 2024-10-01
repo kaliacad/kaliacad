@@ -1,7 +1,7 @@
 import { ExpandMore, ExpandLess } from "@mui/icons-material";
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-
+import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
+import Navbar from "../components/navbar";
 import "./../../style/style.css";
 import { datafaq } from "./../data/Data.js";
 
@@ -65,10 +65,10 @@ function Scholarship() {
           </div>
           <div>
             <h1 className="number_title">2</h1>
-            <div>
-              <h2 className="title_box">Scholarship Recipients Announced</h2>
-              <p>Scholarship recipients will be notified by email.</p>
-            </div>
+            <h2 className="title">Scholarship Recipients Announced</h2>
+            <p>
+              Scholarship recipients will be notified by email.
+            </p>
           </div>
         </div>
       </section>
@@ -116,9 +116,8 @@ function Scholarship() {
         <div>
           {data?.map((quiz, index) => (
             <div
-              className={`${
-                expandedIndex === index ? "expanded" : "notexpanded"
-              }`}
+              className={`${expandedIndex === index ? "expanded" : "notexpanded"
+                }`}
               key={index}
               onClick={() => handleClick(index)}
             >
