@@ -3,4 +3,5 @@ node_modules/
 public
 .DS_Store
 images/.DS_Store
-src/images/.DS_Store
+src/images/.DS_Store.DS_Store
+src/.DS_Store
