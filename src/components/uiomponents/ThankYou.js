@@ -51,7 +51,7 @@ function ThankYou() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid
+      {/* <Grid
         container
         display={{
           xs: "flex",
@@ -124,7 +124,7 @@ function ThankYou() {
             </div>
           </Grid>
         </Grid>
-      </Grid>
+      </Grid> */}
     </div>
   );
 }

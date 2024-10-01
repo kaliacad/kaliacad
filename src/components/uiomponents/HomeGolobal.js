@@ -9,7 +9,6 @@ import Layout from "../../theme/layout";
 
 import Skeletons from "../Loader";
 
-
 function HomeGolobal() {
   const [loading, setLoading] = useState(true);
   React.useEffect(() => {
@@ -26,12 +25,6 @@ function HomeGolobal() {
   }, []);
   return (
     <Layout>
-      <Header />
-      <About />
-      <WeDo />
-      <Homeaf />
-      <ThankYou />
-      <FooterFin />
       {loading === true ? (
         <Skeletons />
       ) : (

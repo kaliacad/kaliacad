@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+
 import { GoldSupport, PlatiumSupport } from "../data/Data";
 import Header from "../components/header/Header";
 import Layout from "../theme/layout";
@@ -17,7 +18,6 @@ const GoldSupports = GoldSupport.map((supporter, index) => (
     key={index}
     sx={{
       maxWidth: 250,
-      // ml: 5,
     }}
     elevation={0}
   >
@@ -62,10 +62,6 @@ function supporters() {
   return (
     <Layout>
       <Header />
-      <Grid container>
-        <Grid item xs={false} sm={false} md={2} lg={2} xl={2}></Grid>
-        <Grid item xs={12} sm={12} md={8} lg={8} xl={8} mt={5}>
-          <Typography variant="h2">Nos Supporteurs</Typography>
       <Grid
         container
         sx={{
@@ -76,7 +72,7 @@ function supporters() {
         <Grid item xs={12} sm={12} md={8} lg={8} xl={8} mt={5}>
           <Typography variant="h2">Nos Supporteurs</Typography>
           <Typography mt={2} mb={3}>
-            Code.org is sincerely grateful for our vibrant community of
+            {/* Code.org is sincerely grateful for our vibrant community of
             corporate, institutional, and individual donors. We acknowledge the
             following supporters who have made generous commitments of $1,000
             and above to support our 2023 fiscal year (January 1, 2023 -
@@ -87,9 +83,9 @@ function supporters() {
             computer science. Thanks to the support listed below, we are able to
             increase access to computer science education globally. Code.org is
             a 501(c)(3) nonprofit organization and our Federal Tax ID is
-            46-0858543.
+            46-0858543. */}
           </Typography>
-          <Typography variant="h3">Plantium Supporteurs ($10,000+)</Typography>
+          <Typography variant="h3">Plantium Supporteurs ($3,000+)</Typography>
           <div
             style={{
               display: "flex",
@@ -101,7 +97,7 @@ function supporters() {
             {PlatiumSupports}
           </div>
           <Typography mt={5} variant="h3">
-            Gold Supporteurs ($3,000+)
+            Gold Supporteurs ($1,000+)
           </Typography>
           <div
             style={{
@@ -119,9 +115,7 @@ function supporters() {
                 bgcolor: "#00B2C0",
                 p: 2,
                 flexDirection: "row",
-                // justifyContent: "space-between",
                 mt: 3,
-                // width: "145%",
               }}
             >
               <Typography
@@ -173,8 +167,7 @@ function supporters() {
               >
                 <Stack>
                   <ul>
-                    <li>Contributaire 1</li>
-                    <li>Contributaire 2</li>
+                    <li>Your institution</li>
                   </ul>
                 </Stack>
                 <Stack
@@ -183,8 +176,7 @@ function supporters() {
                   }}
                 >
                   <ul>
-                    <li>Contributaire 1</li>
-                    <li>Contributaire 2</li>
+                    <li>You</li>
                   </ul>
                 </Stack>
               </Stack>
@@ -220,8 +212,7 @@ function supporters() {
               >
                 <Stack>
                   <ul>
-                    <li>Contributaire 1</li>
-                    <li>Contributaire 2</li>
+                    <li>Your institution</li>
                   </ul>
                 </Stack>
                 <Stack
@@ -230,8 +221,7 @@ function supporters() {
                   }}
                 >
                   <ul>
-                    <li>Contributaire 1</li>
-                    <li>Contributaire 2</li>
+                    <li>You</li>
                   </ul>
                 </Stack>
               </Stack>
@@ -267,8 +257,7 @@ function supporters() {
               >
                 <Stack>
                   <ul>
-                    <li>Contributaire 1</li>
-                    <li>Contributaire 2</li>
+                    <li>Your institution</li>
                   </ul>
                 </Stack>
                 <Stack
@@ -277,8 +266,7 @@ function supporters() {
                   }}
                 >
                   <ul>
-                    <li>Contributaire 1</li>
-                    <li>Contributaire 2</li>
+                    <li>You</li>
                   </ul>
                 </Stack>
               </Stack>

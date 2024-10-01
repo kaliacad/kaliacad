@@ -4,6 +4,7 @@ import image3 from "../images/firstDayWishitonMurch2024PresentialyInGoma1.jpg";
 import imageabout from "../images/firstDayWishitonMurch2024PresentialyInGoma4.jpg";
 import wkmRdcLogo from "../images/wkmrdc.png";
 import wmChLogo from "../images/WikimediaCHLogo.svg";
+import wmIgbo from "../images/wmIgbo.svg";
 
 export const pages = [
   // {
@@ -69,23 +70,19 @@ export const supporters = [
 
 export const GoldSupport = [
   {
-    name: "Wikimedia CH",
-    logo: wmChLogo,
+    name: "Wikimedia RDC",
+    logo: wkmRdcLogo,
   },
-  // {
-  //   name: "Wikimedia RDC",
-  //   logo: wkmRdcLogo,
-  // },
 ];
 
 export const PlatiumSupport = [
-  // {
-  //   name: "Wikimedia CH",
-  //   logo: wmChLogo,
-  // },
   {
-    name: "Wikimedia RDC",
-    logo: wkmRdcLogo,
+    name: "Wikimedia Igbo",
+    logo: wmIgbo,
+  },
+  {
+    name: "Wikimedia CH",
+    logo: wmChLogo,
   },
 ];
 

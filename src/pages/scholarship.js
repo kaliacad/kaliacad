@@ -1,9 +1,8 @@
 import { AppBar, Grid, Typography } from "@mui/material";
 import { Google, ExpandMore } from "@mui/icons-material";
 import React from "react";
-import ITextFieldInput from "../controlers/TextFieldInput";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
-import Navbar from "../component/navbar";
+import Navbar from "../components/navbar";
 import "./../../style/style.css";
 import { datafaq } from "./../data/Data.js";
 
@@ -19,8 +18,10 @@ function Scholarship() {
           <img src={kalibackground} alt="Kali Academy" />
           <h1>WMA STEM Scholarship Program</h1>
           <p>
-            Wikimedia Igbo under Wiki Mentor Africa Program and
-            KALI Academy are teaming up to offer a fully-funded Programming 101 course for Africans to empower them with technical skills to contribute technically in Wikimedia Technical Projects.
+            Wikimedia Igbo under Wiki Mentor Africa Program and KALI Academy are
+            teaming up to offer a fully-funded Programming 101 course for
+            Africans to empower them with technical skills to contribute
+            technically in Wikimedia Technical Projects.
           </p>
         </div>
         <div>
@@ -42,9 +43,7 @@ function Scholarship() {
           <div>
             <h1 className="number_title">2</h1>
             <h2 className="title">Scholarship Recipients Announced</h2>
-            <p>
-              Scholarship recipients will be notified by email.
-            </p>
+            <p>Scholarship recipients will be notified by email.</p>
           </div>
         </div>
       </section>
@@ -57,14 +56,13 @@ function Scholarship() {
           </div>
           <div>
             <p> August 4, 2024.</p>
-            <p>
-              Last day to submit applications to earn a scholarship 
-            </p>
+            <p>Last day to submit applications to earn a scholarship</p>
           </div>
           <div>
             <p> August 20, 2024.</p>
             <p>
-              Scholarship recipients are notified of their admission to the course
+              Scholarship recipients are notified of their admission to the
+              course
             </p>
           </div>
           <div>
@@ -78,7 +76,8 @@ function Scholarship() {
         <div>
           <h1>About Kali Academy</h1>
           <p>
-            Kali Academy is a non-profit organization whose mission is to train the next generation of open-source developers within Africa.
+            Kali Academy is a non-profit organization whose mission is to train
+            the next generation of open-source developers within Africa.
           </p>
         </div>
       </section>

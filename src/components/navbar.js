@@ -1,7 +1,7 @@
 import { AppBar, Button, Grid, Typography } from "@mui/material";
 import { Google } from "@mui/icons-material";
 import React from "react";
-import ITextFieldnput from "../controlers/TextFieldInput";
+// import ITextFieldnput from "../controlers/TextFieldInput";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
 
 export default function Navbar() {
@@ -46,11 +46,11 @@ export default function Navbar() {
           </div>
         </Grid>
         <Grid item xs={0} sm={0} md={5} lg={5} xl={5} mt={1}>
-          <ITextFieldnput
+          {/* <ITextFieldnput
             value={seach}
             onChange={(e) => setSeach(e.target.value)}
             placeholder={"Recherche..."}
-          />
+          /> */}
         </Grid>
         <Grid item xs={0} sm={0} md={3} lg={3} xl={3} ml={2}>
           <div
