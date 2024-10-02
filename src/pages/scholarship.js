@@ -1,6 +1,7 @@
 import { ExpandMore, ExpandLess } from "@mui/icons-material";
 import React from "react";
 import kalibackground from "../images/Kali_academy_-_Logo-gris.png";
+import { StaticImage } from "gatsby-plugin-image";
 import Navbar from "../components/navbar";
 import "./../../style/style.css";
 import { datafaq } from "./../data/Data.js";
