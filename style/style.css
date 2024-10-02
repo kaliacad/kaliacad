@@ -1,4 +1,9 @@
+* {
+  font-family: "Montserrat" !important;
+}
+
 body {
+  font-size: 18px;
   font-size: 18px;
 }
 
@@ -6,9 +11,17 @@ body {
   background-color: rgba(26, 36, 38, 0.5);
   min-height: 5em;
   font-weight: 600;
+  background-color: rgba(26, 36, 38, 0.5);
+  min-height: 5em;
+  font-weight: 600;
 }
 
 .jumbotron {
+  margin: 0px auto;
+  background: #00889a !important;
+  color: floralwhite;
+  min-height: 24rem;
+  border-radius: 0;
   margin: 0px auto;
   background: #00889a !important;
   color: floralwhite;
@@ -67,7 +80,7 @@ body {
 }
 /*---------------presentation--------------*/
 .presentation {
-  margin: 120px 0;
+  margin: 120px 0 20px 0px;
   height: auto;
   display: flex;
   div {
@@ -81,6 +94,9 @@ body {
     h1 {
       font-size: 60px;
       font-weight: 400;
+    }
+    p {
+      margin: 30px 0px;
     }
   }
   div:last-of-type {
@@ -104,7 +120,12 @@ body {
     }
   }
 }
-/*---------------scholarship-------------- */
+/*-------------common element--------------*/
+.title {
+  font-size: 50px;
+  font-weight: 300;
+}
+/*---------------scholarship , how it works-------------- */
 .scholarship {
   display: flex;
   flex-direction: column;
@@ -124,22 +145,31 @@ body {
       width: 48%;
       display: flex;
       flex-direction: column;
+      justify-content: start;
       height: 50vh;
+      overflow: hidden;
       background-color: rgb(3, 3, 73);
       border-radius: 7px;
-      padding: 50px 35px;
+      padding: 45px 35px;
       box-sizing: border-box;
 
       .number_title {
         font-size: 40px;
         color: yellow;
       }
-      .title {
-        color: white;
-        font-size: 24px;
-      }
-      p {
-        color: white;
+      div {
+        width: 100%;
+        padding: 0;
+        height: auto;
+
+        .title_box {
+          color: white;
+          font-size: 24px;
+        }
+        p {
+          margin-top: 30px;
+          color: white;
+        }
       }
     }
   }
@@ -159,17 +189,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 30px;
+  gap: 30px;
+  .notaclass {
+    display: none;
+  }
+
   div {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     width: 100%;
-    margin: 20px 0;
+
     div {
       width: 100%;
       display: flex;
       flex-direction: row;
-      padding: 20px;
+      padding: 12px 20px;
       background-color: rgb(214, 223, 233);
       span {
         height: 100%;
@@ -212,16 +248,16 @@ body {
   display: flex;
   gap: 20px;
   box-sizing: border-box;
-  padding: 70px 50px;
+  padding: 70px 50px 70px 7vw;
   background: linear-gradient(to bottom right, #4550e0, #b563ec);
   margin-left: -7vw;
   margin-bottom: 5vh;
   color: white;
 
-  img {
-    height: 30%;
-    width: 220px;
-    object-fit: cover;
+  .about-logo {
+    background-color: white;
+    border-radius: 3px;
+    border-top-left-radius: 25px;
   }
   div {
     display: flex;
@@ -246,15 +282,24 @@ body {
     flex-wrap: wrap;
     gap: 3%;
 
-    div {
-      height: var(--question-height);
+    .notaclass {
+      display: none;
+    }
+    .expanded {
+      min-height: var(--question-height) !important;
+      background-color: rgb(238, 237, 237);
+    }
+    .notexpanded {
+      max-height: var(--question-height) !important;
       overflow: hidden;
+    }
+    .expanded,
+    .notexpanded {
+      border: 1px solid gray;
       width: 47%;
-      border: 1px solid black;
-
       div {
-        border: 0px solid black;
-        padding: 5px 10px;
+        border: 0px solid gray;
+        padding: 5px 20px;
         box-sizing: border-box;
         display: flex;
         height: var(--question-height);
@@ -262,9 +307,14 @@ body {
 
         width: 90%;
         justify-content: space-between;
+
         button {
           height: 15px;
         }
+      }
+      p {
+        padding: 10px 20px;
+        background-color: white;
       }
     }
   }
@@ -272,10 +322,15 @@ body {
 @media (max-width: 800px) {
   .faq {
     div {
-      div {
+      .notaclass {
+        display: none;
+      }
+      .expanded,
+      .notexpanded {
         width: 100%;
-        div {
-          padding: 1px 2px;
+        div,
+        p {
+          padding: 5px 10px;
         }
       }
     }
