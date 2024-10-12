@@ -313,7 +313,7 @@ body {
         }
       }
       p {
-        padding: 10px 20px;
+        padding: 5px 20px;
         background-color: white;
       }
     }
@@ -322,15 +322,28 @@ body {
 @media (max-width: 800px) {
   .faq {
     div {
+      margin: 0px 0;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
       .notaclass {
         display: none;
       }
       .expanded,
       .notexpanded {
         width: 100%;
+
+        div {
+          padding: 0;
+          align-items: center;
+          h5 {
+            margin: 0;
+            padding: 0;
+          }
+        }
         div,
         p {
-          padding: 5px 10px;
+          padding: 0px 10px;
         }
       }
     }
