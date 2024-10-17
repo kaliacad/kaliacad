@@ -2,8 +2,6 @@ import image from "../images/firstDayWishitonMurch2024PresentialyInGoma2.jpg";
 import image2 from "../images/firstDayWishitonMurch2024PresentialyInGoma9.jpg";
 import image3 from "../images/firstDayWishitonMurch2024PresentialyInGoma1.jpg";
 import imageabout from "../images/firstDayWishitonMurch2024PresentialyInGoma4.jpg";
-import wkmRdcLogo from "../images/wkmrdc.png";
-import wmChLogo from "../images/WikimediaCHLogo.svg";
 
 export const pages = [
   // {
@@ -16,11 +14,11 @@ export const pages = [
     title: "Soutenez-nous",
     path: "",
   },
-  // {
-  //   id: 3,
-  //   title: "Blog",
-  //   path: "/blogs",
-  // },
+  {
+    id: 3,
+    title: "Blog",
+    path: "/blogs",
+  },
   // {
   //   id: 4,
   //   title: "Offre",
@@ -47,7 +45,7 @@ export const dataCequeNousFaison = [
     title: "DU MENTORAT",
     description:
       "pour accompagner efficacement dans la contribution open source",
-    image,
+    image: image,
   },
   {
     title: "DES HACK-A-THONS",
@@ -55,40 +53,6 @@ export const dataCequeNousFaison = [
     image: imageabout,
   },
 ];
-
-export const supporters = [
-  {
-    name: "Wikimedia CH",
-    logo: wmChLogo,
-  },
-  {
-    name: "Wikimedia RDC",
-    logo: wkmRdcLogo,
-  },
-];
-
-export const GoldSupport = [
-  {
-    name: "Wikimedia CH",
-    logo: wmChLogo,
-  },
-  // {
-  //   name: "Wikimedia RDC",
-  //   logo: wkmRdcLogo,
-  // },
-];
-
-export const PlatiumSupport = [
-  // {
-  //   name: "Wikimedia CH",
-  //   logo: wmChLogo,
-  // },
-  {
-    name: "Wikimedia RDC",
-    logo: wkmRdcLogo,
-  },
-];
-
 export const dataCequeNousFaisonAlbum = [
   {
     title: "DES FORMATIONS",
