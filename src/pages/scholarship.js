@@ -3,7 +3,6 @@ import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import wmalogo from "../images/WMA-Logo.png";
 import studentsInClass from "../images/students.jpg";
-
 import "./../../style/style.css";
 import { datafaq } from "./../data/Data.js";
 
@@ -28,7 +27,12 @@ function Scholarship() {
     <div className="scholarship">
       <section className="presentation">
         <div>
-          <img className="firstimg" src={wmalogo} alt="WMA Logo" />
+          <StaticImage
+            alt="WMA Logo"
+            src="../images/WMA-Logo.png"
+            layout="fixed"
+            style={{ marginLeft: "-20px" }}
+          />
           <h1>WMA STEM Scholarship Program</h1>
           <p>
             Wikimedia Igbo under Wiki Mentor Africa Program and KALI Academy are
@@ -37,13 +41,11 @@ function Scholarship() {
             technically in Wikimedia Technical Projects.
           </p>
         </div>
-        <div>
-          <img
-            // className="secondimg"
-            alt="Students in the classrooms"
-            src={studentsInClass}
-          />
-        </div>
+
+        <StaticImage
+          alt="Students in the classrooms"
+          src="../images/students.jpg"
+        />
       </section>
 
       <section className="how-it-work">
@@ -97,7 +99,7 @@ function Scholarship() {
 
       <section className="about">
         <div className="about-logo">
-          <img alt="WMA Logo" src={wmalogo} />
+          <StaticImage alt="WMA Logo" src="../images/WMA-Logo.png" />
         </div>
         <div>
           <h1>About Kali Academy</h1>
