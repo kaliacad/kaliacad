@@ -5,10 +5,6 @@ module.exports = {
   siteMetadata: {
     title: `kali Academy`,
     siteUrl: `https://kaliacademy.org`,
-    
   },
-  plugins: [
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
-  ],
-}
+  plugins: ["gatsby-plugin-sharp", "gatsby-transformer-sharp"],
+};
