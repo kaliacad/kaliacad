@@ -340,7 +340,6 @@ body {
         box-sizing: border-box;
         height: var(--question-height);
         align-items: center;
-        background-color: #4550e0;
         overflow: hidden;
         width: 90%;
         justify-content: space-between;
@@ -350,7 +349,6 @@ body {
         h5 {
           margin: 0;
           padding: 0;
-          padding-left: 20px;
         }
         button {
           height: 15px;
