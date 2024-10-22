@@ -322,34 +322,18 @@ body {
     .notexpanded {
       max-height: var(--question-height) !important;
       overflow: hidden;
-    }
-    .expanded,
-    .notexpanded {
-      display: flex;
-      align-items: center;
-      border: 1px solid gray;
       width: 47%;
-      margin-bottom: 4vh;
+      border: 1px solid black;
 
-      .notaclass {
-        display: none;
-      }
       div {
-        display: flex;
-        border: 0px solid gray;
+        border: 0px solid black;
+        padding: 5px 10px;
         box-sizing: border-box;
         height: var(--question-height);
         align-items: center;
         overflow: hidden;
         width: 90%;
         justify-content: space-between;
-        .notaclass {
-          display: none;
-        }
-        h5 {
-          margin: 0;
-          padding: 0;
-        }
         button {
           height: 15px;
         }
@@ -364,13 +348,7 @@ body {
 @media (max-width: 950px) {
   .faq {
     div {
-      margin: 2px 0;
-
-      .notaclass {
-        display: none;
-      }
-      .expanded,
-      .notexpanded {
+      div {
         width: 100%;
 
         .notaclass {
