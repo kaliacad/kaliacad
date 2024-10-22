@@ -133,13 +133,13 @@ function Tutorials() {
                         </div> */}
                       </div>
                       <p>{answer.description}</p>
-                      <div className="tags tags-main">
+                      {/* <div className="tags tags-main">
                         {answer.tag_list.map((tag, idx) => (
                           <span key={idx} className="tag">
                             #{tag}
                           </span>
                         ))}
-                      </div>
+                      </div> */}
                     </div>
                   ))
                 ) : (
