@@ -302,11 +302,15 @@ body {
 /*----------faq--------------------------*/
 
 .faq {
+  .notaclass {
+    display: none;
+  }
   div {
-    margin: 2vh 0;
+    /* margin: 2vh 0; */
     display: flex;
     flex-wrap: wrap;
-    gap: 3%;
+    column-gap: 4vh;
+    box-sizing: border-box;
 
     .notaclass {
       display: none;
@@ -321,23 +325,30 @@ body {
     }
     .expanded,
     .notexpanded {
+      display: flex;
+      align-items: center;
       border: 1px solid gray;
       width: 47%;
+      margin-bottom: 4vh;
+
       .notaclass {
         display: none;
       }
       div {
-        border: 0px solid gray;
-        padding: 5px 20px;
-        box-sizing: border-box;
         display: flex;
+        border: 0px solid gray;
+        box-sizing: border-box;
         height: var(--question-height);
+        align-items: center;
         overflow: hidden;
-
         width: 90%;
         justify-content: space-between;
         .notaclass {
           display: none;
+        }
+        h5 {
+          margin: 0;
+          padding: 0;
         }
         button {
           height: 15px;
@@ -354,7 +365,7 @@ body {
   .faq {
     div {
       margin: 2px 0;
-      padding: 0 10px;
+
       .notaclass {
         display: none;
       }
